@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started &mdash; Limelight 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Limelight 1.0 documentation" href="index.html"/>
+        <link rel="prev" title="Official Limelight Documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Limelight
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mounting">Mounting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wiring">Wiring</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standard-wiring">Standard Wiring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#power-over-ethernet-poe-wiring">Power-over-Ethernet (PoE) Wiring</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-programming">Basic Programming</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#java">Java</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#labview">LabView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c">C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#python">Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Limelight</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>This page will cover the content on the official website’s “Getting Started” page.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#mounting"><span class="std std-ref">Mounting</span></a></li>
+<li><a class="reference internal" href="#wiring"><span class="std std-ref">Wiring</span></a></li>
+<li><a class="reference internal" href="#programming"><span class="std std-ref">Basic Programming</span></a></li>
+</ul>
+<div class="section" id="mounting">
+<span id="id1"></span><h2>Mounting<a class="headerlink" href="#mounting" title="Permalink to this headline">¶</a></h2>
+<p>Use four 1 1/4” 10-32 screws with nylock nuts to mount your Limelight.</p>
+</div>
+<div class="section" id="wiring">
+<span id="id2"></span><h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Limelight takes a 12V input, but is built to function down to 6V. Its LED’s have a constant brightness down to 9.6v in the current beta iteration.</p>
+</div>
+<div class="section" id="standard-wiring">
+<h3>Standard Wiring<a class="headerlink" href="#standard-wiring" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Do not run wires to your VRM.</li>
+<li>Run two wires from your limelight to a slot on your PDP.</li>
+<li>Add a 5A breaker to the same slot on your PDP.</li>
+<li>Run an ethernet calbe from your Limelight to your robot radio.</li>
+</ul>
+</div>
+<div class="section" id="power-over-ethernet-poe-wiring">
+<h3>Power-over-Ethernet (PoE) Wiring<a class="headerlink" href="#power-over-ethernet-poe-wiring" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable.</p>
+</div>
+<ul class="simple">
+<li>Ensure that your Limelight’s power jumper is set to the “E” position.</li>
+<li>Interface a passive <a class="reference external" href="http://amzn.to/2he36Dp/">Passive PoE Injector</a>. to your PDP.</li>
+<li>Add a 5A breaker to the same slot on your PDP.</li>
+<li>Run an ethernet cable from your Limelight to your passive POE injector.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="basic-programming">
+<span id="programming"></span><h2>Basic Programming<a class="headerlink" href="#basic-programming" title="Permalink to this headline">¶</a></h2>
+<p>For now, we will grab Limelight’s tracking info from Network Tables. Here’s an overview of what Limelight posts to Network Tables:
+<a href="#id3"><span class="problematic" id="id4">*</span></a>i</p>
+<div class="section" id="java">
+<h3>Java<a class="headerlink" href="#java" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">NetworkTables</span> <span class="n">table</span> <span class="o">=</span> <span class="n">NetworkTable</span><span class="o">.</span><span class="na">getTable</span><span class="o">(</span><span class="s">&quot;limelight&quot;</span><span class="o">);</span>
+<span class="kt">float</span> <span class="n">targetOffsetAngle_Horizontal</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="na">getNumber</span><span class="o">(</span><span class="s">&quot;tx&quot;</span><span class="o">);</span>
+<span class="kt">float</span> <span class="n">targetOffsetAngle_Vertical</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="na">getNumber</span><span class="o">(</span><span class="s">&quot;ty&quot;</span><span class="o">);</span>
+<span class="kt">float</span> <span class="n">targetArea</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="na">getNumber</span><span class="o">(</span><span class="s">&quot;ta&quot;</span><span class="o">);</span>
+<span class="kt">float</span> <span class="n">targetSkew</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="na">getNumber</span><span class="o">(</span><span class="s">&quot;ts&quot;</span><span class="o">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="labview">
+<h3>LabView<a class="headerlink" href="#labview" title="Permalink to this headline">¶</a></h3>
+<p>Drag the below image into LabView to automatically generate the starter code for Limelight!</p>
+<div class="figure align-left" style="width: 100%">
+<img alt="LabView snippet for Limelight Smart Camera" src="_images/Labview_10.png" />
+</div>
+</div>
+<div class="section" id="c">
+<h3>C++<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">NetworkTable</span><span class="o">&gt;</span> <span class="n">table</span> <span class="o">=</span>   <span class="n">NetworkTable</span><span class="o">::</span><span class="n">GetTable</span><span class="p">(</span><span class="s">&quot;limelight&quot;</span><span class="p">);</span>
+<span class="kt">float</span> <span class="n">targetOffsetAngle_Horizontal</span> <span class="o">=</span> <span class="n">table</span><span class="o">-&gt;</span><span class="n">GetNumber</span><span class="p">(</span><span class="s">&quot;tx&quot;</span><span class="p">);</span>
+<span class="kt">float</span> <span class="n">targetOffsetAngle_Vertical</span> <span class="o">=</span> <span class="n">table</span><span class="o">-&gt;</span><span class="n">GetNumber</span><span class="p">(</span><span class="s">&quot;ty&quot;</span><span class="p">);</span>
+<span class="kt">float</span> <span class="n">targetArea</span> <span class="o">=</span> <span class="n">table</span><span class="o">-&gt;</span><span class="n">GetNumber</span><span class="p">(</span><span class="s">&quot;ta&quot;</span><span class="p">);</span>
+<span class="kt">float</span> <span class="n">targetSkew</span> <span class="o">=</span> <span class="n">table</span><span class="o">-&gt;</span><span class="n">GetNumber</span><span class="p">(</span><span class="s">&quot;ts&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="python">
+<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pynetworktables</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Official Limelight Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Limelight.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
