@@ -1,11 +1,9 @@
 Official Limelight Documentation
 ========================
 
-Information about development is also available:
-
 .. toctree::
    :maxdepth: 2
-   :caption: User Documentation
+   :caption: Docs
 
    getting_started
    tuning
