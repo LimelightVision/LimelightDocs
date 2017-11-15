@@ -5,7 +5,9 @@ This page will cover the content on the official website's "Getting Started" pag
 
 * :ref:`mounting`
 * :ref:`wiring`
+* :ref:`networking`
 * :ref:`programming`
+
 
 .. _mounting:
 
@@ -30,11 +32,47 @@ Standard Wiring
 
 Power-over-Ethernet (PoE) Wiring
 --------------------------------
-.. note:: PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable.
+.. note:: PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable. This is not standard 44V POE - this is why you must use a passive injector with 12V.
 * Ensure that your Limelight's power jumper is set to the "E" position.
 * Interface a passive `Passive PoE Injector <http://amzn.to/2he36Dp/>`_. to your PDP.
 * Add a 5A breaker to the same slot on your PDP.
 * Run an ethernet cable from your Limelight to your passive POE injector.
+
+.. _networking:
+
+Networking Setup
+~~~~~~~~~~~
+While we reccomend a static IP address for reliability, some teams prefer dynamically assigned IP addresses.
+
+Static IP Address (reccommended for competition settings until further testing is completed)
+---------
+* Power-up your robot, and connect your laptop to your robot's network.
+* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
+* Navigate to the "Networking" tab.
+* Enter your team number.
+* Change your "IP Assignment" to "Static".
+* Set your Limelight's IP address to "10.TE.AM.11".
+* Set the Netmask to "255.255.255.0".
+* Set the Gateway to "10.TE.AM.1".
+* Click the "Update" button.
+* Power-cycle your robot.
+* You will now be access your config panel at http://10.TE.AM.11:5801, and your camera stream at http://10.TE.AM.11:5800
+.. note:: 
+Q. Why do we reccommend a static IP?
+A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.
+
+Dynamic IP Address
+---------
+* Power-up your robot, and connect your laptop to your robot's network.
+* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
+* Navigate to the "Networking" tab.
+* Enter your team number.
+* Click the "Update" button.
+* Power-cycle your robot.
+* You can continue be access your config panel at http://limelight.local:5801, and your camera stream at http://limelight.local:5801
+
+.. note:: While the camera has a NetBIOS name, we highly reccommend installing an mDNS responder such as Apple's Bonjour if you plan on using a Dynamic IP address.
+
 
 .. _programming:
 
