@@ -21,7 +21,7 @@ Use four 1 1/4" 10-32 screws with nylock nuts to mount your Limelight.
 Wiring
 ~~~~~~~~~~~
 
-.. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LED's have a constant brightness down to 9.6v in the current beta iteration.
+.. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LED's have a constant brightness down to 9.6v in the 6 LED beta iteration. In the 8 LED iteration, LEDs have constant brightness down to 7V.
 
 Standard Wiring
 ---------------
