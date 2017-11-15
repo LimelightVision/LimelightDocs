@@ -57,8 +57,8 @@ Static IP Address (reccommended for competition settings until further testing i
 * Click the "Update" button.
 * Power-cycle your robot.
 * You will now be access your config panel at http://10.TE.AM.11:5801, and your camera stream at http://10.TE.AM.11:5800
-.. note:: |Q. Why do we reccommend a static IP?
-|A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.
+.. note:: Q. Why do we reccommend a static IP? A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.
+.. note:: Q. How do I reset the IP address? A. After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.
 
 Dynamic IP Address
 ---------
@@ -77,8 +77,9 @@ Dynamic IP Address
 
 Basic Programming
 ~~~~~~~~~~~
-For now, we will grab Limelight's tracking info from Network Tables. Here's an overview of what Limelight posts to Network Tables:
-*i
+For now, we just need to get data from the camera to your robot. Limelight posts targeting data to Network Tables at 100hz. The default update rate for NetworkTables is 10hz, but Limelight automatically overrides it to allow for more frequent data transfer.
+
+To get started, we recommend reading four values from the "limelight" Network Table at at least 100hz. Our code samples will show you exactly how to do this. The offsets to your target (in degrees) are sent as "tx" and "ty". These can be used to turn your robot, turn a turret, etc. The target's area, sent as "ta", may be used a rough indicator of distance to your target. Area is a value between 0 and 100, where 0 means that your target's hull area is 0% of the total image area, and 100 means that your target's hull fills the entire image. The rotation or "skew" of your target is returned as "ts".
 
 Java
 ---------
