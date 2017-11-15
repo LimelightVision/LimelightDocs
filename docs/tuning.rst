@@ -93,8 +93,3 @@ Targeting Region
 ---------
 Controls the point of interest of the chosen contour's bounding rectangle. By default, the tracking parameters tx and ty represent the offsets from your crosshair to the center of the chosen rectangle. You can use another option if a target changes in size, or is comprised of two targets that sometimes blend together.
 //show flickering stronghold goal.
-
-.. figure:: Labview_10.png
-   :alt: LabView snippet for Limelight Smart Camera
-   :align: left
-   :figwidth: 100%
