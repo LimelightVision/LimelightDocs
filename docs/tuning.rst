@@ -7,7 +7,7 @@ The "Tracking" page is comprised of four tuning tabs:
 
 * :ref:`Input`
 * :ref:`Thresholding`
-* :ref:`ContourFiltering`
+* :ref:`Contour-Filtering`
 * :ref:`Output`
 
 In addition, you can adjust your Limelight's crosshair by pressing the "calibrate crosshair" button while a target is in view. In a future release, crosshair calibration will move to the "output" tab.
@@ -50,7 +50,7 @@ Value (add cylinder)
 --------------------------------
 Describes the darkness of a color, or how much "black" is in a color. A low value corresponds to a near-black color. You should absolutely increase the minimum value from zero, so that black pixels are not passed through the proccessing pipeline.
 
-.. _ContourFiltering:
+.. _Contour-Filtering:
 
 Contour Filtering
 ~~~~~~~~~~~
@@ -82,7 +82,7 @@ Aspect ratio is defined by the width of the bounding rectange of the chosen cont
 // small contour vs large contour with percentages image. box-in-box with different color text + outlines
 
 
-.. _ContourFiltering:
+.. _Output:
 
 Output
 ~~~~~~~~~~~
