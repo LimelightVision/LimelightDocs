@@ -57,9 +57,8 @@ Static IP Address (reccommended for competition settings until further testing i
 * Click the "Update" button.
 * Power-cycle your robot.
 * You will now be access your config panel at http://10.TE.AM.11:5801, and your camera stream at http://10.TE.AM.11:5800
-.. note:: 
-Q. Why do we reccommend a static IP?
-A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.
+.. note:: |Q. Why do we reccommend a static IP?
+|A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.
 
 Dynamic IP Address
 ---------
