@@ -84,9 +84,31 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-htmo_theme = 'sphinx_rtd_theme'
 #on_rtd = os.environ.get('READTHEDOCS', None) == 'True'                           
                                                                                  
+# Theme options are theme-specific and customize the look and feel of a theme
+# further.  For a list of options available for each theme, see the
+# documentation.
+#
+html_theme = 'sphinx_rtd_theme'
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_static_path = ['_static']
+html_logo = 'img/logo_scaled.svg'
+html_favicon = 'img/LLICO.ico'
+html_show_sphinx = False
+html_show_sourcelink = False
+html_theme_options = {
+    'collapse_navigation': False,
+    'display_version': False,
+    'navigation_depth': 3,
+    'logo_only': True,
+    'sticky_navigation': False,
+}
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+
+
 #if not on_rtd:  # only import and set the theme if we're building docs locally   
  #   import sphinx_rtd_theme                                                      
  #   html_theme = 'sphinx_rtd_theme'                                              
@@ -103,26 +125,6 @@ def setup(app):
  #           '_static/theme_overrides.css',                                       
   #      ],                                                                       
   #  }
-
-
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-#
-html_logo = 'img/logo_scaled.svg'
-# html_theme_options = {}
-html_theme_options = {
-    'collapse_navigation': False,
-    'display_version': False,
-    'navigation_depth': 3,
-    'logo_only': True,
-    'sticky_navigation': False,
-}
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
-
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
