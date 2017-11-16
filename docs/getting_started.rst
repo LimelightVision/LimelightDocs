@@ -21,7 +21,7 @@ Use four 1 1/4" 10-32 screws with nylock nuts to mount your Limelight.
 Wiring
 ~~~~~~~~~~~
 
-.. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LED's have a constant brightness down to 9.6v in the 6 LED beta iteration. In the 8 LED iteration, LEDs have constant brightness down to 7V.
+.. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 9.6v in the 6 LED beta iteration. In the 8 LED iteration, LEDs have constant brightness down to 7V.
 
 Standard Wiring
 ---------------
@@ -57,8 +57,11 @@ Static IP Address (reccommended for competition settings until further testing i
 * Click the "Update" button.
 * Power-cycle your robot.
 * You will now be access your config panel at http://10.TE.AM.11:5801, and your camera stream at http://10.TE.AM.11:5800
-.. note:: Q. Why do we reccommend a static IP? A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.
-.. note:: Q. How do I reset the IP address? A. After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.
+..This is a comment. Mutli-line notes, warnings, admonitions in general need indented lines after the first line
+.. note:: Q. Why do we reccommend a static IP? 
+	A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.
+.. note:: Q. How do I reset the IP address? 
+	A. After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.
 
 Dynamic IP Address
 ---------
