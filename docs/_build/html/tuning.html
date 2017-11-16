@@ -30,6 +30,8 @@
   
 
   
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
 
   
         <link rel="index" title="Index"
@@ -109,7 +111,7 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Tuning &amp; Learning</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Input</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#input">Input</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#camera-orientation">Camera Orientation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#exposure">Exposure</a></li>
 </ul>
@@ -207,9 +209,8 @@
 <li><a class="reference internal" href="#output"><span class="std std-ref">Output</span></a></li>
 </ul>
 <p>In addition, you can adjust your Limelight’s crosshair by pressing the “calibrate crosshair” button while a target is in view. In a future release, crosshair calibration will move to the “output” tab.</p>
-<hr class="docutils" id="input" />
-<div class="section" id="id1">
-<h2>Input<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="input">
+<h2>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
 <p>The Input Tab hosts controls to change the raw camera image before it is passed through the processing pipeline.</p>
 <div class="section" id="camera-orientation">
@@ -223,7 +224,7 @@
 </div>
 </div>
 <div class="section" id="thresholding">
-<span id="id2"></span><h2>Thresholding<a class="headerlink" href="#thresholding" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Thresholding<a class="headerlink" href="#thresholding" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
 <p>Thresholding is a critical component of most FRC vision trakcing algorithms. It is the act of taking an image, and throwing away any pixels that aren’t in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either “on” or “off.</p>
 <div class="section" id="video-feed">
@@ -245,7 +246,7 @@
 </div>
 </div>
 <div class="section" id="contour-filtering">
-<span id="id3"></span><h2>Contour Filtering<a class="headerlink" href="#contour-filtering" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Contour Filtering<a class="headerlink" href="#contour-filtering" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
 <p>After thresholding, Limelight applies a …. to generate a list of contours. After that, each contour is wrapped in a bounding rectangle, and those rectangles are passed through a series of filters to determine the “best” rectangle. If multiple rectangle pass through all filters, Limelight chooses the largest rectangle.</p>
 <div class="section" id="target-area">
@@ -273,7 +274,7 @@
 </div>
 </div>
 <div class="section" id="output">
-<span id="id4"></span><h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
 <p>This tab controls what happens during the last stage of the vision pipeline</p>
 <div class="section" id="targeting-region">
@@ -345,12 +346,6 @@
   
 
   
-  
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
-      });
-  </script>
    
 
 </body>

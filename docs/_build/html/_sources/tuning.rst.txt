@@ -12,9 +12,8 @@ The "Tracking" page is comprised of four tuning tabs:
 
 In addition, you can adjust your Limelight's crosshair by pressing the "calibrate crosshair" button while a target is in view. In a future release, crosshair calibration will move to the "output" tab.
 
-.. _Input:
-
 ----------
+.. _Input:
 
 Input
 ~~~~~~~~~~~~~~~~~~~

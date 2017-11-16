@@ -1,7 +1,7 @@
 Welcome
 ========================
 
-Welcome to the official Limelight documentation! Feel free to contribute at https://github.com/LimelightVision/LimelightDocs.
+Welcome to the official Limelight documentation.
 
 Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents below to get started.
 
