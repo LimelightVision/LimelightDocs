@@ -89,9 +89,13 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
+html_logo = 'img/logo_scaled.svg'
 # html_theme_options = {}
 html_theme_options = {
+    'collapse_navigation': False,
+    'display_version': False,
     'navigation_depth': 3,
+    'logo_only': True,
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

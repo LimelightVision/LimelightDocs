@@ -36,7 +36,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Limelight 1.0 documentation" href="index.html"/>
-        <link rel="prev" title="Official Limelight Documentation" href="index.html"/> 
+        <link rel="next" title="Tuning &amp; Learning" href="tuning.html"/>
+        <link rel="prev" title="Welcome" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -55,19 +56,15 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Limelight
+            <a href="index.html">
           
 
+          
+            
+            <img src="_static/logo_scaled.svg" class="logo" />
           
           </a>
 
-          
-            
-            
-              <div class="version">
-                1.0
-              </div>
-            
           
 
           
@@ -89,7 +86,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">User Documentation</span></p>
+              <p class="caption"><span class="caption-text">Sections</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#mounting">Mounting</a></li>
@@ -98,11 +95,41 @@
 <li class="toctree-l3"><a class="reference internal" href="#power-over-ethernet-poe-wiring">Power-over-Ethernet (PoE) Wiring</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#networking-setup">Networking Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#static-ip-address-recommended-for-competition-settings-until-further-testing-is-completed">Static IP Address (recommended for competition settings until further testing is completed)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamic-ip-address">Dynamic IP Address</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#basic-programming">Basic Programming</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#java">Java</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#labview">LabView</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#c">C++</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#python">Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tuning.html">Tuning &amp; Learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tuning.html#id1">Input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#camera-orientation">Camera Orientation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#exposure">Exposure</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tuning.html#thresholding">Thresholding</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#video-feed">Video Feed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#hue-add-cylinder">Hue (add cylinder)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#satruation-add-cylinder">Satruation (add cylinder)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#value-add-cylinder">Value (add cylinder)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tuning.html#contour-filtering">Contour Filtering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#target-area">Target Area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#target-fullness">Target Fullness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#target-aspect-ratio">Target Aspect Ratio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tuning.html#output">Output</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tuning.html#targeting-region">Targeting Region</a></li>
 </ul>
 </li>
 </ul>
@@ -176,6 +203,7 @@
 <ul class="simple">
 <li><a class="reference internal" href="#mounting"><span class="std std-ref">Mounting</span></a></li>
 <li><a class="reference internal" href="#wiring"><span class="std std-ref">Wiring</span></a></li>
+<li><a class="reference internal" href="#networking"><span class="std std-ref">Networking Setup</span></a></li>
 <li><a class="reference internal" href="#programming"><span class="std std-ref">Basic Programming</span></a></li>
 </ul>
 <div class="section" id="mounting">
@@ -186,7 +214,7 @@
 <span id="id2"></span><h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Limelight takes a 12V input, but is built to function down to 6V. Its LED’s have a constant brightness down to 9.6v in the current beta iteration.</p>
+<p class="last">Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 9.6v in the 6 LED beta iteration. In the 8 LED iteration, LEDs have constant brightness down to 7V.</p>
 </div>
 <div class="section" id="standard-wiring">
 <h3>Standard Wiring<a class="headerlink" href="#standard-wiring" title="Permalink to this headline">¶</a></h3>
@@ -203,6 +231,10 @@
 <p class="first admonition-title">Note</p>
 <p class="last">PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable.</p>
 </div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This is not standard 44V PoE - this is why you must use a passive injector with 12V.</p>
+</div>
 <ul class="simple">
 <li>Ensure that your Limelight’s power jumper is set to the “E” position.</li>
 <li>Interface a passive <a class="reference external" href="http://amzn.to/2he36Dp/">Passive PoE Injector</a>. to your PDP.</li>
@@ -211,10 +243,64 @@
 </ul>
 </div>
 </div>
+<div class="section" id="networking-setup">
+<span id="networking"></span><h2>Networking Setup<a class="headerlink" href="#networking-setup" title="Permalink to this headline">¶</a></h2>
+<p>While we reccomend a static IP address for reliability, some teams prefer dynamically assigned IP addresses.</p>
+<div class="section" id="static-ip-address-recommended-for-competition-settings-until-further-testing-is-completed">
+<h3>Static IP Address (recommended for competition settings until further testing is completed)<a class="headerlink" href="#static-ip-address-recommended-for-competition-settings-until-further-testing-is-completed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Power-up your robot, and connect your laptop to your robot’s network.</li>
+<li>After your Limelight flashes its LED array, navigate to <a class="reference external" href="http://limelight.local:5801">http://limelight.local:5801</a>. This is the configuration panel.</li>
+<li>Navigate to the “Networking” tab.</li>
+<li>Enter your team number.</li>
+<li>Change your “IP Assignment” to “Static”.</li>
+<li>Set your Limelight’s IP address to “10.TE.AM.11”.</li>
+<li>Set the Netmask to “255.255.255.0”.</li>
+<li>Set the Gateway to “10.TE.AM.1”.</li>
+<li>Click the “Update” button.</li>
+<li>Power-cycle your robot.</li>
+<li>You will now be access your config panel at <a class="reference external" href="http://10.TE.AM.11:5801">http://10.TE.AM.11:5801</a>, and your camera stream at <a class="reference external" href="http://10.TE.AM.11:5800">http://10.TE.AM.11:5800</a></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ol class="upperalpha simple" start="17">
+<li>Why do we reccommend a static IP?</li>
+</ol>
+<ol class="last upperalpha simple">
+<li>First, it shaves multiple seconds off Limelight’s boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ol class="upperalpha simple" start="17">
+<li>How do I reset the IP address?</li>
+</ol>
+<ol class="last upperalpha simple">
+<li>After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="dynamic-ip-address">
+<h3>Dynamic IP Address<a class="headerlink" href="#dynamic-ip-address" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Power-up your robot, and connect your laptop to your robot’s network.</li>
+<li>After your Limelight flashes its LED array, navigate to <a class="reference external" href="http://limelight.local:5801">http://limelight.local:5801</a>. This is the configuration panel.</li>
+<li>Navigate to the “Networking” tab.</li>
+<li>Enter your team number.</li>
+<li>Click the “Update” button.</li>
+<li>Power-cycle your robot.</li>
+<li>You can continue be access your config panel at <a class="reference external" href="http://limelight.local:5801">http://limelight.local:5801</a>, and your camera stream at <a class="reference external" href="http://limelight.local:5801">http://limelight.local:5801</a></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">While the camera has a NetBIOS name, we highly reccommend installing an mDNS responder such as Apple’s Bonjour if you plan on using a Dynamic IP address.</p>
+</div>
+</div>
+</div>
 <div class="section" id="basic-programming">
 <span id="programming"></span><h2>Basic Programming<a class="headerlink" href="#basic-programming" title="Permalink to this headline">¶</a></h2>
-<p>For now, we will grab Limelight’s tracking info from Network Tables. Here’s an overview of what Limelight posts to Network Tables:
-<a href="#id3"><span class="problematic" id="id4">*</span></a>i</p>
+<p>For now, we just need to get data from the camera to your robot. Limelight posts targeting data to Network Tables at 100hz. The default update rate for NetworkTables is 10hz, but Limelight automatically overrides it to allow for more frequent data transfer.</p>
+<p>To get started, we recommend reading four values from the “limelight” Network Table at at least 100hz. Our code samples will show you exactly how to do this. The offsets to your target (in degrees) are sent as “tx” and “ty”. These can be used to turn your robot, turn a turret, etc. The target’s area, sent as “ta”, may be used a rough indicator of distance to your target. Area is a value between 0 and 100, where 0 means that your target’s hull area is 0% of the total image area, and 100 means that your target’s hull fills the entire image. The rotation or “skew” of your target is returned as “ts”.</p>
 <div class="section" id="java">
 <h3>Java<a class="headerlink" href="#java" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">NetworkTables</span> <span class="n">table</span> <span class="o">=</span> <span class="n">NetworkTable</span><span class="o">.</span><span class="na">getTable</span><span class="o">(</span><span class="s">&quot;limelight&quot;</span><span class="o">);</span>
@@ -261,8 +347,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="tuning.html" class="btn btn-neutral float-right" title="Tuning &amp; Learning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="index.html" class="btn btn-neutral" title="Official Limelight Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

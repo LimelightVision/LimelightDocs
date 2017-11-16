@@ -32,7 +32,8 @@ Standard Wiring
 
 Power-over-Ethernet (PoE) Wiring
 --------------------------------
-.. note:: PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable. This is not standard 44V POE - this is why you must use a passive injector with 12V.
+.. note:: PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable. 
+.. warning:: This is not standard 44V PoE - this is why you must use a passive injector with 12V.
 * Ensure that your Limelight's power jumper is set to the "E" position.
 * Interface a passive `Passive PoE Injector <http://amzn.to/2he36Dp/>`_. to your PDP.
 * Add a 5A breaker to the same slot on your PDP.
@@ -44,7 +45,7 @@ Networking Setup
 ~~~~~~~~~~~
 While we reccomend a static IP address for reliability, some teams prefer dynamically assigned IP addresses.
 
-Static IP Address (reccommended for competition settings until further testing is completed)
+Static IP Address (recommended for competition settings until further testing is completed)
 ---------
 * Power-up your robot, and connect your laptop to your robot's network.
 * After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
@@ -58,11 +59,11 @@ Static IP Address (reccommended for competition settings until further testing i
 * Power-cycle your robot.
 * You will now be access your config panel at http://10.TE.AM.11:5801, and your camera stream at http://10.TE.AM.11:5800
 .. This is a comment. Mutli-line notes, warnings, admonitions in general need indented lines after the first line
-.. note:: 
-	Q. Why do we reccommend a static IP? 
+.. note:: Q. Why do we reccommend a static IP? 
+
 	A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.
-.. note:: 
-	Q. How do I reset the IP address? 
+.. note:: Q. How do I reset the IP address? 
+
 	A. After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.
 
 Dynamic IP Address
