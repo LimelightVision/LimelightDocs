@@ -78,7 +78,7 @@ Controls the range of acceptable bounding-rectangle areas, as percentages of the
 
 Target Fullness
 ---------
-Fullness is the percentage of "on" pixels in the chosen contour's bounding rectangle. A solid rectange target will have a high, near 1.0 fullness, while a U-shaped target will have a low fullness.
+Fullness is the percentage of "on" pixels in the chosen contour's bounding rectangle. A solid rectange target will have a high near 1.0 fullness, while a U-shaped target will have a low fullness.
 
 // real-world fullness examples
 
@@ -86,7 +86,7 @@ Target Aspect Ratio
 ---------
 Aspect ratio is defined by the width of the bounding rectange of the chosen contour divided by its height. A low aspect ratio describes a "tall" rectangle, whlie a high aspect ratio describes a "wide" rectangle. 
 //wide and tall images
-.. note:: The aspect ratio slider but quadratically scaled.
+.. note:: The aspect ratio slider is also quadratically scaled.
 
 // real-world fullness examples
 
