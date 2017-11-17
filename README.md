@@ -1,4 +1,4 @@
-# Limelight Dcomuentation Environment Setup
+# Limelight Documentation Environment Setup
 
 * Install python
 * sudo pip install sphinx sphinx-autobuild
