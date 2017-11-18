@@ -5,9 +5,9 @@ This page will cover the content on the official website's "Getting Started" pag
 
 * :ref:`mounting`
 * :ref:`wiring`
+* :ref:`imaging`
 * :ref:`networking`
 * :ref:`programming`
-
 
 .. _mounting:
 
@@ -38,6 +38,30 @@ Power-over-Ethernet (PoE) Wiring
 * Interface a passive `Passive PoE Injector <http://amzn.to/2he36Dp/>`_. to your PDP.
 * Add a 5A breaker to the same slot on your PDP.
 * Run an ethernet cable from your Limelight to your passive POE injector.
+
+.. _imaging:
+
+Imaging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: Limelight will recieve software updates for improvements and features to accomodate the game.
+.. _Downloads: http://www.python.org/
+* Remove power from your limelight
+* Download the latest flasher tool and image from from the Downloads_ Page.
+* Install the flasher tool.
+* Run a USB-MicroUSB cable from your laptop to your limelight.
+* Apply power to your limelight
+* Run the "Limelight Flash Tool" from the Windows search bar. It will also appear under the "Limelight" folder under the start menu applications folder
+* Select the latest .zip image in your downloads folder
+* Select an "RPI" device in the "Limelights" menu
+* Click "Flash"
+* Once flashing is complete, remove power from your limelight
+
+.. figure:: img/ImagerWindow.png
+   :alt: Limelight Smart Camera Flash Tool
+   :align: left
+   :figwidth: 100%
+
 
 .. _networking:
 
@@ -126,7 +150,7 @@ LabView
 ------------------------------------------
 Drag the below image into LabView to automatically generate the starter code for Limelight!
 
-.. figure:: Labview_10.png
+.. figure:: ing/Labview_10.png
    :alt: LabView snippet for Limelight Smart Camera
    :align: left
    :figwidth: 100%
