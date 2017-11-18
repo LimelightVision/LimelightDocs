@@ -22,9 +22,9 @@ Input
 
 The Input Tab hosts controls to change the raw camera image before it is passed through the processing pipeline.
 
-Camera Orientation
+ Orientation
 ----------------
-Controls the orienation of incoming frames. Set it to "inverted" if your camera is mounted upside-down.
+Controls the orientation of incoming frames. Set it to "inverted" if your camera is mounted upside-down.
 
 Exposure
 -------------------
@@ -39,9 +39,9 @@ Thresholding
 
 ----------
 
-Thresholding is a critical component of most FRC vision trakcing algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off.
+Thresholding is a critical component of most FRC vision tracking algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off.
 
-The Limelight camera does threshholding in the HSV (Hue-Saturation-Value) colorspace.  You may be used to thinking of colors in the RGB (Red-Green-Blue) colorspace.  HSV is just another way of representing color similar to the way cartesian coordinates or polar coordinates can be used to describe positions.  The reason we use the HSV colorspace is that the Hue can be used to very tightly select the green color that the limelight leds output.  
+The Limelight camera does thresholding in the HSV (Hue-Saturation-Value) colorspace.  You may be used to thinking of colors in the RGB (Red-Green-Blue) colorspace.  HSV is just another way of representing color similar to the way cartesian coordinates or polar coordinates can be used to describe positions.  The reason we use the HSV colorspace is that the Hue can be used to very tightly select the green color that the limelight leds output.  
 
 .. figure:: img/HSVImage.png
    :alt: HSV Cylindrical Rep For Limelight
@@ -62,7 +62,7 @@ Describes the extent to which a color is "pure". Another way to think of this is
 
 Value (add cylinder)
 --------------------------------
-Describes the darkness of a color, or how much "black" is in a color. A low value corresponds to a near-black color. You should absolutely increase the minimum value from zero, so that black pixels are not passed through the proccessing pipeline.
+Describes the darkness of a color, or how much "black" is in a color. A low value corresponds to a near-black color. You should absolutely increase the minimum value from zero, so that black pixels are not passed through the processing pipeline.
 
 ----------
 
@@ -85,13 +85,13 @@ Controls the range of acceptable bounding-rectangle areas, as percentages of the
 
 Target Fullness
 ---------
-Fullness is the percentage of "on" pixels in the chosen contour's bounding rectangle. A solid rectange target will have a high near 1.0 fullness, while a U-shaped target will have a low fullness.
+Fullness is the percentage of "on" pixels in the chosen contour's bounding rectangle. A solid rectangle target will have a near-1.0 fullness, while a U-shaped target will have a low fullness.
 
 // real-world fullness examples
 
 Target Aspect Ratio
 ---------
-Aspect ratio is defined by the width of the bounding rectange of the chosen contour divided by its height. A low aspect ratio describes a "tall" rectangle, whlie a high aspect ratio describes a "wide" rectangle. 
+Aspect ratio is defined by the width of the bounding rectangle of the chosen contour divided by its height. A low aspect ratio describes a "tall" rectangle, while a high aspect ratio describes a "wide" rectangle. 
 //wide and tall images
 .. note:: The aspect ratio slider is also quadratically scaled.
 
