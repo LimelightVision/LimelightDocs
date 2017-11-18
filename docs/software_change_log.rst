@@ -24,7 +24,7 @@ Image Change Log
 2017.4 (10/30/17)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Lots of boot and shutdown bullet-proofing
-..dhcpcd and var/log/samba every 20 minutes
+.. dhcpcd and var/log/samba every 20 minutes
 
 2017.3 (10/25/17)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,7 +43,7 @@ Image Change Log
 * Disable all swap functionality (100 mb)
 * Auto chmod 777 adminserver and visionserver from rc.local
 * Smaller image
-..Removed WiringPi zip
+.. Removed WiringPi zip
 * “Convexity” changed to “Fullness”
 * Exposure range set to 0-128 ms from 0-255 ms
 * Support two cameras
