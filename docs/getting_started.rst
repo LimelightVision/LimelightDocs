@@ -98,7 +98,7 @@ Dynamic IP Address
 * Enter your team number.
 * Click the "Update" button.
 * Power-cycle your robot.
-* You can continue be access your config panel at http://limelight.local:5801, and your camera stream at http://limelight.local:5801
+* You can continue be access your config panel at http://limelight.local:5801, and your camera stream at http://limelight.local:5800
 
 .. note:: While the camera has a NetBIOS name, we highly reccommend installing an mDNS responder such as Apple's Bonjour if you plan on using a Dynamic IP address.
 
