@@ -9,6 +9,7 @@ Image Change Log
 * Organize controls into “input”, “threshold”, “filter”, and “output” tabs
 * Continuous updates while dragging sliders
 * Area sent to NT as a percentage (0-100)
+* Image size down to 700MB from 2.1GB
 
 2017.5 (11/9/17)
 ~~~~~~~~~~~~~~~~~~~~~
