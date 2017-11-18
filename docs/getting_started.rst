@@ -150,7 +150,7 @@ LabView
 ------------------------------------------
 Drag the below image into LabView to automatically generate the starter code for Limelight!
 
-.. figure:: ing/Labview_10.png
+.. figure:: img/Labview_10.png
    :alt: LabView snippet for Limelight Smart Camera
    :align: left
    :figwidth: 100%
