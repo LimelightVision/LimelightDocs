@@ -43,7 +43,10 @@ Thresholding is a critical component of most FRC vision trakcing algorithms. It 
 
 The Limelight camera does threshholding in the HSV (Hue-Saturation-Value) colorspace.  You may be used to thinking of colors in the RGB (Red-Green-Blue) colorspace.  HSV is just another way of representing color similar to the way cartesian coordinates or polar coordinates can be used to describe positions.  The reason we use the HSV colorspace is that the Hue can be used to very tightly select the green color that the limelight leds output.  
 
-.. figure:: HSVImage.png
+.. figure:: img/HSVImage.png
+   :alt: HSV Cylindrical Rep For Limelight
+   :align: left
+   :figwidth: 100%
 
 Video Feed  (Remove this?)
 ---------------
