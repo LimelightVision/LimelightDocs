@@ -109,14 +109,14 @@ Basic Programming
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 For now, we just need to get data from the camera to your robot. Limelight posts targeting data to Network Tables at 100hz. The default update rate for NetworkTables is 10hz, but Limelight automatically overwrites it to allow for more frequent data transfer.
 
-To get started, we recommend reading four values from the "limelight" Network Table at at least 100hz. Our code samples will show you exactly how to do this. The offsets to your target (in degrees) are sent as "tx" and "ty". These can be used to turn your robot, turn a turret, etc. The target's area, sent as "ta", may be used a rough indicator of distance to your target. Area is a value between 0 and 100, where 0 means that your target's hull area is 0% of the total image area, and 100 means that your target's hull fills the entire image. The rotation or "skew" of your target is returned as "ts".
+To get started, we recommend reading four values from the "limelight" Network Table at at least 100hz. Our code samples will show you exactly how to do this. The offsets to your target (in degrees) are sent as "tx" and "ty". These can be used to turn your robot, turn a turret, etc. The target's area, sent as "ta", may be used a rough indicator of distance to your target. Area is a value between 0 and 100, where 0 means that your target's hull area is 0% of the total image area, and 100 means that your target's hull fills the entire image. The rotation or "skew" of your target is returned as "ts". If all values are equal to zero, no targets exist.
 
 In addition, you may control certain features by setting values in NetworkTables. 
 
 Read the following from the "limelight" table
 
 -tx			Horizontal Offset From Crosshair To Target (-27 degrees to 27 degrees)
--ty			Vertical Offset From Crosshair To Target (-20 degrees to 20 degrees) *update
+-ty			Vertical Offset From Crosshair To Target (-20.5 degrees to 20.5 degrees)
 -ta			Target Area (0% of image to 100% of image)								
 -ts			Skew or rotation (-90 degrees to 0 degrees)*check This
 

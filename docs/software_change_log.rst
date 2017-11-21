@@ -1,6 +1,16 @@
 Image Change Log
 ==============================
 
+2017.7 (11/21/17)
+~~~~~~~~~~~~~~~~~~~~~
+* Fix severe bug that broke contour sorting. This caused very small contours to often be favored over larger contours. 
+* New Coordinate system: Center is (0,0). ty increases as the target moves "up" the y-axis, and tx increases as the target moves "right" along the x-axis.
+* More accurate angle calculations.
+* Display targeting info (tx, ty, ta, and ts) on webpage
+* Default targeting values are zeros. This means zeros are returned if no target is in view.
+* Continuous slider updates don't hurt config panel performance.
+* Aspect ratio slider scaled such that 1:1 is centered.
+
 2017.6 (11/13/17)
 ~~~~~~~~~~~~~~~~~~~~~
 * New Imaging tool. Tested on Win7, Win8 and Win10.

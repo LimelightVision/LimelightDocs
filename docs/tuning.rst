@@ -73,7 +73,7 @@ Contour Filtering
 
 ----------
 
-After thresholding, Limelight applies a .... to generate a list of contours. After that, each contour is wrapped in a bounding rectangle, and those rectangles are passed through a series of filters to determine the "best" rectangle. If multiple rectangle pass through all filters, Limelight chooses the largest rectangle.
+After thresholding, Limelight applies a .... to generate a list of contours. After that, each contour is wrapped in a bounding rectangle, or "convex hull". Hulls are passed through a series of filters to determine the "best" hull. If multiple hulls pass through all filters, Limelight chooses the largest hulls.
 
 Target Area
 ---------
