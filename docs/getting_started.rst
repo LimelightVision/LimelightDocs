@@ -5,9 +5,9 @@ This page will cover the content on the official website's "Getting Started" pag
 
 * :ref:`mounting`
 * :ref:`wiring`
+* :ref:`imaging`
 * :ref:`networking`
 * :ref:`programming`
-
 
 .. _mounting:
 
@@ -38,6 +38,30 @@ Power-over-Ethernet (PoE) Wiring
 * Interface a passive `Passive PoE Injector <http://amzn.to/2he36Dp/>`_. to your PDP.
 * Add a 5A breaker to the same slot on your PDP.
 * Run an ethernet cable from your Limelight to your passive POE injector.
+
+.. _imaging:
+
+Imaging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: Limelight will receive software updates for improvements and features to accomodate the game.
+.. _Downloads: http://www.python.org/
+* Remove power from your limelight
+* Download the latest flasher tool and image from from the Downloads_ Page.
+* Install the flasher tool.
+* Run a USB-MicroUSB cable from your laptop to your limelight.
+* Apply power to your limelight
+* Run the "Limelight Flash Tool" from the Windows search bar. It will also appear under the "Limelight" folder under the start menu applications folder
+* Select the latest .zip image in your downloads folder
+* Select an "RPI" device in the "Limelights" menu
+* Click "Flash"
+* Once flashing is complete, remove power from your limelight
+
+.. figure:: img/ImagerWindow.png
+   :alt: Limelight Smart Camera Flash Tool
+   :align: left
+   :figwidth: 100%
+
 
 .. _networking:
 
@@ -74,7 +98,7 @@ Dynamic IP Address
 * Enter your team number.
 * Click the "Update" button.
 * Power-cycle your robot.
-* You can continue be access your config panel at http://limelight.local:5801, and your camera stream at http://limelight.local:5801
+* You can continue be access your config panel at http://limelight.local:5801, and your camera stream at http://limelight.local:5800
 
 .. note:: While the camera has a NetBIOS name, we highly reccommend installing an mDNS responder such as Apple's Bonjour if you plan on using a Dynamic IP address.
 
@@ -83,7 +107,7 @@ Dynamic IP Address
 
 Basic Programming
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-For now, we just need to get data from the camera to your robot. Limelight posts targeting data to Network Tables at 100hz. The default update rate for NetworkTables is 10hz, but Limelight automatically overrides it to allow for more frequent data transfer.
+For now, we just need to get data from the camera to your robot. Limelight posts targeting data to Network Tables at 100hz. The default update rate for NetworkTables is 10hz, but Limelight automatically overwrites it to allow for more frequent data transfer.
 
 To get started, we recommend reading four values from the "limelight" Network Table at at least 100hz. Our code samples will show you exactly how to do this. The offsets to your target (in degrees) are sent as "tx" and "ty". These can be used to turn your robot, turn a turret, etc. The target's area, sent as "ta", may be used a rough indicator of distance to your target. Area is a value between 0 and 100, where 0 means that your target's hull area is 0% of the total image area, and 100 means that your target's hull fills the entire image. The rotation or "skew" of your target is returned as "ts".
 
@@ -126,7 +150,7 @@ LabView
 ------------------------------------------
 Drag the below image into LabView to automatically generate the starter code for Limelight!
 
-.. figure:: Labview_10.png
+.. figure:: img/Labview_10.png
    :alt: LabView snippet for Limelight Smart Camera
    :align: left
    :figwidth: 100%

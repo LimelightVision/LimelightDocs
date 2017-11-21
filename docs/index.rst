@@ -15,5 +15,6 @@ Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents
    features_and_tech
    frequently_asked_questions
    additional_resources
-   
+   software_change_log
+
    
