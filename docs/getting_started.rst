@@ -57,10 +57,7 @@ Imaging
 * Click "Flash"
 * Once flashing is complete, remove power from your limelight
 
-.. figure:: img/ImagerWindow.png
-   :alt: Limelight Smart Camera Flash Tool
-   :align: left
-   :figwidth: 100%
+.. image:: img/ImagerWindow.png
 
 
 .. _networking:
@@ -148,12 +145,9 @@ Java
 
 LabView
 ------------------------------------------
-Drag the below image into LabView to automatically generate the starter code for Limelight!
+Drag the below image into LabView to automatically generate the starter code for Limelight.
 
-.. figure:: img/Labview_10.png
-   :alt: LabView snippet for Limelight Smart Camera
-   :align: left
-   :figwidth: 100%
+.. image:: img/Labview_10.png
 
 C++
 ------------------------------------------
@@ -170,3 +164,12 @@ Python
 .. code-block:: python
 
     import pynetworktables
+    
+    NetworkTables.initialize(server='10.26.5.11')
+    
+    sd = NetworkTables.getTable("limelight")
+    tx = sd.getNumber('tx')
+    ty = sd.getNumber('ty')
+    ta = sd.getNumber('ta')
+    ts = sd.getNumber('ts')
+    
