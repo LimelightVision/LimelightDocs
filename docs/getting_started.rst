@@ -57,7 +57,7 @@ Imaging
 * Click "Flash"
 * Once flashing is complete, remove power from your limelight
 
-.. image:: img/ImagerWindow.png
+image:: img/ImagerWindow.png
 
 
 .. _networking:

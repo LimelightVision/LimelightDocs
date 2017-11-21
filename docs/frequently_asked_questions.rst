@@ -16,5 +16,4 @@ We specifically designed the Limelight camera to handle the "noisy" power availa
 
 Will the Limelight LEDs dim when our robot's voltage drops?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We designed the LED array on the Limelight to produce a consistent brightness all the way down to 7.5V.  So your tracking should remain consistent even when your robot motors are putting a heavy load on the battery.  This often happens when some robots turn in place.
-
+We designed the LED array on the Limelight to produce a consistent brightness all the way down to 7.5V.  So your tracking should remain consistent even when your robot motors are putting a heavy load on the battery.  This can be an important feature for robots with high-traction drivetrains that aim by turning in place.
