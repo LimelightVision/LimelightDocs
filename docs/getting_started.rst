@@ -145,12 +145,9 @@ Java
 
 LabView
 ------------------------------------------
-Drag the below image into LabView to automatically generate the starter code for Limelight!
+Drag the below image into LabView to automatically generate the starter code for Limelight.
 
-.. figure:: img/Labview_10.png
-   :alt: LabView snippet for Limelight Smart Camera
-   :align: left
-   :figwidth: 100%
+.. image:: img/Labview_10.png
 
 C++
 ------------------------------------------
