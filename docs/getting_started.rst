@@ -60,7 +60,6 @@ Imaging
 .. figure:: img/ImagerWindow.png
    :alt: Limelight Smart Camera Flash Tool
    :align: left
-   :figwidth: 100%
 
 
 .. _networking:
