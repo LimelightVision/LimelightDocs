@@ -137,11 +137,11 @@ Java
 ------------------------------------------
 .. code-block:: java
 
-	NetworkTables table = NetworkTable.getTable("limelight");
-	float targetOffsetAngle_Horizontal = table.getNumber("tx");
-	float targetOffsetAngle_Vertical = table.getNumber("ty");
-	float targetArea = table.getNumber("ta");
-	float targetSkew = table.getNumber("ts");
+	NetworkTable table = NetworkTable.getTable("limelight");
+	double targetOffsetAngle_Horizontal = table.getNumber("tx", 0);
+	double targetOffsetAngle_Vertical = table.getNumber("ty", 0);
+	double targetArea = table.getNumber("ta", 0);
+	double targetSkew = table.getNumber("ts", 0);
 
 LabView
 ------------------------------------------
