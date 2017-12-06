@@ -2,16 +2,16 @@ Frequently Asked Questions
 ===============
 
 What if the game calls for a different tracking algorithm?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We will update the onboard software for the 2018 season.
 
 Why is there an extra usb port?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-You can add a usb camera to limelight to act as a secondary driver camera. The second camera stream will automatically appear alongside the primary camera stream.
+You can add a usb camera to limelight to act as a secondary driver or backup camera. The second camera stream will automatically appear alongside the primary camera stream.  Limelight's video stream uses very little bandwidth so you can safely use this feature for a competitive advantage.
 
 How do I view the video stream?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The video stream exists at http://<Limelight's IP address or limelight.local>:5800. Stream info is also posted to network tables, so SmartDashbaord and Shuffleboard (test LV dashboard) will automatically find it.
+The video stream exists at http://<Limelight's IP address or limelight.local>:5800. Stream info is also posted to network tables so SmartDashbaord and Shuffleboard (test LV dashboard) will automatically find it.
 
 Does Limelight support protocols other than NetworkTables?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,36 +1,24 @@
-Tuning & Learning
+Theory
 ===============
-
-To begin tuning your Limelight, first access its web interface at http://10.te.am.11:5801. If you have opted to use a dynamically assigned ip-address, access the interface at http://limelight.local:5801.
-
-The "Tracking" page is comprised of four tuning tabs: 
-
-* :ref:`Input`
+* :ref:`Vision-Targets`
 * :ref:`Thresholding`
 * :ref:`Contour-Filtering`
 * :ref:`Output`
 
-In addition, you can adjust your Limelight's crosshair by pressing the "calibrate crosshair" button while a target is in view. In a future release, crosshair calibration will move to the "output" tab.
+.. Vision-Targets:
+Vision Targets
+~~~~~~~~~~~~~~
+The FRC game designers often place reflective "vision targets" on the field in strategic locations.  These vision targets are usually made out of retro-reflective tape.  Usually the major scoring elements of the field will have vision targets that can be used to automatically aim.  Below you can see two examples of some of the vision targets from the 2016 and 2017 FRC games.
 
-----------
-.. _Input:
+.. image:: img/VisionTargetExamples.jpg
+	:align: center
 
-Input
-~~~~~~~~~~~~~~~~~~~
+These retro-reflective vision targets have a very useful property: when light is shined at them, it will reflect directly back to the light source.  This is why the Limelight camera has bright green LEDs surrounding its camera lens.  By setting the camera exposure very low while emitting a bright green light toward the target, we can aquire an image that is mostly black with a bright green vision target.  This makes the job of aquiring the target relatively easy.
 
-----------
+Here you can see an example of the type of image you want to get.  Notice how almost all of the detail in the image is gone due to the low exposure setting but the retro-reflective tape stands out brightly.
 
-The Input Tab hosts controls to change the raw camera image before it is passed through the processing pipeline.
-
- Orientation
-----------------
-Controls the orientation of incoming frames. Set it to "inverted" if your camera is mounted upside-down.
-
-Exposure
--------------------
-Controls the camera's exposure setting in milliseconds. Think of a camera as a grid of light-collecting buckets - exposure time controls how long your camera's "buckets" are open per frame. Lowering the exposure time will effectively darken your image. Low and fixed exposure times are crucial in FRC, as they black-out the bulk of incoming image data. Well-lit retroreflective tape will stand out in a mostly black image, making vision processing a straightforward process.
-
-----------
+.. image:: img/VisionTargetExample2.jpg
+	:align: center
 
 .. _Thresholding:
 
@@ -39,28 +27,17 @@ Thresholding
 
 ----------
 
-Thresholding is a critical component of most FRC vision tracking algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off.
+Thresholding is the next critical component of most FRC vision tracking algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off.  Thresholding works very well on images that are captured using the above strategy (low exposure, very dark image with a brightly illuminated vision target)
 
 The Limelight camera does thresholding in the HSV (Hue-Saturation-Value) colorspace.  You may be used to thinking of colors in the RGB (Red-Green-Blue) colorspace.  HSV is just another way of representing color similar to the way cartesian coordinates or polar coordinates can be used to describe positions.  The reason we use the HSV colorspace is that the Hue can be used to very tightly select the green color that the limelight leds output.  
 
 .. image:: img/HSVImage.png
+	:align: center
+
+It is critical to adjust your thresholding settings to eliminate as much as you can from the image (other than the vision targets).  You will get the best results if you optimize each stage of your vision pipeline before moving to the next stage.  Sometimes things like ceiling lights or windows in an arena can be difficult to remove from the image using thresholding which brings us to our next stage.
+
+TODO:  Add image of a thresholded target here
  
-Video Feed  (Remove this?)
----------------
-Controls which image is streamed from the mjpeg server. You should switch to the "threshold" image if you need to tune your HSV thresholding.
-
-Hue (add cylinder)
---------------------------------
-Describes a "pure" color. A Hue of "0" describes pure red, and a hue of 1/3 (59 on the slider) describes pure green. Hue is useful because it doesn't change as a pixel "brightens" or "darkens". This is the most important parameter to tune. If you make your hue range as small as possible, you will have little if any trouble transitioning to an actual FRC field.
-
-Satruation (add cylinder)
---------------------------------
-Describes the extent to which a color is "pure". Another way to think of this is how washed-out a color appears, that is, how much "white" is in a color. Low saturation means a color is almost white, and high saturation means a color is almost "pure".
-
-Value (add cylinder)
---------------------------------
-Describes the darkness of a color, or how much "black" is in a color. A low value corresponds to a near-black color. You should absolutely increase the minimum value from zero, so that black pixels are not passed through the processing pipeline.
-
 ----------
 
 .. _Contour-Filtering:
@@ -70,44 +47,29 @@ Contour Filtering
 
 ----------
 
-After thresholding, Limelight applies a .... to generate a list of contours. After that, each contour is wrapped in a bounding rectangle, or "convex hull". Hulls are passed through a series of filters to determine the "best" hull. If multiple hulls pass through all filters, Limelight chooses the largest hulls.
+After thresholding, the Limelight vision pipeline generates a set of contours for the image.  A contour in is a curve surrounding a contiguous set of pixels.  Sometimes things like ceiling lights, arena scoreboards, windows and other things can make it past the thresholding step.  This is where contour filtering becomes useful.  The goal is to eliminate any contours which we know are not the target we are interested in.  
 
-Target Area
----------
-Controls the range of acceptable bounding-rectangle areas, as percentages of the screen. You can increase the minimum area to help filter-out stadium lights, and decrease the maximum value to help filter-out things like large displays near the field.
+The first and easiest countour filter is to ignore any contours which are smaller than what our vision target looks like from our scoring distance.  Anything smaller than that size is obviously something farther away and should be ignored.  This is called area filtering.
 
-// small contour vs large contour with percentages image. box-in-box with different color text + outlines
+The FRC vision targets often have some geometric property that can be exploited to help us filter contours.  For example, if the vision target has a wide aspect ratio, we can filter out any contours that are not wide:
 
-.. note:: The area slider is not linearly scaled, but quarticly scaled. This is done to provide extra precision near the lower-end of area values, where many FRC targets lie. In any case, an area slider should be quadratically scaled, as the area of a square scales quadratically with its side length.
+.. image:: img/Target1.jpg 
+	:align: center
 
-Target Fullness
----------
-Fullness is the percentage of "on" pixels in the chosen contour's bounding rectangle. A solid rectangle target will have a near-1.0 fullness, while a U-shaped target will have a low fullness.
+However, keep in mind that your camera may be looking at the target from an odd angle.  This can drastically affect the aspect ratio of its contour.  Be sure to test your settings from a variety of angles to ensure that you do not filter too aggressively and end up ignoring the vision target!
 
-// real-world fullness examples
+.. image:: img/Target3.jpg
+	:align: center
 
-Target Aspect Ratio
----------
-Aspect ratio is defined by the width of the bounding rectangle of the chosen contour divided by its height. A low aspect ratio describes a "tall" rectangle, while a high aspect ratio describes a "wide" rectangle. 
-//wide and tall images
-.. note:: The aspect ratio slider is also quadratically scaled.
+This next image target is very interesting.  It is one of the best designed vision targets in FRC (in my opinion).  Limelight automatically calculates a value called the **fullness** of a contour.  **Fullness** is the ratio between the pixel area of the contour to its convex area.  This particular shape has a very low fullness and you almost never see any ceiling lights, windows, etc with such a low fullness.  So you can very effectively filter out the unwanted contours if your vision target looks like this one.
 
-// real-world fullness examples
+.. image:: img/Target0.jpg 
+	:align: center
 
-// small contour vs large contour with percentages image. box-in-box with different color text + outlines
+Limelight has many options for filtering contours.  You can use these options along with what you know about the geometry properties of the particular vision target you are trying to track.
 
-----------
+From Pixels to Angles
+~~~~~~~~~~~~~~~~~~~~~
+The end result of the vision pipeline is a pixel location of the best contour in the image.  For most games, we can just aim at the center of the contour.  Sometimes it is also useful to aim at the top-center or some other point but essentially we have a pixel coordinate for where we want to aim.  In order to compute the angles to this target, we need to use a little bit of trigonometry.
 
-.. _Output:
-
-Output
-~~~~~~~~~~~
-
-----------
-
-This tab controls what happens during the last stage of the vision pipeline
-
-Targeting Region
----------
-Controls the point of interest of the chosen contour's bounding rectangle. By default, the tracking parameters tx and ty represent the offsets from your crosshair to the center of the chosen rectangle. You can use another option if a target changes in size, or is comprised of two targets that sometimes blend together.
-//show flickering stronghold goal.
+(WIP)

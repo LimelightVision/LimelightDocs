@@ -3,9 +3,9 @@ Image Change Log
 
 2017.7 (11/21/17)
 ~~~~~~~~~~~~~~~~~~~~~
-* Fix severe bug that broke contour sorting. This caused the favoring of very small contours over larger contours. 
+* Improved contour sorting. Was favoring small contours over larger contours. 
 * New Coordinate system: Center is (0,0). ty increases as the target moves "up" the y-axis, and tx increases as the target moves "right" along the x-axis.
-* More accurate angle calculations.
+* More accurate angle calculations (Pinhole camera model).
 * Display targeting info (tx, ty, ta, and ts) on webpage
 * Default targeting values are zeros. This means zeros are returned if no target is in view.
 * New side-by-side webpage layout. Still collapses to single column on small devices.
