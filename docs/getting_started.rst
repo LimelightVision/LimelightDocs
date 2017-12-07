@@ -45,13 +45,14 @@ Imaging
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: Limelight will receive software updates for improvements and features to accomodate the game.
-.. _Downloads: http://www.python.org/
+.. _Downloads: https://limelightvision.io/pages/downloads
 * Remove power from your limelight
 * Download the latest flasher tool and image from from the Downloads_ Page.
 * Install the flasher tool.
 * Run a USB-MicroUSB cable from your laptop to your limelight.
 * Apply power to your limelight
 * Run the "Limelight Flash Tool" from the Windows search bar. It will also appear under the "Limelight" folder under the start menu applications folder
+* It may take up to 20 seconds for Windows to recognize the camera. Press "cancel" on all subsequent Windows dialogs.
 * Select the latest .zip image in your downloads folder
 * Select an "RPI" device in the "Limelights" menu
 * Click "Flash"
