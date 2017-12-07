@@ -13,6 +13,7 @@ The "Tracking" page is comprised of four tuning tabs:
 In addition, you can adjust your Limelight's crosshair by pressing the "calibrate crosshair" button while a target is in view. In a future release, crosshair calibration will move to the "output" tab.
 
 ----------
+
 .. _Input:
 
 Input
@@ -22,7 +23,7 @@ Input
 
 The Input Tab hosts controls to change the raw camera image before it is passed through the processing pipeline.
 
- Orientation
+Orientation
 ----------------
 Controls the orientation of incoming frames. Set it to "inverted" if your camera is mounted upside-down.
 
@@ -41,19 +42,19 @@ Thresholding
 
 Thresholding is a critical component of most FRC vision tracking algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off.
  
-Video Feed  (Remove this?)
+Video Feed
 ---------------
 Controls which image is streamed from the mjpeg server. You should switch to the "threshold" image if you need to tune your HSV thresholding.
 
-Hue (add cylinder)
+Hue
 --------------------------------
 Describes a "pure" color. A Hue of "0" describes pure red, and a hue of 1/3 (59 on the slider) describes pure green. Hue is useful because it doesn't change as a pixel "brightens" or "darkens". This is the most important parameter to tune. If you make your hue range as small as possible, you will have little if any trouble transitioning to an actual FRC field.
 
-Satruation (add cylinder)
+Satruation
 --------------------------------
 Describes the extent to which a color is "pure". Another way to think of this is how washed-out a color appears, that is, how much "white" is in a color. Low saturation means a color is almost white, and high saturation means a color is almost "pure".
 
-Value (add cylinder)
+Value
 --------------------------------
 Describes the darkness of a color, or how much "black" is in a color. A low value corresponds to a near-black color. You should absolutely increase the minimum value from zero, so that black pixels are not passed through the processing pipeline.
 
