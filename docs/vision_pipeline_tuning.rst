@@ -60,7 +60,7 @@ Hue
 Describes a "pure" color. A Hue of "0" describes pure red, and a hue of 1/3 (59 on the slider) describes pure green. Hue is useful because it doesn't change as a pixel "brightens" or "darkens". This is the most important parameter to tune. If you make your hue range as small as possible, you will have little if any trouble transitioning to an actual FRC field.
 
 
-.. image:: img/huebar.jpg 
+.. image:: img/huebar.png 
 	:align: center
 
 
