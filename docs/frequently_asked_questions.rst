@@ -1,6 +1,10 @@
 Frequently Asked Questions
 ===============
 
+Why is limelight using a low (320x240) resolution?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Using a lower resolution allows us to run the vision pipeline at a high framrate.  Limelight provides tracking data fast enough that you can use its outputs to drive a PID loop on your robot directly.  This makes integrating vision into your robot extremely simple; limelight is just another sensor!  Additionally, we have used even lower resolutions for the past two years in FRC.  In our final regional, our 2016 robot never mis-aimed a shot while using 160x120 resolution and aiming at one of the most difficult targets FRC has used to-date (the high goal in stronghold).  *All* of its shots were auto-aimed; it was impossible to manually aim that robot. 
+
 What if the game calls for a different tracking algorithm?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We will update the onboard software for the 2018 season.
@@ -13,7 +17,7 @@ How do I view the video stream?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The video stream exists at http://<Limelight's IP address or limelight.local>:5800. Stream info is also posted to network tables so SmartDashbaord and Shuffleboard (test LV dashboard) will automatically find it.
 
-Are the six LEDs bright enough?
+Are the eight LEDs bright enough?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The total light output of the LEDs is 400 lumens, and the LED cones actually increase the illuminance (functional light) of the device. To compare, the common two-ring setup has a total output of roughly 250 lumens.
 
