@@ -164,13 +164,11 @@ Python
 ------------------------------------------
 .. code-block:: python
 
-    import pynetworktables
+    from networktables import NetworkTables
     
-    NetworkTables.initialize(server='10.26.5.11')
-    
-    sd = NetworkTables.getTable("limelight")
-    tx = sd.getNumber('tx')
-    ty = sd.getNumber('ty')
-    ta = sd.getNumber('ta')
-    ts = sd.getNumber('ts')
+    table = NetworkTables.getTable("limelight")
+    tx = table.getNumber('tx')
+    ty = table.getNumber('ty')
+    ta = table.getNumber('ta')
+    ts = table.getNumber('ts')
     
