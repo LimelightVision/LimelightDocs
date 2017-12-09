@@ -3,7 +3,7 @@ Frequently Asked Questions
 
 Why is limelight using a low (320x240) resolution?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Using a lower resolution allows us to run the vision pipeline at a high framrate.  Limelight provides tracking data fast enough that you can use its outputs to drive a PID loop on your robot directly.  This makes integrating vision into your robot extremely simple; limelight is just another sensor!  Additionally, we have used even lower resolutions for the past two years in FRC.  In our final regional, our 2016 robot never mis-aimed a shot while using 160x120 resolution and aiming at one of the most difficult targets FRC has used to-date (the high goal in stronghold).  *All* of its shots were auto-aimed; it was impossible to manually aim that robot. 
+Using a lower resolution allows us to run the vision pipeline at a high framrate.  Limelight provides tracking data fast enough to use its outputs to directly drive a PID loop on your robot.  This makes integrating vision into your robot extremely simple; limelight is just another sensor!  Additionally, we have used even lower resolutions for the past two years in FRC.  In our final event (China), our 2016 robot never mis-aimed a shot while using 160x120 resolution and aiming at one of the most difficult targets FRC has used to-date (the high goal in stronghold).  *All* of its shots were auto-aimed; it was impossible to manually aim that robot. 
 
 What if the game calls for a different tracking algorithm?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
