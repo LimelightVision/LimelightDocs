@@ -8,5 +8,6 @@ Contact us or post to CD to suggest upgrades for Limelight!
 * Write image version to web interface
 * "ValidTarget" Key in NetworkTables
 * Download/Upload Pipelines
+* Multi-target output
  
 (More, WIP)
