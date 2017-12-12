@@ -28,7 +28,7 @@ Standard Wiring
 * Do not run wires to your VRM.
 * Run two wires from your limelight to a slot on your PDP.
 * Add a 5A breaker to the same slot on your PDP.
-* Run an ethernet calbe from your Limelight to your robot radio.
+* Run an ethernet cable from your Limelight to your robot radio.
 
 Power-over-Ethernet (PoE) Wiring
 ------------------------------------------
