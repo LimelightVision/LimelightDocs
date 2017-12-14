@@ -77,4 +77,51 @@ From Pixels to Angles
 ~~~~~~~~~~~~~~~~~~~~~
 The end result of the vision pipeline is a pixel location of the best contour in the image. For most games, we can just aim at the center of the contour. Sometimes it is also useful to aim at the top-center or some other point but essentially we have a pixel coordinate for where we want to aim.  In order to compute the angles to this target, we need to use a little bit of trigonometry.
 
+First we assume that we have a perfect "pinhole" camera.  In practice this can be far from the truth but the limelight's camera is very close.  (A fisheye lens would be far from this ideal as a counter-example.)  
+
+The limelight camera has a horizontal field of view of 54 degrees and a vertical field of view of 41 degrees.  It captures images at 320x240 resolution.  We assume the center of the image is the optical azis of the camera (so the x and y angles for that location are 0,0).  Given these known values, we can use a little trigonometry to compute the angles for any pixel in the image.  
+
+The below diagram shows an example target point which we want to compute angles for.  Pixel coordinates start at the upper left corner of the image and are positive to the right and down.  Our first step will be to convert from pixel coordinates to normalized 2D coordinates where 0,0 is the center of the image and 1.0:
+
+.. image:: img/Pixels2Angles_1.jpg
+	:align: center
+
+(px,py) = pixel coordinates, 0,0 is the upper-left, positive down and to the right
+
+(nx,ny) = normalized pixel coordinates, 0,0 is the center, positive right and up
+
+nx = (1/160) * (px - 159.5)   
+
+ny = (1/120) * (119.5 - py)   
+
+In order to compute the angles to a given nx,ny, we can use similar triangles.  First we use the horizontal fov and vertical fov to compute the size of an imaginary rectangle in front of the camera.  For simplicity, we choose to place this rectangle 1.0 unit in front of the camera location.  Here is a view looking down on the camera.  Our goal is to compute the view plane width and height as those values will be used to compute the angles later:
+
+.. image:: img/Pixels2Angles_2.jpg
+	:align: center
+
+Given a distance of 1.0 unit and a known horizontal and vertical fov, we can compute the size of the view plane rectangle the following formulas:
+
+vpw = 2.0*tan(horizontal_fov/2)
+
+vph = 2.0*tan(vertical_fov/2)
+
+Using these two values, we can now convert between normalized pixel coordinates and view plane coordinates using a simple multiply.
+
+vpx = vpw/2 * nx;
+
+vpy = vph/2 * ny;
+
+Remember that we chose our view plane to be positioned at a distance of 1.0.  Now we have everything we need to compute the angles to the target point.
+
+tan(x_angle) = vpx / 1
+
+tan(y_angle) = vpy / 1
+
+x_angle = atan2(1,vpx)
+
+y_angle = atan2(1,vpy)
+
+
+Estimating Distance
+~~~~~~~~~~~~~~~~~~~
 (WIP)
