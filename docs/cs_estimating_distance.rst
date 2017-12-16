@@ -8,7 +8,7 @@ Using a Fixed Angle Camera:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If your vision tracking camera is mounted on your robot in such a way that its angle between the ground plane and its line of sight does not change then you can use this technique to very accurately calculate the distance to a target.  You can then use this distance value to either drive your robot forward and back to get into the perfect range or you can use it to adjust the power of a shooting mechanism.  
 
-See the below diagram.  In this situation all of the variables are known: the height of the target (h2) is known because it is a property of the field.  The height of your camera above the floor (h1) is known and its mounting angle is known (a2).  The limelight (or your vision system) will tell you the value of angle a2.
+See the below diagram.  In this situation all of the variables are known: the height of the target (h2) is known because it is a property of the field.  The height of your camera above the floor (h1) is known and its mounting angle is known (a1).  The limelight (or your vision system) can tell you the y angle to the target (a2).
 
 .. image:: img/DistanceEstimation.jpg
 	:align: center
@@ -29,5 +29,6 @@ In the case where your target is at nearly the same height as your camera, this 
 Using Area to Estimate Distance:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-WIP
+Another simple way to estimate distance is to use the area of the contour you are tracking.  This is a very simple method to implement but it does not give you extremely accurate results.  All you do is point your vision camera at the target from a known distance and take note of the area of the blob.  Make sure you're using an accurate representation of the real field's vision target and make sure you're pointing at it from your desired shooting location.  You can then do this from a few different distances and make a table out of these values.  In 2016 we used this method to adjust the aim of our 2-axis turret based on how far from the goal we were.
+
 

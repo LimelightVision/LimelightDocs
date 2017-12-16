@@ -126,6 +126,3 @@ ax = atan2(1,x)
 ay = atan2(1,y)
 
 
-Estimating Distance
-~~~~~~~~~~~~~~~~~~~
-(WIP)
