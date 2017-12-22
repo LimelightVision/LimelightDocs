@@ -45,5 +45,5 @@ If (joystick->GetRawButton(9))
 	Right_command -= steering_adjust;
 }
 
-A little tuning on Kp and min_command should get your robot aiming directly at the target very quickly.  You want to use the smallest possible min_command because that term can quickly make your robot oscillate back and forth if it is too large.
+A little tuning on Kp and min_command should get your robot aiming directly at the target very quickly.  You want to use the smallest possible min_command; if you set this term too high your robot will oscillate as it overshoots the target.
 
