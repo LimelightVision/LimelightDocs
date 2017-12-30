@@ -1,5 +1,51 @@
 Image Change Log
 ==============================
+2017.8 (12/31/17)
+~~~~~~~~~~~~~~~~~~~~~
+Features
+----------------
+* New Vision Pipeline infrastructure:
+	* Add up to 10 unique vision pipelines, each with custom crosshairs, thresholding options, exposure, filtering options, etc.
+	* Name each vision pipeline.
+	* Mark any pipeline as the "default" pipeline.
+	* Instantly switch between pipelines with new "pipeline" NetworkTables value.
+	* Download vision pipelines to backup or share with other teams
+	* Upload vision pipelines to any "slot" to use downloaded pipelines.
+* New Crosshair Calibration infrastructure:
+	* "Single" and "Dual" crosshair modes.
+	* "Single" mode is what Limelight utilized prior to this update. Teams align their robots manually, and "calibrate" to re-zero targeting values about the crosshair.
+	* "Dual" mode is an advanced feature for robots that need a dynamic crosshair that automatically adjusts as a target's area changes. We've used this feature on all of our shooting robots, as none of them shot perfectly straight.
+ 	* Separate X and Y calibration.
+* Add Valid Target "tv" key to Network Tables.
+* Add Targeting Latency "tl" key to Network Tables. Tl measures the vision pipeline execution time. Add at least 11 ms for capture time.
+* Draw additional rectangle to help explain aspect ratio calculation.
+* Remove throttling feature, and lock Limelight to 90fps.
+* Disable focusing on most web interface buttons. Fixes workflow problem reported by teams who would calibrate their crosshairs, then press "enter" to enable their robots.
+* Post three "raw" contours and both crosshairs to nt.
+	*Access a contour with tx0, tx1, ta0, ta1, etc.
+	*Access both crosshairs with cx0, cy0, cx1, cy1.
+	*All x/y values are in normalized screen space (-1.0 to 1.0)
+* Add "suffix" option in web interface. Allows users to add a suffix to their Limelights' hostnames and NetworkTables (e.g. limelight-boiler)
+
+Optimizations
+----------------
+* Decrease Networking-Related latency to ~.2 ms from ~10ms (Thanks to Thad House)
+* Move stream encoding and compression to third core, eliminating 10ms hitch (25 - 30ms hitch with two cameras) every six frames.
+* New Latency testing shows 22 ms total latency from photons to targeting information.
+* Upgrade Network Tables to v4 (Thanks to Thad House)
+* Optimize contour filtering step. Latency no longer spikes when many contours exist.
+* Much improved hysterisis tuning.
+
+
+Bugfixes
+------------------
+* Fix minor area value inaccuracy which prevented value from reaching 100% (maxed ~99%).
+* Fix half-pixel offset in all targeting calculations
+* Fix camera stream info not populating for NT servers started after Limelight's boot sequence. Regularly refresh camera stream info.
+* Fix bug which caused aspect ratio to "flip" occasionally.
+* Force standard stream output (rather than thresholded output) in driver mode.
+* Fix bug which prevented LEDs from blinking after resetting Networking information
+
 
 2017.7 (11/21/17)
 ~~~~~~~~~~~~~~~~~~~~~
