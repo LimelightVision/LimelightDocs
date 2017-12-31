@@ -7,7 +7,7 @@
 
 Using high-framerate vision tracking, it is now possible to use the vision pipeline directly as the “sensor” in a PID control loop to guide your robot or turret.  In order to test this idea we added a limelight to our 2017 FRC robotand made it aim at vision targets using nothing more than the drivetrain and the networks table data being reported by the limelight. 
 
-In this example, our test candidate was our 2017 robot which uses a 6-wheel drivetrain with colson wheels.  Here is a picture of us adding a limelight onto the robot in order to do this test.  
+In this example, our test candidate was a 2017 FRC robot which uses a 6-wheel drivetrain with colson wheels.  Here is a picture of us adding a limelight onto the robot in order to do this test.  
 
 .. image:: img/CS_aim_limelight_mounted.JPG
 
