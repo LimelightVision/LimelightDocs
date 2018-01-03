@@ -2,11 +2,11 @@
 ===============================
 
 .. Summary
-1. Entire c++ robot program which implements 2017 boiler scoring.
+1. Entire c++ robot program which implements 2017 fuel scoring.
 
-In this example, we present a complete robot program which implements the 2017 boiler goal.  We tested this program on the 987 steamworks robot and were able to easily score fuel in the boiler.  For this example we aim and move into range using the robot's drivetrain.  
+In this example, we present a complete robot program which implements the 2017 boiler goal.  We tested this program on the 987 steamworks robot and were able to easily score fuel in the boiler.  For this example we aim and move into range using the robot's drivetrain.  One thing that was immediately apparent to us is that limelight let us implement this feature in a tiny fraction of the amount of code and time compared to our real 2017 robot. 
 
-There are also a couple of other features in the code below such as the ability to blink the LEDs.
+There are also a couple of other features in the code below such as the ability to blink the LEDs and dynamically toggle between multiple vision pipelines.
 
 .. code-block:: c++
 

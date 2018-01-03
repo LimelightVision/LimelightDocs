@@ -31,3 +31,6 @@ Luckily, adding seeking logic to your robot is very easy.  To implement seeking,
 	right_command-=steering_adjust;
 
 Note that if your aiming code includes correcting the distance to the target, the robot behavior will be seeking followed by driving to the shooting distance as it aligns with the target.  All of this can be achieved with the very simple code shown above.
+
+.. image:: img/CS_Seeking_Anim.gif
+
