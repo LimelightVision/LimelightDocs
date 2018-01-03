@@ -4,9 +4,9 @@
 .. Summary
 1. Entire c++ robot program which implements 2017 fuel scoring.
 
-In this example, we present a complete robot program which implements the 2017 boiler goal.  We tested this program on the 987 steamworks robot and were able to easily score fuel in the boiler.  For this example we aim and move into range using the robot's drivetrain.  One thing that was immediately apparent to us is that limelight let us implement this feature in a tiny fraction of the amount of code and time compared to our real 2017 robot. 
+In this example, we present a complete robot program which implements the 2017 boiler goal.  We tested this program on the 987 steamworks robot and were able to easily score fuel in the boiler.  For this example we aim and move into range using the robot's drivetrain.  One thing that was immediately apparent to us is that limelight let us implement this feature in a tiny fraction of the amount of code and time compared to our real 2017 robot.  
 
-There are also a couple of other features in the code below such as the ability to blink the LEDs and dynamically toggle between multiple vision pipelines.
+There are also a couple of other features in the code below such as the ability to blink the LEDs and dynamically toggle between multiple vision pipelines.  This example also shows how to use a Talon SRX speed controller along with a magnetic encoder to control the RPM of the shooter wheel.
 
 .. code-block:: c++
 
@@ -34,8 +34,6 @@ There are also a couple of other features in the code below such as the ability 
 	#define Tal_Intake 3
 	#define Tal_Uptake 9
 
-	const double Shooter_WheelK = .00075f;
-
 	class Robot : public frc::SampleRobot 
 	{
 	public:
@@ -58,7 +56,7 @@ There are also a couple of other features in the code below such as the ability 
 		Shooter.SetStatusFrameRateMs(CTRE::MotorControl::CAN::TalonSRX::StatusFrameRateAnalogTempVbat,10);
 
 		Shooter.SetFeedbackDevice(CTRE::MotorControl::CAN::TalonSRX::CtreMagEncoder_Relative);
-		SetShooterConstants(.0002f, .00009f, .0000f, .000006f);
+		SetShooterConstants(.0002f, .00009f, .0000f, .000006f);  // P,I,D,F constants for the shooter wheel 
 		Shooter.SetAllowableClosedLoopErr(10);
 		Shooter.ConfigNominalOutputVoltage(+0.f,-0.f);
 		Shooter.ConfigPeakOutputVoltage(+12.f,-12.f);
