@@ -14,6 +14,10 @@ Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents
    dimensions
    theory
    cs_estimating_distance
+   cs_aiming
+   cs_seeking
+   cs_autorange
+   cs_aimandrange
    frequently_asked_questions
    additional_resources
    software_change_log

@@ -7,7 +7,7 @@ Using a lower resolution allows us to run the vision pipeline at a high framrate
 
 What if the game calls for a different tracking algorithm?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We believe that Limelight will give you the tools to solve the vision tracking challenge for any FRC game.  However if some challenge comes up which we have not anticipated, we will add the features needed for you to track the new type of target.  
+We believe that Limelight will give you the tools to solve the vision tracking challenge for any FRC game.  However if some challenge comes up which we have not anticipated, we will add the features needed for you to track the new type of target.
 
 Why is there an extra usb port?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
