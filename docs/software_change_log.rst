@@ -1,10 +1,13 @@
 Software Change Log
 ==============================
-2017.8 (12/31/17)
+2018.0 (1/3/18)
 ~~~~~~~~~~~~~~~~~~~~~
 Features
 ----------------
 * New Vision Pipeline interface:
+
+	* .. image:: https://thumbs.gfycat.com/UnfitLankyHadrosaurus-max-14mb.gif
+
 	* Add up to 10 unique vision pipelines, each with custom crosshairs, thresholding options, exposure, filtering options, etc.
 	* Name each vision pipeline.
 	* Mark any pipeline as the "default" pipeline.
@@ -31,6 +34,10 @@ Optimizations
 ----------------
 * Decrease networking-related latency to ~0.2 ms from ~10ms (Thanks Thad House)
 * Move stream encoding and jpg compression to third core, eliminating 10ms hitch (25 - 30ms hitch with two cameras) seen every six frames.
+* Drop steady-state pipeline execution time to 5ms with SIMD optimizations.
+
+.. image:: img/20180_latency.png	
+
 * New Latency testing shows 22 ms total latency from photons to targeting information.
 * Upgrade Network Tables to v4 (Thanks Thad House)
 * Optimize contour filtering step. Latency no longer spikes when many contours exist.
