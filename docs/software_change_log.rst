@@ -2,6 +2,8 @@ Software Change Log
 ==============================
 2018.0 (1/3/18)
 ~~~~~~~~~~~~~~~~~~~~~
+On top of a ton of new case studies, more detailed documentation, and a full example program for an autonomous STEAMWORKS shooter, the software has received a major upgrade.
+
 Features
 ----------------
 * New Vision Pipeline interface:
@@ -14,6 +16,9 @@ Features
 	* Instantly switch between pipelines during a match with the new "pipeline" NetworkTables value. This is useful for games that have multiple vision targets (eg. the gear peg and boiler from 2017). This is also useful for teams that need to use slightly different crosshair options per robot, field, alliance, etc.
 	* Download vision pipelines from Limelight to backup or share with other teams.
 	* Upload vision pipelines to any "slot" to use downloaded pipelines.
+* Target "Grouping" option:
+	* Instantly prefer targets that consist of two shapes with the "dual" grouping mode". "Single" and "Tri" options are also available
+	* .. image:: https://thumbs.gfycat.com/ScalyDeficientBrahmanbull-size_restricted.gif
 * New Crosshair Calibration interface:
 	* "Single" and "Dual" crosshair modes.
 	* "Single" mode is what Limelight utilized prior to this update. Teams align their robots manually, and "calibrate" to re-zero targeting values about the crosshair.

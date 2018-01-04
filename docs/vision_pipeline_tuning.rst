@@ -126,9 +126,17 @@ Controls the point of interest of the chosen contour's bounding rectangle. By de
 .. image:: https://thumbs.gfycat.com/RemarkableFragrantAmericankestrel-size_restricted.gif
 	:align: center
 
+Target Grouping for Combined Targets
+-----------------------------------------
+Controls target "grouping". Set to dual mode to look for "targets" that consist of two shapes, or tri mode to look for targets that consist of three shapes.
+
+.. image:: https://thumbs.gfycat.com/ScalyDeficientBrahmanbull-size_restricted.gif
+	:align: center
+
+
 Crosshair Calibration
 -------------------------
-Controls the "origin" of your targeting values. Let's say a shooter on your robot needs to be calibrated such that it always points a bit left-of-center. You can line up your robot, click "calibrate," and all of your targeting values will be sent relative to your new crosshair. 
+Controls the "origin" of your targeting values. Let's say a shooter on your robot needs to be calibrated such that it always points a bit left-of-center. You can line up your robot, click "calibrate," and all of your targeting values will be sent relative to your new crosshair. See the calibration page for more details!
 
 .. image:: https://thumbs.gfycat.com/GraveEverlastingFawn-size_restricted.gif
 	:align: center
