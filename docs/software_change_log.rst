@@ -1,5 +1,12 @@
 Software Change Log
 ==============================
+2018.1 (1/8/18)
+~~~~~~~~~~~~~~~~~~~~~
+* Red-Balance slider
+* Blue-Balance slider
+* Better default color balance settings
+* Increased max exposure setting
+
 2018.0 (1/3/18)
 ~~~~~~~~~~~~~~~~~~~~~
 On top of a ton of new case studies, more detailed documentation, and a full example program for an autonomous STEAMWORKS shooter, the software has received a major upgrade.
