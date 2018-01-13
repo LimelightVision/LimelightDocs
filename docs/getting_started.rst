@@ -27,7 +27,7 @@ Standard Wiring
 ------------------------------------------
 * Do not run wires to your VRM.
 * Run two wires from your limelight to a slot on your PDP.
-* Add a 5A breaker to the same slot on your PDP.
+* Add any breaker (5A, 10A, 20A, etc.) to the same slot on your PDP.
 * Run an ethernet cable from your Limelight to your robot radio.
 
 Power-over-Ethernet (PoE) Wiring
@@ -36,7 +36,7 @@ Power-over-Ethernet (PoE) Wiring
 .. warning:: This is not standard 44V PoE - this is why you must use a passive injector with 12V.
 * Ensure that your Limelight's power jumper is set to the "E" position.
 * Interface a passive `Passive PoE Injector <http://www.andymark.com/POE-p/am-3766.htm>`_. to your PDP.
-* Add a 5A breaker to the same slot on your PDP.
+* Add any breaker (5A, 10A, 20A, etc.) to the same slot on your PDP.
 * Run an ethernet cable from your Limelight to your passive POE injector.
 
 .. _imaging:
