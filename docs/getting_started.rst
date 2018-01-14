@@ -69,6 +69,7 @@ While we reccomend a static IP address for reliability, some teams prefer dynami
 
 Static IP Address (recommended for competition settings until further testing is completed)
 ---------------------------------------------------------------------------------------------
+* Install bonjour from https://support.apple.com/kb/dl999?locale=en_US
 * Power-up your robot, and connect your laptop to your robot's network.
 * After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
 * Navigate to the "Networking" tab.
