@@ -153,6 +153,7 @@ Java
 LabView
 ------------------------------------------
 Drag the below image into LabView to automatically generate the starter code for Limelight.
+NOTE: Prepend a "/" to all NT values. Instead of "limelight/tx", use "/limelight/tx". Updating the LV snippet with this change asap.
 
 .. image:: img/Labview_10.png
 
