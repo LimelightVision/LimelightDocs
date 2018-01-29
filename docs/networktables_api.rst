@@ -3,7 +3,7 @@ Complete NetworkTables API
 
 "Best" Contour information:
 
-Use NetworkTables::GetNumber() to retrieve this data:
+Use NetworkTables::GetEntry(<variablename>).GetDouble(0) to retrieve this data:
 
 -tv 		Whether the limelight has any valid targets (0 or 1)
 -tx			Horizontal Offset From Crosshair To Target (-27 degrees to 27 degrees)
@@ -16,7 +16,7 @@ Use NetworkTables::GetNumber() to retrieve this data:
 
 Camera Controls:
 
-Use NetworkTables::PutNumber() to set this data:
+Use NetworkTables::GetEntry(<variablenamde>).setNumber(<value>) to set this data:
 
 -ledMode		Sets limelight's LED state
 
