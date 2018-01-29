@@ -153,6 +153,7 @@ Java
 	double area = ta.getDouble(0);
 
 Don't forget to add these imports:
+
 .. code-block:: java
 
 	import edu.wpi.first.networktables.NetworkTableEntry;
