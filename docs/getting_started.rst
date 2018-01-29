@@ -44,8 +44,9 @@ Power-over-Ethernet (PoE) Wiring
 Imaging
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: Limelight will receive software updates for improvements and features to accomodate the game.
+.. note:: Limelight will receive software updates for improvements and features to accomodate the game if necessary.
 .. _Downloads: https://limelightvision.io/pages/downloads
+* Do not use a Windows 7 machine
 * Remove power from your limelight
 * Download the latest flasher tool and image from from the Downloads_ Page.
 * Install the flasher tool.
