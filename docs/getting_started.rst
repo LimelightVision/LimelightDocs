@@ -152,6 +152,11 @@ Java
 	double y = ty.getDouble(0);
 	double area = ta.getDouble(0);
 
+Don't forget to add these imports:
+.. code-block:: java
+
+	import edu.wpi.first.networktables.NetworkTableEntry;
+	import edu.wpi.first.networktables.NetworkTableInstance;
 LabView
 ------------------------------------------
 Drag the below image into LabView to automatically generate the starter code for Limelight.
