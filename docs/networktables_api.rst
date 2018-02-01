@@ -3,7 +3,7 @@ Complete NetworkTables API
 
 "Best" Contour information:
 
-Use NetworkTables::GetNumber() to retrieve this data:
+Use   NetworkTableInstance.getDefault().getTable("limelight").getEntry(<variablename>).getDouble(0) to retrieve this data:
 
 ====== =====================================================================================
 tv 		Whether the limelight has any valid targets (0 or 1)
@@ -22,7 +22,7 @@ tl 		The pipeline's latency contribution (ms) Add at least 11ms for image captur
 
 Camera Controls:
 
-Use NetworkTables::PutNumber() to set this data:
+Use NetworkTableInstance.getDefault().getTable("limelight").getEntry(<variablenamde>).setNumber(<value>) to set this data:
 
 =========== =====================================================================================
 ledMode		Sets limelight's LED state
