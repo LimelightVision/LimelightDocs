@@ -8,14 +8,14 @@ Features
 ----------------
 * Thresholding wands
 	
-	* Setup your HSV threshold parameters in a matter of clicks
-	* The "Set" wand will center your HSV parameters around the selected pixel
-	* The "Add" wand will adjust your HSV parameters to include the selected pixel
-	* The "Subtract" wand will adjust your HSV paramters to ignore the selected pixel
+	* Setup HSV threshold parameters in a matter of clicks
+	* The "Set" wand centers HSV parameters around the selected pixel
+	* The "Add" wand adjusts HSV parameters to include the selected pixel
+	* The "Subtract" wand adjusts HSV paramters to ignore the selected pixel
 
 * Snapshots
 	
-	* Snapshots allow you to save what Limelight is seeing during matches or event calibration, and tune your pipelines while away from the field.
+	* Snapshots allow users to save what Limelight is seeing during matches or event calibration, and tune pipelines while away from the field.
 	* Save a snapshot with the web interface, or by posting a "1" to the "snapshot" NetworkTables key
 	* To view snapshots, change the "Image Source" combo box on the input tab. This will allow you to test your pipelines on snapshots rather than Limelight's camera feed
 	* Limelight will store up to 32 snapshots. It will automatically delete old snapshots if you exceed this limit.
@@ -34,8 +34,8 @@ Features
 * Erosion and Dilation
 
 	* Enable up to one iteration of both erosion and dilation. 
-	* Erosion will slightly erode the result of your HSV threshold. This is useful if many objects are passing through your tuned HSV threshold.
-	* Dilation will slightly inflate the result of your HSV threshold. Use this to patch holes in your thresholding result.
+	* Erosion will slightly erode the result of an HSV threshold. This is useful if many objects are passing through a tuned HSV threshold.
+	* Dilation will slightly inflate the result of an HSV threshold. Use this to patch holes in thresholding results.
 
 * Restart Button
 	

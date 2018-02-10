@@ -64,13 +64,29 @@ Describes a "pure" color. A Hue of "0" describes pure red, and a hue of 1/3 (59 
 	:align: center
 
 
-Satruation
+Saturation
 --------------------------------
 Describes the extent to which a color is "pure". Another way to think of this is how washed-out a color appears, that is, how much "white" is in a color. Low saturation means a color is almost white, and high saturation means a color is almost "pure".
 
 Value
 --------------------------------
 Describes the darkness of a color, or how much "black" is in a color. A low value corresponds to a near-black color. You should absolutely increase the minimum value from zero, so that black pixels are not passed through the processing pipeline.
+
+Thresholding Wands
+--------------------------------
+
+Wands enable users to click on Limelights's video stream to perform automatic HSV thresholding.
+	* The "Set" wand centers HSV parameters around the selected pixel
+	* The "Add" wand adjusts HSV parameters to include the selected pixel
+	* The "Subtract" wand adjust HSV paramters to ignore the selected pixel
+	*GIF
+
+Erosion and Dilation
+--------------------------------
+Erosion slightly erodes the result of an HSV threshold. This is useful if many objects are passing through a tuned HSV threshold.
+Dilation slightly inflates the result of an HSV threshold. Use this to patch holes in thresholding results.
+	*GIF
+
 
 ----------
 
