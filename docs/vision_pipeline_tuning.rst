@@ -79,7 +79,9 @@ Wands enable users to click on Limelights's video stream to perform automatic HS
 	* The "Set" wand centers HSV parameters around the selected pixel
 	* The "Add" wand adjusts HSV parameters to include the selected pixel
 	* The "Subtract" wand adjust HSV paramters to ignore the selected pixel
-	*GIF
+
+.. image:: https://thumbs.gfycat.com/FarHandyCanvasback-max-14mb.gif
+	:align: center
 
 Erosion and Dilation
 --------------------------------
