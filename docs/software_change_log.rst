@@ -1,7 +1,7 @@
 Software Change Log
 ==============================
 2018.2 (2/10/18)
-
+~~~~~~~~~~~~~~~~~~~~~
 2018.2 fixes all known streaming bugs with various FRC dashboards. It also makes Limelight easier to tune and more versatile during events.
 
 Features
