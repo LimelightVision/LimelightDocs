@@ -11,10 +11,13 @@ Features
 	* Setup HSV threshold parameters in a matter of clicks
 	* The "Set" wand centers HSV parameters around the selected pixel
 	* The "Add" wand adjusts HSV parameters to include the selected pixel
+	* .. image:: https://thumbs.gfycat.com/FarHandyCanvasback-max-14mb.gif
 	* The "Subtract" wand adjusts HSV paramters to ignore the selected pixel
+	* .. image:: https://thumbs.gfycat.com/HoarseEnragedIslandwhistler-max-14mb.gif
 
 * Snapshots
 	
+	* .. image:: https://thumbs.gfycat.com/WindyDefiantCrayfish-max-14mb.gif
 	* Snapshots allow users to save what Limelight is seeing during matches or event calibration, and tune pipelines while away from the field.
 	* Save a snapshot with the web interface, or by posting a "1" to the "snapshot" NetworkTables key
 	* To view snapshots, change the "Image Source" combo box on the input tab. This will allow you to test your pipelines on snapshots rather than Limelight's camera feed
