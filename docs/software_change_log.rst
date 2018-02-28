@@ -2,7 +2,7 @@ Software Change Log
 ==============================
 2018.3 (2/28/18)
 ~~~~~~~~~~~~~~~~~~~~~
-2018.3 fixes a major networktables reconnection bug which would cause NetworkTables settings changes to not propogate to the Limelight. Thanks to Peter Johnson and the WPILib team for pinpointing and fixing the underlying NT bug. This was (as far as we know) the last high-priorty bug facing Limelight.
+2018.3 fixes a major networktables reconnection bug which would cause NetworkTables settings changes to not propagate to Limelight. Thanks to Peter Johnson and the WPILib team for pinpointing and fixing the underlying NT bug. This was (as far as we know) the last high-priority bug facing Limelight.
 
 Settings changes such as ledMode, pipeline, and camMode should always apply to Limelight. You should no longer need workarounds to change Limelight settings while debugging, after restarting robot code, and after rebooting the roborio.
 
