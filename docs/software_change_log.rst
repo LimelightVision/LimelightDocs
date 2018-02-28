@@ -14,7 +14,7 @@ Changes
 	* The eye dropper wand uses the same 10 unit window for Hue, but now uses a 30 unit window for saturation and value. This means that thresholding is more often a one-click operation, rather than a multi-step process.
 * Snapshots
 
-	* Setting the snapshot value to "1" will only take a single snapshot and reset the value to 0. Snapshots are throttled to 2 per second.
+	* Setting the snapshot value to "1" will only take a single snapshot and reset the value to 0. Snapshotting is throttled to 2 snapshots per second.
 	* Snapshot limit increased to 100 images.
 	* Snapshot selector area is now scrollable to support 100 images.
 	* .. image:: https://thumbs.gfycat.com/ComplexConstantGalapagosalbatross-max-14mb.gif
