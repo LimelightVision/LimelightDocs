@@ -4,13 +4,14 @@ Software Roadmap
 Contact us or post to CD to suggest upgrades for Limelight!
 
 * "Crop Box" filtering options. Set min/max x/y in contour filtering step.
+* Hysterisis tuning options
+* Individual width and height filtering options
 * "Final sort" filtering options. Options for largest,highest,lowest, least skewed, etc.
-* Better shuffleboard support
-* Read current pipeline name via Network Tables
-* Add ability to test pipeline on uploaded image.
 * More tooltips and helpful info on web interface.
-* Add ability to capture & download a frame with diagnostic info.
-* Implementation Examples in docs (distance calc, PID w/ gyro, etc)
+* Add ability to capture & download a frame with verbose diagnostic info.
+* More Implementation Examples in docs (distance calc, PID w/ gyro, etc)
+* DONE 2018.2 Add ability to test pipeline on snapshots.
+* DONE 2018.2 Better shuffleboard support
 * DONE 2017.8 Multiple pipelines. Switch at runtime via NetworkTables
 * DONE 2017.8 Dual crosshair calibration
 * DONE 2017.8 Timestamps
