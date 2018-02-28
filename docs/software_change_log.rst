@@ -1,5 +1,24 @@
 Software Change Log
 ==============================
+2018.3 (2/28/18)
+~~~~~~~~~~~~~~~~~~~~~
+2018.3 fixes a major networktables reconnection bug which would cause NetworkTables settings changes to not propogate to the Limelight. Thanks to Peter Johnson and the WPILib team for pinpointing and fixing the underlying NT bug. This was (as far as we know) the last high-priorty bug facing Limelight.
+
+Settings changes such as ledMode, pipeline, and camMode should always apply to Limelight. You should no longer need workarounds to change Limelight settings while debugging, after restarting robot code, and after rebooting the roborio.
+
+Changes
+----------------
+* Fix major NT syncing issue which broke settings changes (ledMode, pipeline, and camMode) during LabView debugging, and after a reset/reboot of the roborio.
+* Eye-dropper wand:
+	
+	* The eye dropper wand uses the same 10 unit window for Hue, but now uses a 30 unit window for saturation and value. This means that thresholding is more often a one-click operation, rather than a multi-step process.
+* Snapshots
+
+	* Setting the snapshot value to "1" will only take a single snapshot and reset the value to 0. Snapshots are throttled to 2 per second.
+	* Snapshot limit increased to 100 images.
+	* Snapshot selector area is now scrollable to support 100 images.
+	* .. image:: https://thumbs.gfycat.com/ComplexConstantGalapagosalbatross-max-14mb.gif
+
 2018.2 (2/10/18)
 ~~~~~~~~~~~~~~~~~~~~~
 2018.2 fixes all known streaming bugs with various FRC dashboards. It also makes Limelight easier to tune and more versatile during events.
