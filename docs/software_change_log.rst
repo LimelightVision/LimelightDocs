@@ -2,7 +2,7 @@ Software Change Log
 ==============================
 2018.4 (3/19/18)
 ~~~~~~~~~~~~~~~~~~~~~
-2018.4 adds new contour sorting options. This turns out to be quite important for cube tracking this year, as teams don't necessarily want to track the largest cube in view. In many cases, teams want to track the cube that is closest to their intakes. Many users have had to use the raw contours feature to implement their own sorting, so we want to make this as easy as possible.
+2018.4 adds new contour sorting options. These are fairly important for cube tracking this year, as teams don't necessarily want to track the largest cube in view. In many cases, teams want to track the cube that is closest to their intakes. Many users have had to use the raw contours feature to implement their own sorting, so we want to make this as easy as possible.
 
 * Contour Sort Mode
 
