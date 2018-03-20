@@ -8,7 +8,7 @@ Software Change Log
 
 	* Select between "largest", "smallest", "highest", "lowest", "leftmost", "rightmost", and "closest" sort options.
 	* We feel that many teams will make use of the "closest" option for cube tracking.
-	* .. image:: https://thumbs.gfycat.com/ComplexConstantGalapagosalbatross-max-14mb.gif
+	* .. image:: https://thumbs.gfycat.com/PlaintiveSizzlingEskimodog-max-14mb.gif
 	
 2018.3 (2/28/18)
 ~~~~~~~~~~~~~~~~~~~~~
