@@ -1,5 +1,15 @@
 Software Change Log
 ==============================
+2018.4 (3/19/18)
+~~~~~~~~~~~~~~~~~~~~~
+2018.4 adds essential contour sorting options. This turns out to be quite important for cube tracking this year, as teams don't necessarily want to track the largest cube in their fields of view. In many cases, teams want to track the cube that is closest to their intakes. Many users have had to use the raw contours feature to implement their own sorting, so we want to make this as easy as possible.
+
+* Contour Sort Mode
+
+	* Select between "largest", "smallest", "highest", "lowest", "leftmost", "rightmost", and "closest" sort options.
+	* We feel that many teams will make use of the "closest" option for cube tracking.
+	* .. image:: https://thumbs.gfycat.com/ComplexConstantGalapagosalbatross-max-14mb.gif
+	
 2018.3 (2/28/18)
 ~~~~~~~~~~~~~~~~~~~~~
 2018.3 fixes a major networktables reconnection bug which would cause NetworkTables settings changes to not propagate to Limelight. Thanks to Peter Johnson and the WPILib team for pinpointing and fixing the underlying NT bug. This was (as far as we know) the last high-priority bug facing Limelight.
