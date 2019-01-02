@@ -36,7 +36,7 @@ Power-over-Ethernet (PoE) Wiring
 .. note:: PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable. 
 .. warning:: This is not standard 44V PoE - this is why you must use a passive injector with 12V.
 * (LIMELIGHT 1 ONLY) Ensure that your Limelight's power jumper is set to the "E" position.
-* Interface a passive `Passive PoE Injector <http://www.andymark.com/POE-p/am-3766.htm>`_. to your PDP.
+* Connect a passive `Passive PoE Injector <http://www.revrobotics.com/rev-11-1210/>`_ to your PDP.
 * Add any breaker (5A, 10A, 20A, etc.) to the same slot on your PDP.
 * Run an ethernet cable from your Limelight to your passive POE injector.
 
@@ -47,18 +47,36 @@ Imaging
 
 .. note:: Limelight will receive software updates for improvements and features to accomodate the game if necessary.
 .. _Downloads: https://limelightvision.io/pages/downloads
-* Do not use a Windows 7 machine
-* Remove power from your limelight
-* Download the latest flasher tool and image from from the Downloads_ Page.
-* Install the flasher tool.
-* Run a USB-MicroUSB cable from your laptop to your limelight.
-* Apply power to your limelight
-* Run the "Limelight Flash Tool" from the Windows search bar. It will also appear under the "Limelight" folder under the start menu applications folder
-* It may take up to 20 seconds for Windows to recognize the camera. Press "cancel" on all subsequent Windows dialogs.
-* Select the latest .zip image in your downloads folder
-* Select an "RPI" device in the "Limelights" menu
-* Click "Flash"
-* Once flashing is complete, remove power from your limelight
+.. tabs::
+	
+	.. tab:: Limelight 2
+
+		* Do not use a Windows 7 machine.
+		* Remove power from your limelight.
+		* Download the latest flasher tool and image from from the Downloads_ Page.
+		* Install the Balena Etcher flash tool.
+		* Run a USB-MicroUSB cable from your laptop to your limelight.
+		* Run "Balena Etcher".
+		* It may take up to 20 seconds for your machine to recognize the camera.
+		* Select the latest .zip image in your downloads folder
+		* Select an "RPI" device in the "Limelights" menu
+		* Click "Flash"
+		* Once flashing is complete, remove power from your limelight
+
+	.. tab:: Limelight 1
+
+		* Do not use a Windows 7 machine.
+		* Remove power from your limelight.
+		* Download the latest flasher tool and image from from the Downloads_ Page.
+		* Install the Balena Etcher flash tool.
+		* Run a USB-MicroUSB cable from your laptop to your limelight.
+		* Apply power to your limelight.
+		* Run "Balena Etcher".
+		* It may take up to 20 seconds for your machine to recognize the camera.
+		* Select the latest .zip image in your downloads folder
+		* Select an "RPI" device in the "Limelights" menu
+		* Click "Flash"
+		* Once flashing is complete, remove power from your limelight
 
 .. image:: img/ImagerWindow.png
 
