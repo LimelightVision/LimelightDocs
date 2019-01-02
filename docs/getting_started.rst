@@ -84,41 +84,44 @@ Imaging
 
 Networking Setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-While we reccomend a static IP address for reliability, some teams prefer dynamically assigned IP addresses.
+We highly reccomend following the static IP instructions for reliability during events.
 
-Static IP Address (recommended for competition settings until further testing is completed)
----------------------------------------------------------------------------------------------
-* Install bonjour from https://support.apple.com/kb/dl999?locale=en_US
-* Power-up your robot, and connect your laptop to your robot's network.
-* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
-* Navigate to the "Networking" tab.
-* Enter your team number.
-* Change your "IP Assignment" to "Static".
-* Set your Limelight's IP address to "10.TE.AM.11".
-* Set the Netmask to "255.255.255.0".
-* Set the Gateway to "10.TE.AM.1".
-* Click the "Update" button.
-* Power-cycle your robot.
-* You will now be access your config panel at http://10.TE.AM.11:5801, and your camera stream at http://10.TE.AM.11:5800
+.. tabs::
+
+	.. tab:: Static IP Address (Recommended)
+
+		* Install bonjour from the Downloads_ Page.
+		* Power-up your robot, and connect your laptop to your robot's network.
+		* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
+		* Navigate to the "Settings" tab on the left side of the interface.
+		* Enter your team number and press the "Update Team Number" button.
+		* Change your "IP Assignment" to "Static".
+		* Set your Limelight's IP address to "10.TE.AM.11".
+		* Set the Netmask to "255.255.255.0".
+		* Set the Gateway to "10.TE.AM.1".
+		* Click the "Update" button.
+		* Power-cycle your robot.
+		* You will now be access your config panel at http://10.TE.AM.11:5801, and your camera stream at http://10.TE.AM.11:5800
+
+	.. tab:: Dynamic IP Address (Not recommended)
+
+		* Install bonjour from the Downloads_ Page.
+		* Power-up your robot, and connect your laptop to your robot's network.
+		* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
+		* Navigate to the "Settings" tab on the left side of the interface.
+		* Enter your team number and press the "Update Team Number" button.
+		* Change your "IP Assignment" to "Automatic".
+		* Click the "Update" button.
+		* Power-cycle your robot.
+		* You can continue be access your config panel at http://limelight.local:5801, and your camera stream at http://limelight.local:5800
+
 .. This is a comment. Mutli-line notes, warnings, admonitions in general need indented lines after the first line
 .. note:: Q. Why do we reccommend a static IP? 
 
-	A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields.
+	A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields and with event radio firmware.
 .. note:: Q. How do I reset the IP address? 
 
 	A. After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.
-
-Dynamic IP Address
-------------------------------------------
-* Power-up your robot, and connect your laptop to your robot's network.
-* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
-* Navigate to the "Networking" tab.
-* Enter your team number.
-* Click the "Update" button.
-* Power-cycle your robot.
-* You can continue be access your config panel at http://limelight.local:5801, and your camera stream at http://limelight.local:5800
-
-.. note:: While the camera has a NetBIOS name, we highly reccommend installing an mDNS responder such as Apple's Bonjour if you plan on using a Dynamic IP address.
 
 
 .. _programming:
