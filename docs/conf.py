@@ -33,6 +33,7 @@ import os
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = []
+extensions.append('sphinx_tabs.tabs')
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -48,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Limelight'
-copyright = '2017, Limelight'
+copyright = '2019, Limelight'
 author = 'Limelight'
 
 # The version info for the project you're documenting, acts as replacement for

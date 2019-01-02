@@ -23,6 +23,7 @@ Wiring
 
 .. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 7V.
 
+
 Standard Wiring
 ------------------------------------------
 * Do not run wires to your VRM.
@@ -34,7 +35,7 @@ Power-over-Ethernet (PoE) Wiring
 ------------------------------------------
 .. note:: PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable. 
 .. warning:: This is not standard 44V PoE - this is why you must use a passive injector with 12V.
-* Ensure that your Limelight's power jumper is set to the "E" position.
+* (LIMELIGHT 1 ONLY) Ensure that your Limelight's power jumper is set to the "E" position.
 * Interface a passive `Passive PoE Injector <http://www.andymark.com/POE-p/am-3766.htm>`_. to your PDP.
 * Add any breaker (5A, 10A, 20A, etc.) to the same slot on your PDP.
 * Run an ethernet cable from your Limelight to your passive POE injector.
