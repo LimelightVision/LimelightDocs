@@ -24,21 +24,23 @@ Wiring
 .. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 7V.
 
 
-Standard Wiring
-------------------------------------------
-* Do not run wires to your VRM.
-* Run two wires from your limelight to a slot on your PDP.
-* Add any breaker (5A, 10A, 20A, etc.) to the same slot on your PDP.
-* Run an ethernet cable from your Limelight to your robot radio.
+.. tabs::
+	
+	.. tab:: Standard Wiring
 
-Power-over-Ethernet (PoE) Wiring
-------------------------------------------
-.. note:: PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable. 
-.. warning:: This is not standard 44V PoE - this is why you must use a passive injector with 12V.
-* (LIMELIGHT 1 ONLY) Ensure that your Limelight's power jumper is set to the "E" position.
-* Connect a passive `Passive PoE Injector <http://www.revrobotics.com/rev-11-1210/>`_ to your PDP.
-* Add any breaker (5A, 10A, 20A, etc.) to the same slot on your PDP.
-* Run an ethernet cable from your Limelight to your passive POE injector.
+		* Do not run wires to your VRM.
+		* Run two wires from your limelight to a slot on your PDP (NOT your VRM).
+		* Add any breaker (5A, 10A, 20A, etc.) to the same slot on your PDP.
+		* Run an ethernet cable from your Limelight to your robot radio.
+
+	.. tab:: Power-over-Ethernet (PoE) Wiring
+
+		.. note:: PoE allows you to add both power and network connectivity to your Limelight via an Ethernet cable. 
+		.. warning:: This is not standard 44V PoE - this is why you must use a passive injector with 12V.
+		* (LIMELIGHT 1 ONLY) Ensure that your Limelight's power jumper is set to the "E" position.
+		* Connect a passive `Passive PoE Injector <http://www.revrobotics.com/rev-11-1210/>`_ to your PDP (NOT your VRM).
+		* Add any breaker (5A, 10A, 20A, etc.) to the same slot on your PDP.
+		* Run an ethernet cable from your Limelight to your passive POE injector.
 
 .. _imaging:
 
@@ -77,9 +79,6 @@ Imaging
 		* Select an "RPI" device in the "Limelights" menu
 		* Click "Flash"
 		* Once flashing is complete, remove power from your limelight
-
-.. image:: img/ImagerWindow.png
-
 
 .. _networking:
 
@@ -178,51 +177,52 @@ pipeline	Sets limelight's current pipeline
 =========== =====================================================================================
 
 
-Java
-------------------------------------------
-.. code-block:: java
+.. tabs::
+	
+	.. tab:: Java
 
-	NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight");
-	NetworkTableEntry tx = table.getEntry("tx");
-	NetworkTableEntry ty = table.getEntry("ty");
-	NetworkTableEntry ta = table.getEntry("ta");
-	double x = tx.getDouble(0);
-	double y = ty.getDouble(0);
-	double area = ta.getDouble(0);
+		.. code-block:: java
 
-Don't forget to add these imports:
+			NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight");
+			NetworkTableEntry tx = table.getEntry("tx");
+			NetworkTableEntry ty = table.getEntry("ty");
+			NetworkTableEntry ta = table.getEntry("ta");
+			double x = tx.getDouble(0);
+			double y = ty.getDouble(0);
+			double area = ta.getDouble(0);
 
-.. code-block:: java
+		Don't forget to add these imports:
 
-	import edu.wpi.first.networktables.NetworkTableEntry;
-	import edu.wpi.first.networktables.NetworkTableInstance;
-LabView
-------------------------------------------
-Drag the below image into LabView to automatically generate the starter code for Limelight.
-NOTE: Prepend a "/" to all NT values. Instead of "limelight/tx", use "/limelight/tx". Updating the LV snippet with this change asap.
+		.. code-block:: java
 
-.. image:: img/Labview_10.png
+			import edu.wpi.first.networktables.NetworkTableEntry;
+			import edu.wpi.first.networktables.NetworkTableInstance;
 
-C++
-------------------------------------------
-.. code-block:: c++
+	.. tab:: LabView
 
-	std::shared_ptr<NetworkTable> table = 	NetworkTable::GetTable("limelight");
-	float targetOffsetAngle_Horizontal = table->GetNumber("tx");
-	float targetOffsetAngle_Vertical = table->GetNumber("ty");
-	float targetArea = table->GetNumber("ta");
-	float targetSkew = table->GetNumber("ts"); 
+		Drag the below image into LabView to automatically generate the starter code for Limelight. We are working with teams to generate more detailed LabView Docs for 2019.
+		NOTE: Prepend a "/" to all NT values. Instead of "limelight/tx", use "/limelight/tx". 
 
-Python
-------------------------------------------
-.. code-block:: python
+		.. image:: img/Labview_10.png
 
-    from networktables import NetworkTables
-    
-    table = NetworkTables.getTable("limelight")
-    tx = table.getNumber('tx',None)
-    ty = table.getNumber('ty',None)
-    ta = table.getNumber('ta',None)
-    ts = table.getNumber('ts',None)
+	.. tab:: C++
 
-    
+		.. code-block:: c++
+
+			std::shared_ptr<NetworkTable> table = 	NetworkTable::GetTable("limelight");
+			float targetOffsetAngle_Horizontal = table->GetNumber("tx");
+			float targetOffsetAngle_Vertical = table->GetNumber("ty");
+			float targetArea = table->GetNumber("ta");
+			float targetSkew = table->GetNumber("ts"); 
+
+	.. tab:: Python
+
+		.. code-block:: python
+
+		    from networktables import NetworkTables
+		    
+		    table = NetworkTables.getTable("limelight")
+		    tx = table.getNumber('tx',None)
+		    ty = table.getNumber('ty',None)
+		    ta = table.getNumber('ta',None)
+		    ts = table.getNumber('ts',None) 
