@@ -3,7 +3,37 @@ Complete NetworkTables API
 
 "Best" Contour information:
 
-Use   NetworkTableInstance.getDefault().getTable("limelight").getEntry(<variablename>).getDouble(0) to retrieve this data:
+Use the following code:
+
+.. tabs::
+	
+	.. tab:: Java
+
+		.. code-block:: java
+
+			NetworkTableInstance.getDefault().getTable("limelight").getEntry("<variablename>").getDouble(0);
+
+	.. tab:: LabView
+
+			<Coming Soon>
+
+	.. tab:: C++
+
+		.. code-block:: c++
+
+			NetworkTableInstance::GetDefault().GetTable("limelight")->GetNumber("<variablename>",0.0);
+			
+	.. tab:: Python
+
+		.. code-block:: python
+
+			NetworkTables.getTable("limelight").getNumber('<variablename>');
+
+		    
+
+
+to retrieve this data:
+
 
 ====== =====================================================================================
 tv 		Whether the limelight has any valid targets (0 or 1)
@@ -22,16 +52,45 @@ tl 		The pipeline's latency contribution (ms) Add at least 11ms for image captur
 
 Camera Controls:
 
-Use NetworkTableInstance.getDefault().getTable("limelight").getEntry(<variablenamde>).setNumber(<value>) to set this data:
+Use the following code:
+
+.. tabs::
+	
+	.. tab:: Java
+
+		.. code-block:: java
+
+			NetworkTableInstance.getDefault().getTable("limelight").getEntry("<variablename>").setNumber(<value>);
+
+	.. tab:: LabView
+
+			<Coming Soon>
+
+	.. tab:: C++
+
+		.. code-block:: c++
+
+			NetworkTableInstance::GetDefault().GetTable("limelight")->PutNumber("<variablename>",<value>);
+			
+	.. tab:: Python
+
+		.. code-block:: python
+
+		    	NetworkTables.getTable("limelight").putNumber('<variablename>',<value>);
+
+
+to set this data:
 
 =========== =====================================================================================
 ledMode		Sets limelight's LED state
 ----------- -------------------------------------------------------------------------------------
-0	 	on
+0	 	use the LED Mode set in the current pipeline
 ----------- -------------------------------------------------------------------------------------
-1 		off
+1 		force off
 ----------- -------------------------------------------------------------------------------------
-2 		blink
+2 		force blink
+----------- -------------------------------------------------------------------------------------
+3 		force on
 =========== =====================================================================================
 
 

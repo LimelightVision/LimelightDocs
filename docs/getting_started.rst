@@ -173,11 +173,13 @@ Write the following to the "limelight" table
 =========== =====================================================================================
 ledMode		Sets limelight's LED state
 ----------- -------------------------------------------------------------------------------------
-0	 	on
+0	 	use the LED Mode set in the current pipeline
 ----------- -------------------------------------------------------------------------------------
-1 		off
+1 		force off
 ----------- -------------------------------------------------------------------------------------
-2 		blink
+2 		force blink
+----------- -------------------------------------------------------------------------------------
+3 		force on
 =========== =====================================================================================
 
 =========== =====================================================================================
@@ -206,14 +208,23 @@ pipeline	Sets limelight's current pipeline
 			NetworkTableEntry tx = table.getEntry("tx");
 			NetworkTableEntry ty = table.getEntry("ty");
 			NetworkTableEntry ta = table.getEntry("ta");
-			double x = tx.getDouble(0);
-			double y = ty.getDouble(0);
-			double area = ta.getDouble(0);
+			
+			//read values periodically
+			double x = tx.getDouble(0.0);
+			double y = ty.getDouble(0.0);
+			double area = ta.getDouble(0.0);
+
+			//post to smart dashboard periodically
+			SmartDashboard.putNumber("LimelightX", x);
+			SmartDashboard.putNumber("LimelightY", y);
+			SmartDashboard.putNumber("LimelightArea", area);
 
 		Don't forget to add these imports:
 
 		.. code-block:: java
 
+			import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+			import edu.wpi.first.networktables.NetworkTable;
 			import edu.wpi.first.networktables.NetworkTableEntry;
 			import edu.wpi.first.networktables.NetworkTableInstance;
 
@@ -228,11 +239,11 @@ pipeline	Sets limelight's current pipeline
 
 		.. code-block:: c++
 
-			std::shared_ptr<NetworkTable> table = 	NetworkTable::GetTable("limelight");
-			float targetOffsetAngle_Horizontal = table->GetNumber("tx");
-			float targetOffsetAngle_Vertical = table->GetNumber("ty");
-			float targetArea = table->GetNumber("ta");
-			float targetSkew = table->GetNumber("ts"); 
+			std::shared_ptr<NetworkTable> table = NetworkTableInstance::GetDefault().GetTable("limelight");  
+			double targetOffsetAngle_Horizontal = table->GetNumber("tx",0.0);
+			double targetOffsetAngle_Vertical = table->GetNumber("ty",0.0);
+			double targetArea = table->GetNumber("ta",0.0);
+			double targetSkew = table->GetNumber("ts",0.0); 
 
 	.. tab:: Python
 
