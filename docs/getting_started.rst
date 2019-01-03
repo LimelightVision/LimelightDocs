@@ -34,8 +34,8 @@ Mounting
 
 Wiring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-note
-.. :: Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 7V.
+
+.. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 7V.
 
 
 .. tabs::
