@@ -14,14 +14,28 @@ This page will cover the content on the official website's "Getting Started" pag
 Mounting
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use four 1 1/4" 10-32 screws with nylock nuts to mount your Limelight. 
+
+
+.. tabs::
+	
+	.. tab:: Limelight 2
+
+		Use four 1 1/2" 10-32 screws and nylock nuts to mount your Limelight.
+
+		.. image:: img/LL2DrawingSmall.png
+
+	.. tab:: Limelight 1
+
+		Use four 1 1/4" 10-32 screws and nylock nuts to mount your Limelight.
+		
+		.. image:: img/LL1DrawingSmall.png
 
 .. _wiring:
 
 Wiring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 7V.
+note
+.. :: Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 7V.
 
 
 .. tabs::
@@ -79,6 +93,8 @@ Imaging
 		* Select an "RPI" device in the "Limelights" menu
 		* Click "Flash"
 		* Once flashing is complete, remove power from your limelight
+
+.. warning:: Only connect the microUSB cable while imaging. Limelight enters a special flash mode while the microUSB cable is connected. You will not be able to access the web interface while Limelight is in flash mode.
 
 .. _networking:
 
