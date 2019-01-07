@@ -28,10 +28,10 @@ Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents
    cs_robotexample
 
 .. toctree::
-	:maxdepth: 2
-	:caption: Grip Support
-	grip_software
-	grip_limelight
+   :maxdepth: 2
+   :caption: Grip Support
+   grip_software
+   grip_limelight
 	
 .. toctree::
    :maxdepth: 2
