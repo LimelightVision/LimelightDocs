@@ -3,6 +3,8 @@
 
 .. Summary
 1. Upload your custom GRIP pipeline into a limelight pipeline.
+2. Upload any additional inputs to your pipeline.
+3. Observe the behavior of your GRIP pipeline.
 
 Once you have used GRIP to design a custom vision pipeline and exported your pipeline to a .LL file, it is time to run it on the limelight camera hardware.  The first step is to select which limelight pipeline you'd like to load your grip pipeline into.  In order to do this, you use the UI at the top of the limelight interface to select a pipeline.  Normally your robot (through network-tables) controls the currently active pipeline.  Our first step is to disable that functionality so that we can select the pipeline to edit:
 
