@@ -1,5 +1,72 @@
 Software Change Log
 ==============================
+2019.2 (1/7/19)
+~~~~~~~~~~~~~~~~~~~~~
+2019.2 adds a ton of new features to better equip teams for the 2019 season.
+
+* Intersection Filter
+
+	* .. image:: https://thumbs.gfycat.com/ThunderousWholeDinosaur-max-14mb.gif
+		:align: center
+
+	* The all-new intersection filter will allow teams to better distinguish between different groups of contours. The filter extends contours to infinity, and checks where they would intersect.
+
+* Direction Filter
+
+	* .. image:: https://thumbs.gfycat.com/HalfUnselfishHarvestmen-max-14mb.gif
+		:align: center
+
+	* The new direction filter will allow teams to better distinguish between contours of different orientations.
+
+* Additional Changes and Fixes
+	
+	* IP Address is auto-posted to SmartDashboard/Shuffleboard for easier event troubleshooting. We have had almost no reports of this being an issue, but this serves as another contingency feature.
+	* Pipeline name is auto-posted to SmartDashboard/Shuffleboard
+	* Access the width and height of the rough bounding box in pixels with new networktables keys.
+	* Access the longest side and shortest side of the perfect bounding box in pixels with new networktables keys.
+	* "Sort Mode" now applies to dual-contours
+	* "Sort Mode" is now fixed
+	* 5802 stream is less taxing on the camera
+
+2019.1 (12/18/18)
+~~~~~~~~~~~~~~~~~~~~~
+2019.1 fixes all major bugs reported during the beta
+
+* Performance is back to a steady 90fps. A driver issue was the root cause of our performance problems during beta
+* IP and hostname settings actually apply and "stick"
+* Magic Wands have been re-ordered to match those of Limelight 2018 software
+* We now support Grip inputs like masks through the web interface
+* NetworkTables freeze fixed
+
+2019.0 (12/10/18)
+~~~~~~~~~~~~~~~~~~~~~
+With 2019, we are introducing GRIP support, a brand-new interface, and a cleaner flashing procedure.
+
+* Grip Support
+	
+	* Build pipelines with GRIP For Limelight, and export "LL Script" files to upload to your camera.
+	* Masks and NetworkTables support will be added in a future update
+	* Expose a bare video stream at http://<limelighturl>:5802 for testing in grip
+	
+* All-new web interface
+	
+	* Smaller controls
+	* More tooltips
+	* Add the ability to turn off the LEDs from the interface
+	* Move display combobox underneath stream for easier display switching
+	* Faster communication to Limelight. New web tech allowed us to simplify other parts of our code.
+
+* Flashing
+	
+	* We have migrated to "Balena Etcher"
+	* Etcher is twice as fast and works on all platforms
+	* Flash popups are fixed with the migration.
+	
+* Other
+	
+	* The LED Mode has been modified to allow for pipeline-specific LED Modes. LED MODE 0 is now "pipeline mode", while mode 1 is "force off"
+	* Faster boot times in automatic IP assignment mode.
+	* Optimizations and minor bug fixes
 
 2018.5 (3/28/18)
 ~~~~~~~~~~~~~~~~~~~~~
