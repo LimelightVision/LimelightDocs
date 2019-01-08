@@ -14,12 +14,11 @@ The first step in using GRIP is to download our build of Grip.  It can be downlo
 You can learn more about GRIP on this web page:
 https://wpilib.screenstepslive.com/s/currentCS/m/vision/l/463566-introduction-to-grip
 
-
 Accessing the Video Stream wthin GRIP
 =====================================
 Limelight has an additional video stream on port 5802 which can be accessed primarily for use with GRIP or other applications like it.  This video stream is uncompressed (or very lightly compressed) and has no cross-hair or other overlays drawn on the image.  It is important to use this video stream for developing your GRIP pipeline because the normal Limelight video feed is optimized for very low bandwidth and latency which causes the image to be relatively low quality and can have significant compression artefacts.  So to get your grip pipeline started, add an IP Camera input which uses the limelight as its input:
 
-.. image: img/Grip_Add_IpCamera.jpg
+.. image:: img/Grip_Add_IpCamera.jpg
 
 How Limelight Handles Inputs to the Pipeline
 ============================================
@@ -29,11 +28,11 @@ Generating output for the Limelight to use
 ==========================================
 When your grip pipeline is loaded onto the limelight, it will also be scanned for output data in the form of contours, blobs, or rectangles.  If any of these outputs are found, the last one in the pipeline will be used as the 'results' of your vision pipeline.  The outputs of your pipeline will be passed through the built-in contour filtering system on the limelight.  If you want to do your own contour filtering within your GRIP pipeline, just set the limelight options to essentially accept any contour.  In the example shown below, the output of the block highlighted in red would be passed on to the limelight targetting system.  Notice that this example pipline produces contours at an intermediate step and then filters them.  Only the final set of contours (or blobs or rectangles) will be passed on to the limelight targetting system.
 
-.. image: img/Grip_SimplePipeline.jpg
+.. image:: img/Grip_SimplePipeline.jpg
 
 Code Generation for Limelight
 =============================
 When you are ready to try running your pipeline in hardware on the limelight, it is time to use the code-generation function of GRIP.  We have added a new "Limelight" code generation target to the GRIP application.  Using this option will produce a <pipeline>.ll file which can be loaded into the limelight camera.  
 
-.. image: img/Grip_CodeGeneration.jpg
+.. image:: img/Grip_CodeGeneration.jpg
 
