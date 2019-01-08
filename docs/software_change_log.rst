@@ -2,7 +2,7 @@ Software Change Log
 ==============================
 2019.2 (1/7/19)
 ~~~~~~~~~~~~~~~~~~~~~
-2019.2 adds a ton of new features to better equip teams for the 2019 season.
+2019.2 adds new features to better equip teams for the 2019 season.
 
 * Intersection Filter
 
