@@ -14,8 +14,6 @@ This page will cover the content on the official website's "Getting Started" pag
 Mounting
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
 .. tabs::
 	
 	.. tab:: Limelight 2
@@ -69,7 +67,7 @@ Imaging
 
 		* Do not use a Windows 7 machine.
 		* Remove power from your limelight.
-		* Download the latest flasher tool and image from from the Downloads_ Page.
+		* Download the latest drivers, flasher tool, and image from from the Downloads_ Page.
 		* Install the Balena Etcher flash tool.
 		* Run a USB-MicroUSB cable from your laptop to your limelight.
 		* Run "Balena Etcher".
@@ -83,7 +81,7 @@ Imaging
 
 		* Do not use a Windows 7 machine.
 		* Remove power from your limelight.
-		* Download the latest flasher tool and image from from the Downloads_ Page.
+		* Download the latest drivers, flasher tool and image from from the Downloads_ Page.
 		* Install the Balena Etcher flash tool.
 		* Run a USB-MicroUSB cable from your laptop to your limelight.
 		* Apply power to your limelight.

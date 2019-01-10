@@ -1,4 +1,4 @@
-﻿Running GRIP Pipelines on the Limelight
+﻿Running GRIP Pipelines on Limelight
 =======================================
 
 .. Summary

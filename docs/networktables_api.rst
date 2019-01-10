@@ -47,6 +47,14 @@ ta		Target Area (0% of image to 100% of image)
 ts		Skew or rotation (-90 degrees to 0 degrees)
 ------ -------------------------------------------------------------------------------------
 tl 		The pipeline's latency contribution (ms) Add at least 11ms for image capture latency.
+------ -------------------------------------------------------------------------------------
+tshort		Sidelength of shortest side of the fitted bounding box (pixels)
+------ -------------------------------------------------------------------------------------
+tlong 		Sidelength of longest side of the fitted bounding box (pixels)
+------ -------------------------------------------------------------------------------------
+thoriz		Horizontal sidelength of the rough bounding box (0 - 320 pixels)
+------ -------------------------------------------------------------------------------------
+tvert 		Vertical sidelength of the rough bounding box (0 - 320 pixels)
 ====== =====================================================================================
 
 
