@@ -15,7 +15,7 @@ Use the following code:
 
 	.. tab:: LabView
 
-			<Coming Soon>
+			.. image:: img/Labview_ReadData.png
 
 	.. tab:: C++
 
@@ -72,7 +72,7 @@ Use the following code:
 
 	.. tab:: LabView
 
-			<Coming Soon>
+			.. image:: img/Labview_WriteData.png
 
 	.. tab:: C++
 
