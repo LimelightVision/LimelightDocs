@@ -100,6 +100,14 @@ Networking Setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We highly reccomend following the static IP instructions for reliability during events.
 
+Follow these steps before starting:
+* Go to add/remove programs in windows, and search for "bonjour"
+* How many items do you see?
+	* If there are two (2) items with "bonjour" in their name, uninstall "bonjour print services"
+	* If there are no (0) items with "bonjour" in their name, install bonjour from our Downloads page.
+* Reboot your robot and computer.
+* Follow the steps listed below.
+
 .. tabs::
 
 	.. tab:: Static IP Address (Recommended)
@@ -137,6 +145,9 @@ We highly reccomend following the static IP instructions for reliability during 
 
 	A. After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.
 
+* If the above steps do not fix the problem, install Angry IP scanner and find the address for your limelight.
+* Go to <limelightaddress>:5801, and give your limelight a .11 static IP.
+* From this point onward, you can rely on the static IP to access the page.
 
 .. _programming:
 
