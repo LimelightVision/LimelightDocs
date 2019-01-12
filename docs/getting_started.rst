@@ -241,16 +241,13 @@ pipeline	Sets limelight's current pipeline
 
 	.. tab:: LabView
 
-		Drag the below image into LabView to automatically generate the starter code for Limelight. We are working with teams to generate more detailed LabView Docs for 2019.
-		NOTE: Prepend a "/" to all NT values. Instead of "limelight/tx", use "/limelight/tx". 
-
 		.. image:: img/Labview_10.png
 
 	.. tab:: C++
 
 		.. code-block:: c++
 
-			std::shared_ptr<NetworkTable> table = NetworkTableInstance::GetDefault().GetTable("limelight");  
+			std::shared_ptr<NetworkTable> table = NetworkTable::GetTable("limelight");  
 			double targetOffsetAngle_Horizontal = table->GetNumber("tx",0.0);
 			double targetOffsetAngle_Vertical = table->GetNumber("ty",0.0);
 			double targetArea = table->GetNumber("ta",0.0);
