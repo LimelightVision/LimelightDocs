@@ -101,6 +101,7 @@ Networking Setup
 We highly reccomend following the static IP instructions for reliability during events.
 
 Follow these steps before starting:
+
 * Go to add/remove programs in windows, and search for "bonjour"
 * How many items do you see?
 	* If there are two (2) items with "bonjour" in their name, uninstall "bonjour print services"
@@ -148,6 +149,7 @@ Follow these steps before starting:
 * If the above steps do not fix the problem, install Angry IP scanner and find the address for your limelight.
 * Go to <limelightaddress>:5801, and give your limelight a .11 static IP.
 * From this point onward, you can rely on the static IP to access the page.
+
 
 .. _programming:
 
