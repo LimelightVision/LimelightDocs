@@ -21,7 +21,7 @@ Use the following code:
 
 		.. code-block:: c++
 
-			NetworkTable::GetTable("limelight")->GetNumber("<variablename>",0.0);
+			nt::NetworkTableInstance::GetDefault().GetTable("limelight")->GetNumber("<variablename>",0.0);
 			
 	.. tab:: Python
 
@@ -78,7 +78,7 @@ Use the following code:
 
 		.. code-block:: c++
 
-			NetworkTable::GetTable("limelight")->PutNumber("<variablename>",<value>);
+			nt::NetworkTableInstance::GetDefault().GetTable("limelight")->PutNumber("<variablename>",<value>);
 			
 	.. tab:: Python
 
