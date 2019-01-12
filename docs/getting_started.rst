@@ -254,6 +254,13 @@ pipeline	Sets limelight's current pipeline
 			double targetArea = table->GetNumber("ta",0.0);
 			double targetSkew = table->GetNumber("ts",0.0); 
 
+		Don't forget to add these includes:
+
+		.. code-block:: c++
+
+			include "frc/smartdashboard/Smartdashboard.h"
+			include "networktables/NetworkTable.h"
+			
 	.. tab:: Python
 
 		.. code-block:: python
