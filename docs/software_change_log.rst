@@ -1,5 +1,8 @@
 Software Change Log
 ==============================
+
+Contact us or post to CD to suggest upgrades for Limelight!
+
 2019.2 (1/7/19)
 ~~~~~~~~~~~~~~~~~~~~~
 2019.2 adds new features to better equip teams for the 2019 season.
