@@ -52,7 +52,7 @@ tshort		Sidelength of shortest side of the fitted bounding box (pixels)
 ------ -------------------------------------------------------------------------------------
 tlong 		Sidelength of longest side of the fitted bounding box (pixels)
 ------ -------------------------------------------------------------------------------------
-thoriz		Horizontal sidelength of the rough bounding box (0 - 320 pixels)
+thor		Horizontal sidelength of the rough bounding box (0 - 320 pixels)
 ------ -------------------------------------------------------------------------------------
 tvert 		Vertical sidelength of the rough bounding box (0 - 320 pixels)
 ====== =====================================================================================

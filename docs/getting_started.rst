@@ -22,6 +22,11 @@ Mounting
 
 		.. image:: img/LL2DrawingSmall.png
 
+		.. note:: Q. What is the purpose of the status LEDs? 
+
+			A. The green LED will blink quickly when a target has been acquired. 
+			The yellow LED will blink if the camera is set to use a dynamic IP address, and will stay solid if the camera is using a static IP address.
+
 	.. tab:: Limelight 1
 
 		Use four 1 1/4" 10-32 screws and nylock nuts to mount your Limelight.
@@ -81,7 +86,7 @@ Imaging
 
 		* Do not use a Windows 7 machine.
 		* Remove power from your limelight.
-		* Download the latest drivers, flasher tool and image from from the Downloads_ Page.
+		* Download the latest drivers, flasher tool, and image from from the Downloads_ Page.
 		* Install the Balena Etcher flash tool.
 		* Run a USB-MicroUSB cable from your laptop to your limelight.
 		* Apply power to your limelight.
@@ -104,8 +109,8 @@ Follow these steps before starting:
 
 * Go to add/remove programs in windows, and search for "bonjour"
 * How many items do you see?
-	* If there are two (2) items with "bonjour" in their name, uninstall "bonjour print services"
-	* If there are no (0) items with "bonjour" in their name, install bonjour from our Downloads page.
+	* If there are two (2) items with "bonjour" in their names, uninstall "bonjour print services"
+	* If there are no (0) items with "bonjour" in their names, install bonjour from our Downloads_ page.
 * Reboot your robot and computer.
 * Follow the steps listed below.
 
@@ -113,7 +118,7 @@ Follow these steps before starting:
 
 	.. tab:: Static IP Address (Recommended)
 
-		* Install bonjour from the Downloads_ Page.
+		* Follow the bonjour-related instructions above.
 		* Power-up your robot, and connect your laptop to your robot's network.
 		* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
 		* Navigate to the "Settings" tab on the left side of the interface.
@@ -128,7 +133,7 @@ Follow these steps before starting:
 
 	.. tab:: Dynamic IP Address (Not recommended)
 
-		* Install bonjour from the Downloads_ Page.
+		* Follow the bonjour-related instructions above.
 		* Power-up your robot, and connect your laptop to your robot's network.
 		* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
 		* Navigate to the "Settings" tab on the left side of the interface.
@@ -159,7 +164,7 @@ For now, we just need to get data from the camera to your robot. Limelight posts
 
 To get started, we recommend reading four values from the "limelight" Network Table at at least 100hz. Our code samples will show you exactly how to do this. The offsets to your target (in degrees) are sent as "tx" and "ty". These can be used to turn your robot, turn a turret, etc. The target's area, sent as "ta", may be used a rough indicator of distance to your target. Area is a value between 0 and 100, where 0 means that your target's hull area is 0% of the total image area, and 100 means that your target's hull fills the entire image. The rotation or "skew" of your target is returned as "ts". If all values are equal to zero, no targets exist.
 
-In addition, you may control certain features by setting values in NetworkTables. 
+In addition, you may control certain features by setting values in NetworkTables. See the complete NT API here: :doc:`networktables_api`
 
 Read the following from the "limelight" table
 
@@ -171,10 +176,6 @@ tx	 	Horizontal Offset From Crosshair To Target (-27 degrees to 27 degrees)
 ty 		Vertical Offset From Crosshair To Target (-20.5 degrees to 20.5 degrees)
 ----------- -------------------------------------------------------------------------------------
 ta 		Target Area (0% of image to 100% of image)
------------ -------------------------------------------------------------------------------------
-ts 		Skew or rotation (-90 degrees to 0 degrees)
------------ -------------------------------------------------------------------------------------
-tl 		The pipeline's latency contribution (ms) Add at least 11ms for image capture latency.
 =========== =====================================================================================
 
 -------------------------------------------------
