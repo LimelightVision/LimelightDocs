@@ -17,7 +17,7 @@ Features
 	
 	* Raw contours are now disabled by default. This will further reduce Limelight's overall bandwidth.
 	* There are now ~180 fewer networktables entries submitted per second by default.
-	* See the new "Raw Contours" pipeline option in the "Contours" tab to re-enable raw contours. 
+	* See the new "Raw Contours" pipeline option in the "Output" tab to re-enable raw contours. 
 
 * Active Pipeline Index
 	
