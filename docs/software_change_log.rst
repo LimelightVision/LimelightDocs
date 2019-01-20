@@ -3,6 +3,40 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2019.3 (1/19/19)
+~~~~~~~~~~~~~~~~~~~~~
+2019.3 addresses a number of bugs and feature requests.
+
+Features
+----------------
+* Stream Rate (bandwidth reduction)
+	
+	* Set the stream rate to "low" in the settings page for a lower-bandwidth 15fps video stream.
+
+* Raw Contours disabled in NetworkTables (bandwidth reduction)
+	
+	* Raw contours are now disabled by default. This will further reduce Limelight's overall bandwidth.
+	* There are now ~180 fewer networktables entries submitted per second by default.
+	* See the new "Raw Contours" pipeline option in the "Contours" tab to re-enable raw contours. 
+
+* Active Pipeline Index
+	
+	* Read the networktable key "getpipe" to get the true active pipeline index of the camera. This is updated at 90hz.
+	* The active pipeline index is now written to the videostream underneath the FPS display.
+
+* Left and Right Intersection Filters
+	
+	* Teams may now choose between "left" and "right" dual-contour intersection filters. The "above" and "below" intersection filters were added in 2019.2.
+
+Bug Fixes
+----------------
+
+* Fix LabView Dashboard streaming bug introduced in 2019.2
+* The webpage no longer requests icon fonts from a the internet. All fonts are stored locally. This should speed up interface loading.
+* Reduce "driver mode" exposure.
+* Fix "Distance Transform" GRIP implementation
+* Fix 20-second communication delays caused by changing the hostname.
+
 2019.2 (1/7/19)
 ~~~~~~~~~~~~~~~~~~~~~
 2019.2 adds new features to better equip teams for the 2019 season.
