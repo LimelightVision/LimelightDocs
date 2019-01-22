@@ -78,7 +78,7 @@ Imaging
 		* Run "Balena Etcher".
 		* It may take up to 20 seconds for your machine to recognize the camera.
 		* Select the latest .zip image in your downloads folder
-		* Select an "RPI" device in the "Limelights" menu
+		* Select a "Compute Module" device in the "Drives" menu
 		* Click "Flash"
 		* Once flashing is complete, remove power from your limelight
 
@@ -93,7 +93,7 @@ Imaging
 		* Run "Balena Etcher".
 		* It may take up to 20 seconds for your machine to recognize the camera.
 		* Select the latest .zip image in your downloads folder
-		* Select an "RPI" device in the "Limelights" menu
+		* Select a "Compute Module" device in the "Drives" menu
 		* Click "Flash"
 		* Once flashing is complete, remove power from your limelight
 
