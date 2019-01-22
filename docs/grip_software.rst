@@ -7,7 +7,9 @@
 
 Grip is a program developed by WPI for developing vision pipelines.  We have added a new export option to grip which allows you to export your custom vision pipeline and run it on a limelight camera with no extra programming needed.  Carefully designed Grip pipelines can run at the full 90fps framerate of the limelight camera.  
 
-The first step in using GRIP is to download our build of Grip.  It can be downloaded from our downloads page.  When you run GRIP, you should see a screen like this:  
+.. _downloads page: https://limelightvision.io/pages/downloads
+
+The first step in using GRIP is to download our build of Grip.  It can be downloaded from our `downloads page`_.  When you run GRIP, you should see a screen like this:  
 
 .. image:: img/Grip.jpg
 
