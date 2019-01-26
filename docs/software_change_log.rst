@@ -3,6 +3,22 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2019.4 (1/26/19)
+~~~~~~~~~~~~~~~~~~~~~
+
+Features
+----------------
+* Corners
+	
+	* Send the corners of your target as two arrays (tcornx, tcorny) by enabling "send corners" in the output tab. This will further enable teams that are interested in advanced pipelines with methods like solvePNP().
+
+Bug Fixes
+----------------
+
+* Fix hang + rare crash that would occur when two targets had exactly the same area, x coordinate, or y coordinate.
+* Fix area calculation in dual- and tri-target modes.
+* Optimize contour sorting for better performance.
+
 2019.3 (1/19/19)
 ~~~~~~~~~~~~~~~~~~~~~
 2019.3 addresses a number of bugs and feature requests.
