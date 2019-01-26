@@ -6,11 +6,14 @@ Contact us or post to CD to suggest upgrades for Limelight!
 2019.4 (1/26/19)
 ~~~~~~~~~~~~~~~~~~~~~
 
+We believe all critical bug reports are covered with this release.
+
 Features
 ----------------
 * Corners
 	
-	* Send the corners of your target as two arrays (tcornx, tcorny) by enabling "send corners" in the output tab. This will further enable teams that are interested in advanced pipelines with methods like solvePNP().
+	* Send the corners of your target as two arrays (tcornx, tcorny) by enabling "send corners" in the "Output" tab. This will further enable teams that are interested in advanced pipelines with methods like solvePNP().
+	* Adjust corner approximation with the "corner approximation" slider in the "Output" tab.
 
 Bug Fixes
 ----------------

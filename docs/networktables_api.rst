@@ -138,6 +138,16 @@ snapshot		Allows users to take snapshots during a match
 1 		Take two snapshots per second
 =========== =====================================================================================
 
+Corners:
+
+Enable "send contours" in the "Output" tab to stream corner coordinates:
+
+=========== =====================================================================================
+tcornx		Number array of corner x-coordinates
+----------- -------------------------------------------------------------------------------------
+tcorny	 	Number array of corner x-coordinates
+=========== =====================================================================================
+
 Advanced Usage with Raw Contours
 -------------------------------------------------
 
