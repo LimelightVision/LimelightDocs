@@ -84,6 +84,13 @@ Imaging
 
 	.. tab:: Limelight 1
 
+		.. image:: img/esd-susceptibility-symbol.gif
+			:align: center
+			:width: 64
+			:height: 64
+			
+		.. warning:: Some versions of Limelight 1 are electrostatically sensitive around the micro-usb port.  To prevent damaging the port ground yourself to something metal to ensure your personal static charge has been discharged before you connect to the micro usb port.
+	
 		* Do not use a Windows 7 machine.
 		* Remove power from your limelight.
 		* Download the latest drivers, flasher tool, and image from from the Downloads_ Page.
