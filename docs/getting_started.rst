@@ -89,7 +89,7 @@ Imaging
 			:width: 64
 			:height: 64
 			
-		.. warning:: Some versions of Limelight 1 are electrostatically sensitive around the micro-usb port.  To prevent damaging the port ground yourself to something metal to ensure your personal static charge has been discharged before you connect to the micro usb port.
+		.. warning:: Some versions of Limelight 1 are electrostatically sensitive around the micro-usb port.  To prevent damaging the port, ground yourself to something metal before you connect to the micro usb port.  This will ensure your personal static charge has been discharged.
 	
 		* Do not use a Windows 7 machine.
 		* Remove power from your limelight.
