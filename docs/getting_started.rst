@@ -157,6 +157,11 @@ Follow these steps before starting:
 .. note:: Q. How do I reset the IP address? 
 
 	A. After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.
+	
+	.. image:: img/limelight_reset.png
+			:align: center
+			:height: 180
+			
 
 * If the above steps do not fix the problem, install Angry IP scanner and find the address for your limelight.
 * Go to <limelightaddress>:5801, and give your limelight a .11 static IP.
