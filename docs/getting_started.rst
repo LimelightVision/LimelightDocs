@@ -272,6 +272,7 @@ pipeline	Sets limelight's current pipeline
 
 			include "frc/smartdashboard/Smartdashboard.h"
 			include "networktables/NetworkTable.h"
+			include "networktables/NetworkTableInstance.h"
 			
 	.. tab:: Python
 
