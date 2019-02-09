@@ -3,7 +3,7 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
-2019.5 (1/26/19)
+2019.5 (2/9/19)
 ~~~~~~~~~~~~~~~~~~~~~
 
 With 2019.5 we are introducing the brand new compute3D camera localization feature. Only a handful of teams have ever attempted to add this feature to their vision systems, and now it is available to all Limelight 1 and Limelight 2 users. 
