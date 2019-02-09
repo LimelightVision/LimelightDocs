@@ -22,10 +22,11 @@ Features
 		* .. image:: https://giant.gfycat.com/ThirstyFailingGreatdane.gif
 	* The Limelight was later turned by hand. Notice how the distances remain mostly unchanged:
 		* .. image:: https://giant.gfycat.com/DisloyalUnfinishedAntipodesgreenparakeet.gif
-	* With 2019.4, we introduced corner sending. This allowed advanced teams to write their own algorithms using solvePNP. With 2019.5, this is all done on-board.
-	* Upload a plain-text csv file with a model of your target. We have pre-built models of 2019 targets hosted on our website. All models must have a centered origin and use counter-clockwise ordering.
+	* With 2019.4, we introduced corner sending. This allowed advanced teams to write their own algorithms using OpenCV's solvePNP(). With 2019.5, this is all done on-board.
+	* Upload a plain-text csv file with a model of your target. We have pre-built models of 2019 targets hosted on our website. All models must have a centered origin and use counter-clockwise point ordering.
 	* Enable the new high-res 960x720 mode, and then enable "Solve 3D" to aquire the position and rotation of your Limelight relative to your target.
-	* Corner numbers are now displayed on the image for easier model creation.
+	* Corner numbers are now displayed on the image for easier model creation and threshold tuning.
+	* Read all 6 dimensions of your camera's transform (x,y,z,pitch,yaw,roll) by reading the "camtran" networktable number array.
 
 * Black Level
 
