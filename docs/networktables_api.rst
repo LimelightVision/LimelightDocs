@@ -57,6 +57,8 @@ thor      Horizontal sidelength of the rough bounding box (0 - 320 pixels)
 tvert     Vertical sidelength of the rough bounding box (0 - 320 pixels)
 -------- --------------------------------------------------------------------------------------
 getpipe   True active pipeline index of the camera (0 .. 9)
+-------- --------------------------------------------------------------------------------------
+camtran   Results of a 3D position solution, 6 numbers: Translation (x,y,y) Rotation(pitch,yaw,roll)
 ======== ======================================================================================
 
 
