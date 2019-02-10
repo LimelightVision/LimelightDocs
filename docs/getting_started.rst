@@ -84,6 +84,13 @@ Imaging
 
 	.. tab:: Limelight 1
 
+		.. image:: img/esd-susceptibility-symbol.gif
+			:align: center
+			:width: 64
+			:height: 64
+			
+		.. warning:: Some versions of Limelight 1 are electrostatically sensitive around the micro-usb port.  To prevent damaging the port, ground yourself to something metal before you connect to the micro usb port.  This will ensure your personal static charge has been discharged.
+	
 		* Do not use a Windows 7 machine.
 		* Remove power from your limelight.
 		* Download the latest drivers, flasher tool, and image from from the Downloads_ Page.
@@ -150,6 +157,11 @@ Follow these steps before starting:
 .. note:: Q. How do I reset the IP address? 
 
 	A. After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.
+	
+	.. image:: img/limelight_reset.png
+			:align: center
+			:height: 180
+			
 
 * If the above steps do not fix the problem, install Angry IP scanner and find the address for your limelight.
 * Go to <limelightaddress>:5801, and give your limelight a .11 static IP.
@@ -260,6 +272,7 @@ pipeline	Sets limelight's current pipeline
 
 			include "frc/smartdashboard/Smartdashboard.h"
 			include "networktables/NetworkTable.h"
+			include "networktables/NetworkTableInstance.h"
 			
 	.. tab:: Python
 

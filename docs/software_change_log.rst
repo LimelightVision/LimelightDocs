@@ -3,6 +3,49 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2019.5 (2/9/19)
+~~~~~~~~~~~~~~~~~~~~~
+
+With 2019.5 we are introducing the brand new compute3D camera localization feature. Only a handful of teams have ever attempted to add this feature to their vision systems, and now it is available to all Limelight 1 and Limelight 2 users. 
+
+This is not a silver bullet for this year's game. We highly recommend thinking of creative ways to use the standard high-speed 90 fps tracking unless this feature is absolutely necessary.
+
+.. image:: https://giant.gfycat.com/LeftHalfBluewhale.gif
+
+All example gifs were created with an LL2 mounted on the side of a kitbot. This is why you will see slight changes in translation during turns.
+
+Features
+----------------
+* High-Precision Mode and PnP
+	
+	* In the following gif, a Limelight 2 was placed 37 inches behind and 14.5 inches to the right of the target.
+		* .. image:: https://giant.gfycat.com/ThirstyFailingGreatdane.gif
+	* The Limelight was later turned by hand. Notice how the distances remain mostly unchanged:
+		* .. image:: https://giant.gfycat.com/DisloyalUnfinishedAntipodesgreenparakeet.gif
+	* With 2019.4, we introduced corner sending. This allowed advanced teams to write their own algorithms using OpenCV's solvePNP(). With 2019.5, this is all done on-board.
+	* Upload a plain-text csv file with a model of your target. We have pre-built models of 2019 targets hosted on our website. All models must have a centered origin, and use counter-clockwise point ordering with inch scaling.
+	* Enable the new high-res 960x720 mode, and then enable "Solve 3D" to aquire the position and rotation of your Limelight relative to your target.
+	* Corner numbers are now displayed on the image for easier model creation and threshold tuning.
+	* Read all 6 dimensions of your camera's transform (x,y,z,pitch,yaw,roll) by reading the "camtran" networktable number array.
+
+* Black Level
+
+	* With the new black level slider, thresholding is even easier. Increase the black level offset to further darken your images.
+	* .. image:: https://giant.gfycat.com/FoolishUnimportantLacewing.gif
+
+Breaking Changes
+----------------
+
+* The reported vertical FOV for LL2 has been fixed to match the listed value of 49.7 degrees. This will change your "ty" values
+
+Bug Fixes
+----------------
+
+* Fix stream-only crash that could occur when fisheye USB cameras were attached.
+* Fix rare hang caused by networking-related driver.
+* Corner approximation is now always active.
+
+
 2019.4 (1/26/19)
 ~~~~~~~~~~~~~~~~~~~~~
 
