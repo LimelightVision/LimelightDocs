@@ -2,9 +2,8 @@ Case Study: Seeking
 ===============================
 
 .. Summary
+
 1. Use a seeking behavior to find a target that is not initially visible to the camera.
-
-
 
 Implementing a seeking behavior can be useful in a few situtations.  In some games, the goal you are trying to score into may not be in a predictable location so you can't rely on dead-reconing autonomous code to get "close enough".  In 2009 for example, the goals were attached to the opponents robots which also driving around.  Another reason you might want to implement seeking is if your robot's drivetrain is not reliable/repeatable enough to put you in exactly the location you want.  Sometimes swerve drives or omni-directional drives can have trouble driving to presice locations (this is not a knock on swerve or omni-directional drivetrains; it is just more challenging to get them to drive to repeatable locations).  Some games have even allowed robot-robot interaction during autonomous mode.  In 2006 we often engaged in autonomous duels where the defense robots would try to knock the offense robots out of scoring position.  In this case you can't be sure of anything!  Hopefully this gets you thinking about some ways that having your robot automatically seek for a goal that it can't initially see might be useful.
 

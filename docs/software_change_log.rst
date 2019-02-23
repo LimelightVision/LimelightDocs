@@ -298,6 +298,7 @@ Features
 	* All x/y values are in normalized screen space (-1.0 to 1.0)
 * Add "suffix" option to web interface. Allows users to add a suffix to their Limelights' hostnames and NetworkTables (e.g. limelight-boiler). This feature should only be utilized if teams intend to use multiple Limelights on a single robot.
 * Display image version on web interface
+
 Optimizations
 ----------------
 * Decrease networking-related latency to ~0.2 ms from ~10ms (Thanks Thad House)
@@ -311,6 +312,7 @@ Optimizations
 * Optimize contour filtering step. Latency no longer spikes when many contours exist.
 * Much improved hysterisis tuning.
 * Significantly improve responsiveness of webinterface<->limelight actions. 
+
 Bugfixes
 ------------------
 * Fix minor area value inaccuracy which prevented value from reaching 100% (maxed ~99%).
@@ -356,6 +358,7 @@ Bugfixes
 2017.4 (10/30/17)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Lots of boot and shutdown bullet-proofing
+
 .. dhcpcd and var/log/samba every 20 minutes
 
 2017.3 (10/25/17)
@@ -375,9 +378,10 @@ Bugfixes
 * Disable all swap functionality (100 mb)
 * Auto chmod 777 adminserver and visionserver from rc.local
 * Smaller image
+
 .. Removed WiringPi zip
+
 * “Convexity” changed to “Fullness”
 * Exposure range set to 0-128 ms from 0-255 ms
 * Support two cameras
 * Fully support single-point calibration
-

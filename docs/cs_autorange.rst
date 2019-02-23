@@ -2,6 +2,7 @@
 ==========================================
 
 .. Summary
+
 1. Have your robot automatically drive to a desired distance from the target.
 2. A very simple trick using a calibrated cross-hair.
 

@@ -1,13 +1,19 @@
 Additional Theory
-===============
+==================
 * :ref:`Vision-Targets`
 * :ref:`Thresholding`
 * :ref:`Contour-Filtering`
 * :ref:`Output`
 
-.. Vision-Targets:
+------------------------
+
+.. _Vision-Targets:
+
 Vision Targets
 ~~~~~~~~~~~~~~
+
+------------------------
+
 The FRC game designers often place reflective "vision targets" on the field in strategic locations.  These vision targets are usually made out of retro-reflective tape. Major scoring elements generally have vision targets that can be used to automatically aim. Below you can see two examples of some of the vision targets from the 2016 and 2017 FRC games.
 
 .. image:: img/VisionTargetExamples.jpg
@@ -20,12 +26,14 @@ Here you can see an example of the ideal of image.  Notice how almost all of the
 .. image:: img/VisionTargetExample2.jpg
 	:align: center
 
+------------------------
+
 .. _Thresholding:
 
 Thresholding
-~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
-----------
+------------------------
 
 Thresholding is the next critical component of most FRC vision tracking algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off. Thresholding works very well on images that are captured using the above strategy (low exposure, very dark image with a brightly illuminated vision target)
 
@@ -41,14 +49,14 @@ It is critical to adjust your thresholding settings to eliminate as much as you 
 
 Sometimes things like ceiling lights or windows in an arena can be difficult to remove from the image using thresholding, which brings us to the next stage.
 
-----------
+------------------------
 
 .. _Contour-Filtering:
 
 Contour Filtering
-~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
-----------
+------------------------
 
 After thresholding, Limelight's vision pipeline generates a set of contours for the image.  A contour in is a curve surrounding a contiguous set of pixels.  Sometimes things like ceiling lights, arena scoreboards, windows and other things can make it past the thresholding step.  This is where contour filtering becomes useful.  The goal is to eliminate any contours which we know are not the target we are interested in.  
 
