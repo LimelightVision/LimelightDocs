@@ -5,7 +5,7 @@ Before An Event
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Download and backup all pipelines to your programming laptop.
 * Download a copy of the latest Limelight image to your programming laptop.
-* Record a list of your pipelines and their indecies.
+* Record a list of your pipelines and their indicies.
     * 1 - Dual Target Low
     * 2 - Dual Target High Cargo
 * Add strain reliefs to all power and ethernet cables going to your LL.
@@ -40,7 +40,8 @@ Additional information: https://wpilib.screenstepslive.com/s/currentCS/m/trouble
 
 Before Every Match
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Check all power and ethernet cables going to your LL.
+* Check all power and Ethernet cables going to your Limelights.
+* Check all electrical connections for looseness and frayed wires.
 * Check all mounting screws / zipties / tape.
 * Observe ESD precautions at all times.
 
@@ -57,5 +58,5 @@ Troubleshooting
 * Restart your dashboard
 * Reboot your computer
 * Reboot your robot if the field has been reset
-* Broken ethernet cables can be the cause of intermittent networking issues.
+* Broken Ethernet cables can be the cause of intermittent networking issues.
 * Always use static IP configurations on the field.
