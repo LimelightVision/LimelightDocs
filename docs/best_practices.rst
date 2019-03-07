@@ -8,6 +8,8 @@ Before An Event
 * Record a list of your pipelines and their indecies.
     * 1 - Dual Target Low
     * 2 - Dual Target High Cargo
+* Add strain reliefs to all power and ethernet cables going to your LL.
+* Consider hot-gluing all connections.
 
 During Event Calibration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,9 +38,24 @@ Before Connecting to the Field
 
 Additional information: https://wpilib.screenstepslive.com/s/currentCS/m/troubleshooting/l/319135-ip-networking-at-the-event
 
+Before Every Match
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Check all power and ethernet cables going to your LL.
+* Check all mounting screws / zipties / tape.
+* Observe ESD precautions at all times.
+
 Bandwidth
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Some teams run two Limelights with two USB cameras while staying well under under the bandwidth limit. Follow the steps below to reduce bandwidth.
 * Rather than using driver mode, create a "driver" pipeline. Turn down the exposure to reduce stream bandwidth.
 * Using a USB camera? Use the "stream" NT key to enable picture-in-picture mode. This will dramatically reduce stream bandwidth.
 * Turn the stream rate to "low" in the settings page if streaming isn't critical for driving.
+
+Troubleshooting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Try to access the stream at <IP>:5800 with a web browser. This should help you determine the root of your issues.
+* Restart your dashboard
+* Reboot your computer
+* Reboot your robot if the field has been reset
+* Broken ethernet cables can be the cause of intermittent networking issues.
+* Always use static IP configurations on the field.
