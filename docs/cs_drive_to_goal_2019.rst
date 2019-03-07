@@ -2,6 +2,7 @@ Case Study: DEEP SPACE 2019 Examples
 ====================================
 
 .. Summary
+
 1. Example programs in C++, Java and Labview for using a limelight camera to drive up to a goal in Deep Space.
 
 The 2019 FRC game Deep Space has vision targets above many of the goals that you need to drive up to.  Below you can find complete example programs in C++, Java, and Labview which implement a simple method for automatically driving a differential drive robot to a goal in Deep Space.

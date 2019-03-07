@@ -2,6 +2,7 @@
 =======================================
 
 .. Summary
+
 1. Upload your custom GRIP pipeline into a limelight pipeline.
 2. Upload any additional inputs to your pipeline.
 3. Observe the behavior of your GRIP pipeline.

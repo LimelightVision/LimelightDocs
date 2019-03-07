@@ -2,6 +2,7 @@
 ====================================================
 
 .. Summary
+
 1. You can use GRIP to grapically design custom vision pipelines.
 2. Your custom vision pipeline can be loaded into a limelight and run in hardware.
 

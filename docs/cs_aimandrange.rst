@@ -2,6 +2,7 @@ Case Study: Aiming and Range at the same time.
 ==============================================
 
 .. Summary
+
 1. Put aiming and range adjustment into one function.
 
 .. image:: https://thumbs.gfycat.com/UncommonIncomparableDassierat-max-14mb.gif

@@ -9,6 +9,7 @@ The "Tracking" page is comprised of four tuning tabs:
 * :ref:`Thresholding`
 * :ref:`Contour-Filtering`
 * :ref:`Output`
+* :ref:`3D`
 
 In addition, you can adjust your Limelight's crosshair by pressing the "calibrate crosshair" button while a target is in view. In a future release, crosshair calibration will move to the "output" tab.
 
@@ -44,7 +45,7 @@ Controls the camera's exposure setting in milliseconds. Think of a camera as a g
 Thresholding
 ~~~~~~~~~~~~~~~~~~~~~~
 
-----------
+----------------------
 
 Thresholding is a critical component of most FRC vision tracking algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off.
 
@@ -87,17 +88,15 @@ Erosion and Dilation
 --------------------------------
 Erosion slightly erodes the result of an HSV threshold. This is useful if many objects are passing through a tuned HSV threshold.
 Dilation slightly inflates the result of an HSV threshold. Use this to patch holes in thresholding results.
-	*GIF
 
-
-----------
+------------------------------
 
 .. _Contour-Filtering:
 
 Contour Filtering
 ~~~~~~~~~~~~~~~~~~~~~~
 
-----------
+------------------------------
 
 After thresholding, Limelight applies a .... to generate a list of contours. After that, each contour is wrapped in a bounding rectangle, or "convex hull". Hulls are passed through a series of filters to determine the "best" hull. If multiple hulls pass through all filters, Limelight chooses the largest hulls.
 
@@ -159,3 +158,51 @@ Controls the "origin" of your targeting values. Let's say a shooter on your robo
 .. image:: https://thumbs.gfycat.com/GraveEverlastingFawn-size_restricted.gif
 	:align: center
 
+-------------
+
+.. _3D:
+
+3D
+~~~~~~~~~~~
+
+----------
+
+Experiment with PnP point-based pose estimation here.
+
+Solve 3D
+-------------------
+Controls whether pose estimation is enabled. You must enable high-res mode for this to work.
+
+Camera Matricies (Advanced Users)
+-----------------------------------
+
+.. tabs::
+
+	.. tab:: Limelight 2 960x720
+
+		.. code-block:: c++
+
+			cameraMatrix = cv::Matx33d(
+						772.53876202, 0., 479.132337442,
+						0., 769.052151477, 359.143001808,
+						0., 0., 1.0);
+			distortionCoefficient =  std::vector<double> {
+						2.9684613693070039e-01, -1.4380252254747885e+00,-2.2098421479494509e-03,
+						-3.3894563533907176e-03, 2.5344430354806740e+00};
+
+			focalLength = 2.9272781257541; //mm
+			
+	.. tab:: Limelight 1 960x720
+
+		.. code-block:: c++
+
+			cameraMatrix = cv::Matx33d(
+					8.8106888208290547e+02, 0., 4.8844767170376019e+02,
+					0., 8.7832357838726318e+02, 3.5819038625928994e+02,
+					0., 0., 1.);
+			distortionCoefficient =  std::vector<double> {
+					1.3861168261860063e-01, -5.4784067711324946e-01,
+					-2.2878279907387667e-03, -3.8260257487769065e-04,
+					5.0520158005588123e-01 };
+			
+			focalLength = 3.3385168390258093; //mm
