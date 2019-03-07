@@ -153,7 +153,12 @@ Follow these steps before starting:
 .. This is a comment. Mutli-line notes, warnings, admonitions in general need indented lines after the first line
 .. note:: Q. Why do we reccommend a static IP? 
 
-	A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields and with event radio firmware.
+	A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields and with event radio firmware.  In fact we recommend setting static
+	IP addresses on your robo-rio and driverstation as well.  The networking settings to use on all of these devices
+	can be found near the bottom half of this web page:
+	https://wpilib.screenstepslive.com/s/currentCS/m/troubleshooting/l/319135-ip-networking-at-the-event
+	
+	
 .. note:: Q. How do I reset the IP address? 
 
 	A. After your Limelight has booted, hold the config button on the front face of the camera until the LEDs start blinking. Power-cycle your robot, and your Limelight will have an automatically-assigned IP address.
