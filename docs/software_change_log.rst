@@ -3,6 +3,46 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+
+2019.6 (3/12/19)
+~~~~~~~~~~~~~~~~~~~~~
+
+2019.6 is all about reliability.
+
+Bugfixes
+----------------
+* USB Cameras
+	
+	* Address issue that could cause some USB cameras to fail on boot.
+
+* FMS
+
+	* Make Limelight more (if not completely) resistant to FMS restarts and field / laptop networking changes.
+
+* Raw Contour Sorting (BREAKING CHANGE)
+
+	* Intersection filters no longer affect raw contour sorting.
+
+* Smartdashboard auto-posting
+
+	*LL auto-posts certain pieces of information to SmartDashboard (IP Address, Interface url, etc.). The names of these values now containt the hostname.
+
+Features & Changes
+--------------------
+
+* Significantly increase precision and stability of the compute3d feature. Translation and rotation measurements are stable at larger distances.
+* Max Black Level Offset increased to 40 (from 25) for even darker images.
+* New "Closest" sort options in the "Output" tab while "Dual Crosshair" mode is enabled.
+	* Standard - Current "closest" sorting implementation with "Dual Crosshair" mode.
+	* Standard V2 - Experimental, smart "closest" sorting implementation with "Dual Crosshair" mode.
+	* Average of Crosshairs - "Closest" sort origin with "Dual Crosshair" mode is the average of the two crosshairs.
+	* Crosshair A - "Closest" sort origin with "Dual Crosshair" mode is crosshair A.
+	* Crosshair B - "Closest" sort origin with "Dual Crosshair" mode is crosshair B.
+* Floating-point raw corner values while compute3D is enabled.
+* Hide image decorations while using magic wands
+* Larger stream in web interface
+
+
 2019.5 (2/9/19)
 ~~~~~~~~~~~~~~~~~~~~~
 
