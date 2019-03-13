@@ -18,6 +18,7 @@ Bugfixes
 * FMS
 
 	* Make Limelight more (if not completely) resistant to FMS restarts and field / laptop networking changes.
+	* Limelight will no longer hang after a sudden client networking change.
 
 * Raw Contour Sorting (BREAKING CHANGE)
 
