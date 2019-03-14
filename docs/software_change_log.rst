@@ -4,6 +4,10 @@ Software Change Log
 Contact us or post to CD to suggest upgrades for Limelight!
 
 
+2019.6.1 Hotfix (3/14/19)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2019.6.1 Fixes Grip uploads.
+
 2019.6 (3/12/19)
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -26,7 +30,7 @@ Bugfixes
 
 * Smartdashboard auto-posting
 
-	*LL auto-posts certain pieces of information to SmartDashboard (IP Address, Interface url, etc.). The names of these values now containt the hostname.
+	*LL auto-posts certain pieces of information to SmartDashboard (IP Address, Interface url, etc.). The names of these values now contain the hostname.
 
 Features & Changes
 --------------------
@@ -39,6 +43,7 @@ Features & Changes
 	* Average of Crosshairs - "Closest" sort origin with "Dual Crosshair" mode is the average of the two crosshairs.
 	* Crosshair A - "Closest" sort origin with "Dual Crosshair" mode is crosshair A.
 	* Crosshair B - "Closest" sort origin with "Dual Crosshair" mode is crosshair B.
+* New "LED Mode" pipeline options: "Left Half", "Right Half"
 * Floating-point raw corner values while compute3D is enabled.
 * Hide image decorations while using magic wands
 * Larger stream in web interface
