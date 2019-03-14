@@ -6,7 +6,7 @@ Contact us or post to CD to suggest upgrades for Limelight!
 
 2019.6.1 Hotfix (3/14/19)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2019.6.1 Fixes Grip uploads.
+2019.6.1 fixes Grip uploads.
 
 2019.6 (3/12/19)
 ~~~~~~~~~~~~~~~~~~~~~
