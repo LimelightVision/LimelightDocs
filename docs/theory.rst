@@ -79,7 +79,7 @@ This next image target is very interesting.  It is one of the best designed visi
 
 Limelight has many options for filtering contours. You can use these options along with what you know about the geometry properties of the particular vision target you are trying to track.
 
-Currently, if multiple contours pass through your filtering options, the largest contour is chosen. In addition, the pipeline prefers to "lock" onto contours using hysterisis. This is a feature that helps prevent flickering between similar targets.
+Currently, if multiple contours pass through your filtering options, the largest contour is chosen. In addition, the pipeline prefers to "lock" onto contours using hysteresis. This is a feature that helps prevent flickering between similar targets.
 
 From Pixels to Angles
 ~~~~~~~~~~~~~~~~~~~~~
