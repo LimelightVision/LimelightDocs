@@ -38,9 +38,9 @@ to retrieve this data:
 ======== ======================================================================================
 tv        Whether the limelight has any valid targets (0 or 1)
 -------- --------------------------------------------------------------------------------------
-tx        Horizontal Offset From Crosshair To Target (-27 degrees to 27 degrees)
+tx        Horizontal Offset From Crosshair To Target (LL1: -27 degrees to 27 degrees | LL2: -29.8 to 29.8 degrees)
 -------- --------------------------------------------------------------------------------------
-ty        Vertical Offset From Crosshair To Target (-20.5 degrees to 20.5 degrees)
+ty        Vertical Offset From Crosshair To Target (LL1: -20.5 degrees to 20.5 degrees | LL2: -24.85 to 24.85 degrees)
 -------- --------------------------------------------------------------------------------------
 ta        Target Area (0% of image to 100% of image)								
 -------- --------------------------------------------------------------------------------------
@@ -147,7 +147,7 @@ Enable "send contours" in the "Output" tab to stream corner coordinates:
 =========== =====================================================================================
 tcornx		Number array of corner x-coordinates
 ----------- -------------------------------------------------------------------------------------
-tcorny	 	Number array of corner x-coordinates
+tcorny	 	Number array of corner y-coordinates
 =========== =====================================================================================
 
 Advanced Usage with Raw Contours
