@@ -14,9 +14,14 @@ Before An Event
 During Event Calibration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Roll your robot to various targets around the field.
-    * Make sure your thresholding is working properly. Switch to the "threshold" view during this process (located under the image stream). 
+    * Make sure your thresholding is working properly. Switch to the "threshold" view during this process (located under the image stream).
+    * See the tuning section below for more tuning tips. 
     * Ensure no other field / arena elements are being accidentally tracked. Check your area and aspect ratio filters if you are picking up arena lights.
     * Take snapshots of all targets and erroneous targeting. You can use these to tune your pipelines in the pits.
+
+Pipeline Tuning
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Use the lowest exposure possible, and increase black level offset until field lights and LED reflections are removed from the image.
 
 Before Connecting to the Field
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
