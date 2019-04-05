@@ -3,6 +3,34 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2019.7  (4/5/19)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2019.7 adds two new features.
+
+Features
+----------------
+* 160x120 30fps streaming
+	
+	* Smoother, lower-bandwidth streaming for teams that use wide-angle USB cameras. Our 180-degree camera stream bandwidth dropped from ~3.7mbps to ~1.8 mbps.
+	* Change the stream resolution in the settings tab.
+	* Changing the stream resolution on a Limelight with a wide-angle USB camera attached. No Picture-in-Picture, and normal stream rate.	
+		* .. image:: img/20197_bandwidth.png
+
+* Smart Speckle Rejection
+
+	* Teams that have mounted their cameras in-line with the target this year have had to deal with unwanted LED reflections.
+	* The area slider does not always solve this problem, as teams want to track small vision targets at large distances.
+	* This new feature will automatically reject *relatively* small contours that have passed through all other filters.
+	* As a robot moves away from a vision target (decreasing its size), SSR will automatically adjust to only reject *relatively* small contours.
+	* .. image:: https://thumbs.gfycat.com/EachInsecureAustraliansilkyterrier-max-14mb.gif
+
+Changes
+----------------
+* Tooltips
+
+	* Tooltips are now avaiable on some Limelight controls
+	* .. image:: https://thumbs.gfycat.com/SeparateHonestEthiopianwolf-max-14mb.gif
+
 
 2019.6.1 Hotfix (3/14/19)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -56,6 +56,7 @@ Bandwidth
 * Rather than using driver mode, create a "driver" pipeline. Turn down the exposure to reduce stream bandwidth.
 * Using a USB camera? Use the "stream" NT key to enable picture-in-picture mode. This will dramatically reduce stream bandwidth.
 * Turn the stream rate to "low" in the settings page if streaming isn't critical for driving.
+* Use the 160x120 stream option introduced in 2019.7.
 
 Troubleshooting
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
