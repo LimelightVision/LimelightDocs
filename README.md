@@ -8,7 +8,7 @@
 * Navigate to the "docs" directory
 * Run the autobuild batch script from terminal: "./StartAutobuilding.bat"
 
-## Ubuntu/Linux
+## Linux
 * Fork this repository
 * Clone your forked repo
 * Install python and pip
