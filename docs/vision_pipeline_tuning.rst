@@ -1,9 +1,9 @@
-Vision Pipeline Tuning
+Building A Pipeline
 ===============================
 
-To configure the limelight vision pipeline, first access its web interface at http://10.te.am.11:5801. If you have opted to use a dynamically assigned ip-address, access the interface at http://limelight.local:5801.
+To configure a limelight vision pipeline, first access its web interface at http://10.te.am.11:5801. If you have opted to use a dynamically assigned ip-address, access the interface at http://limelight.local:5801.
 
-The "Tracking" page is comprised of four tuning tabs: 
+The "Tracking" page is comprised of five tuning tabs: 
 
 * :ref:`Input`
 * :ref:`Thresholding`
@@ -11,18 +11,37 @@ The "Tracking" page is comprised of four tuning tabs:
 * :ref:`Output`
 * :ref:`3D`
 
-In addition, you can adjust your Limelight's crosshair by pressing the "calibrate crosshair" button while a target is in view. In a future release, crosshair calibration will move to the "output" tab.
-
 ----------
 
 .. _Input:
 
 Input
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 ----------
 
 The Input Tab hosts controls to change the raw camera image before it is passed through the processing pipeline.
+
+Pipeline Type
+---------------------
+Controls the desired pipeline type. Switch to "GRIP" if you want to use a GRIP pipeline.
+
+
+Source Image
+---------------------
+Controls the source of the image that is passed through the pipeline. Switch to "Snapshot" to test your vision pipeline on a stored Snapshot.
+
+This control auto-resets to "Camera" when the GUI is closed.
+
+Resolution
+---------------------
+Controls the resolution of the camera and vision pipeline. We recommend using the 320x240 pipeline unless you are utilizing 3D functionality.
+
+320x240 pipelines execute at 90fps, while 960x720 pipelines execute at 22 fps.
+
+LEDs
+---------------------
+Controls the default LED mode for this pipeline. This may be overidden during a match with the "LED" network table option.
 
 Orientation
 ---------------------
@@ -33,10 +52,19 @@ Controls the orientation of incoming frames. Set it to "inverted" if your camera
 
 Exposure
 ---------------------
-Controls the camera's exposure setting in milliseconds. Think of a camera as a grid of light-collecting buckets - exposure time controls how long your camera's "buckets" are open per frame. Lowering the exposure time will effectively darken your image. Low and fixed exposure times are crucial in FRC, as they black-out the bulk of incoming image data. Well-lit retroreflective tape will stand out in a mostly black image, making vision processing a straightforward process.
+Controls the camera's exposure setting in .1 millisecond intervals. Think of a camera as a grid of light-collecting buckets - exposure time controls how long your camera's "buckets" are open per frame. Lowering the exposure time will effectively darken your image. Low and fixed exposure times are crucial in FRC, as they black-out the bulk of incoming image data. Well-lit retroreflective tape will stand out in a mostly black image, making vision processing a straightforward process.
 
 .. image:: https://thumbs.gfycat.com/ZealousFrighteningClingfish-size_restricted.gif
 	:align: center
+
+Black Level Offset
+---------------------
+Increasing the black level offset can significantly darken your camera stream. This should be increased to further remove arena lights and bright spots from your image.
+
+Red Balance, Blue Balance
+---------------------
+Controls the intensity of Red and Blue color components in your image. These collecively control your Limelight's white balance. We recommend leaving these at their default values of
+
 
 ----------
 
@@ -52,18 +80,27 @@ Thresholding is a critical component of most FRC vision tracking algorithms. It 
 .. image:: https://thumbs.gfycat.com/NaughtyWateryAngelwingmussel-max-14mb.gif
 	:align: center
  
-Video Feed
----------------
+Video Feed (Located beneath stream)
+--------------------------------------
 Controls which image is streamed from the mjpeg server. You should switch to the "threshold" image if you need to tune your HSV thresholding.
+
+Thresholding Wands
+--------------------------------
+
+Wands enable users to click on Limelights's video stream to perform automatic HSV thresholding.
+	* The "Eyedropper" wand centers HSV parameters around the selected pixel
+	* The "Add" wand adjusts HSV parameters to include the selected pixel
+	* The "Subtract" wand adjust HSV paramters to ignore the selected pixel
+
+.. image:: https://thumbs.gfycat.com/FarHandyCanvasback-max-14mb.gif
+	:align: center
 
 Hue
 --------------------------------
 Describes a "pure" color. A Hue of "0" describes pure red, and a hue of 1/3 (59 on the slider) describes pure green. Hue is useful because it doesn't change as a pixel "brightens" or "darkens". This is the most important parameter to tune. If you make your hue range as small as possible, you will have little if any trouble transitioning to an actual FRC field.
 
-
 .. image:: img/huebar.png 
 	:align: center
-
 
 Saturation
 --------------------------------
@@ -72,17 +109,6 @@ Describes the extent to which a color is "pure". Another way to think of this is
 Value
 --------------------------------
 Describes the darkness of a color, or how much "black" is in a color. A low value corresponds to a near-black color. You should absolutely increase the minimum value from zero, so that black pixels are not passed through the processing pipeline.
-
-Thresholding Wands
---------------------------------
-
-Wands enable users to click on Limelights's video stream to perform automatic HSV thresholding.
-	* The "Set" wand centers HSV parameters around the selected pixel
-	* The "Add" wand adjusts HSV parameters to include the selected pixel
-	* The "Subtract" wand adjust HSV paramters to ignore the selected pixel
-
-.. image:: https://thumbs.gfycat.com/FarHandyCanvasback-max-14mb.gif
-	:align: center
 
 Erosion and Dilation
 --------------------------------
@@ -98,7 +124,12 @@ Contour Filtering
 
 ------------------------------
 
-After thresholding, Limelight applies a .... to generate a list of contours. After that, each contour is wrapped in a bounding rectangle, or "convex hull". Hulls are passed through a series of filters to determine the "best" hull. If multiple hulls pass through all filters, Limelight chooses the largest hulls.
+After thresholding, Limelight generates a list of contours. After that, each contour is wrapped in a bounding rectangle an unrotated rectangle, and a "convex hull". 
+These are passed through a series of filters to determine the "best" contour. If multiple contours pass through all filters, Limelight chooses the best contour using the "Sort Mode" Control.
+
+Sort Mode
+------------------
+Controls how contours are sorted after they are passed through all other filters.
 
 Target Area
 ------------------
@@ -125,6 +156,28 @@ Aspect ratio is defined by the width of the bounding rectangle of the chosen con
 
 .. note:: The aspect ratio slider is also quadratically scaled.
 
+Direction Filter
+------------------
+Rejects contours on the basis of their orientation. 
+
+Smart Speckle Rejection
+----------------------------
+Rejects relatively small contours that have passed through all other filters. This is essential if a target must remain trackable from short-range and long-range. 
+This feature was introduced in the 2019 season to reject Limelight's LED reflections when robots were very close to targets.
+
+Contour Simplification %
+----------------------------
+Simplifies contours to reduce the number of corners in each contour. This is useful when using the raw corner or 3D features.
+
+Target Grouping
+----------------------------
+Controls target "grouping". Set to dual mode to look for "targets" that consist of two shapes, or tri mode to look for targets that consist of three shapes.
+
+Intersection Filter (Dual Targets Only)
+------------------------------------------
+Rejects groups of contours based on how they would intersect if extended to infinity.
+
+
 ----------
 
 .. _Output:
@@ -143,13 +196,13 @@ Controls the point of interest of the chosen contour's bounding rectangle. By de
 .. image:: https://thumbs.gfycat.com/RemarkableFragrantAmericankestrel-size_restricted.gif
 	:align: center
 
-Target Grouping for Combined Targets
+Send Raw Corners?
 -----------------------------------------
-Controls target "grouping". Set to dual mode to look for "targets" that consist of two shapes, or tri mode to look for targets that consist of three shapes.
+Set this control to "yes" to submit raw corners over network tables. Tune the number of corners submitted by adjusting the "Contour Simplification" value in the "Contour Filtering" page.
 
-.. image:: https://thumbs.gfycat.com/ScalyDeficientBrahmanbull-size_restricted.gif
-	:align: center
-
+Send Raw Contours?
+-----------------------------------------
+Set this control to "yes" to submit raw contours over network tables. The top 3 passing contours will be submitted.
 
 Crosshair Calibration
 -------------------------
