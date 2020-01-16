@@ -3,6 +3,55 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2020.1  (1/16/20)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2020.1 adds one of Limelight's coolest features yet: 2x Hardware Zoom. This is not digital zoom, and it is now enabled for all Limelight versions.
+
+Features
+----------------
+* 2x Hardware Zoom
+	
+	* Not Digital zoom
+	* Enable 2x Hardware zoom to achieve vastly improved tracking at long range, and stable tracking at full-court distances.
+	* This feature comes with absolutely no latency or framerate cost - tracking continues to execute at 90fps with no additional overhead.
+	* Zoom from the autonomous starting line (~127" away):
+	* .. image:: https://giant.gfycat.com/LawfulRapidArchaeocete.gif
+	* Zoom from the front of the trench run (~210" away):
+	* .. image:: https://giant.gfycat.com/GrippingWaterloggedEmperorshrimp.gif
+	* Zoom from the front of the color wheel (~310" away):
+	* .. image:: https://giant.gfycat.com/UnlinedFarawayArcticduck.gif
+	* Zoom from the very back of the trench run (~420" away):
+	* .. image:: https://giant.gfycat.com/PartialColorlessGiraffe.gif
+	* Zoom from the sector line (nearly full-court):
+	* .. image:: https://giant.gfycat.com/GreatGiftedAkitainu.gif
+
+* Manual Crosshairs
+
+	* Manually adjust single and dual crosshair locations with sliders in the web interface
+	* .. image:: https://giant.gfycat.com/ElaborateUnimportantCuscus.gif
+	
+* New SolvePNP / 3D features (Still experimental)
+
+	* We have added the "Force Convex" option to use only the outermost points of a target - this is necessary in 2020 due to the thin tape used for the hexagonal target.
+	* .. image:: https://giant.gfycat.com/MemorableHastyFiddlercrab.gif
+	* The "bind target" option has been added. This feature binds "tx" and "ty" to the 3D target. This is required to guide robots to score using 3D targets.
+	* .. image:: https://giant.gfycat.com/DeadUnevenJackrabbit.gif
+	* Finally, add the "Goal Z-Offset" option to automatically offset your desired target location in 3D space on the Z-axis.
+	* In Infinite Recharge, the "Goal Z-Offset" would be used to track the center of the small, circular goal behind the hexagonal goal.
+	* .. image:: https://giant.gfycat.com/AcidicHonoredElephant.gif
+	
+	* SolvePnP is still an experimental feature! We believe there are creative ways to play this game without SolvePnP, but we will continue to improve this feature.
+
+* Color sensing with "tc"
+
+	* Read the new "tc" array in Network Tables to obtain Red, Green, and Blue values at the crosshair's location. Adjust "Blue Balance" and "Red Balance" on the input tab to achieve perfect color sensing.
+
+Bugfixes
+----------------
+* USB Camera functionality broken in 2020.0 is now fixed in 2020.1
+* SolvePnP functionality broken in 2020.0 is now fixed in 2020.1
+* SolvePnP properly uses the model center as the axis visualization center
+
 2019.7  (4/5/19)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2019.7 adds two new features.
