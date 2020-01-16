@@ -121,6 +121,7 @@ Follow these steps before starting:
 	* If there are two (2) items with "bonjour" in their names, uninstall "bonjour print services"
 	* If there are no (0) items with "bonjour" in their names, install bonjour from our Downloads_ page.
 * Reboot your robot and computer.
+* Download the  `Limelight Finder Tool <http://downloads.limelightvision.io/software/LimelightFinderSetup1_0_1.exe/>`_
 * Follow the steps listed below.
 
 .. tabs::
@@ -129,7 +130,7 @@ Follow these steps before starting:
 
 		* Follow the bonjour-related instructions above.
 		* Power-up your robot, and connect your laptop to your robot's network.
-		* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
+		* After your Limelight flashes its LED array, open the Limelight Finder Tool and search for your Limelight or navigate to http://limelight.local:5801. This is the configuration panel.
 		* Navigate to the "Settings" tab on the left side of the interface.
 		* Enter your team number and press the "Update Team Number" button.
 		* Change your "IP Assignment" to "Static".
@@ -144,7 +145,7 @@ Follow these steps before starting:
 
 		* Follow the bonjour-related instructions above.
 		* Power-up your robot, and connect your laptop to your robot's network.
-		* After your Limelight flashes its LED array, navigate to http://limelight.local:5801. This is the configuration panel.
+		* After your Limelight flashes its LED array, open the Limelight Finder Tool and search for your Limelight or navigate to http://limelight.local:5801. This is the configuration panel.
 		* Navigate to the "Settings" tab on the left side of the interface.
 		* Enter your team number and press the "Update Team Number" button.
 		* Change your "IP Assignment" to "Automatic".
