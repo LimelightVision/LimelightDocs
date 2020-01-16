@@ -138,7 +138,7 @@ Controls the range of acceptable bounding-rectangle areas, as percentages of the
 .. image:: https://thumbs.gfycat.com/CriminalWideCalf-size_restricted.gif
 	:align: center
 
-.. note:: The area slider is not linearly scaled, but quarticly scaled. This is done to provide extra precision near the lower-end of area values, where many FRC targets lie. In any case, an area slider should be quadratically scaled, as the area of a square scales quadratically with its side length.
+.. note:: The area slider is not linearly scaled, but quarticly scaled. This is done to provide extra precision near the lower-end of area values, where many FRC targets lie. The area of a square scales quadratically with its side length, but x^4 scaling provides even greater precision where it is needed.
 
 Target Fullness
 ------------------
