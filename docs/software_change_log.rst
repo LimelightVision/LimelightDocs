@@ -3,6 +3,36 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+
+2020.2  (1/30/20)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2020.2 pushes Limelight's hardware even further by adding the ability to pan and zoom to any point. It also adds a brand new video mode and important bug fixes.  Let us know what features you would like to see in future updates!
+
+Features
+----------------
+* 2x Hardware Zoom
+
+	* Our last update added 2x Hardware Zoom for all Limelight models at no cost whatsoever. We've managed to push our hardware zoom even further with 3x Hardware Zoom. All Limelight models are now capable of 3x Hardware Zoom at 60fps. This makes full-court tracking even easier for every team.
+	* The following gif shows 1x, 2x, and 3x Hardware Zoom from the sector line (full court shot line):
+	* .. image:: https://giant.gfycat.com/UnitedAntiqueKestrel.gif
+	* This gif shows only 1x and 3x Hardware Zoom from the full-court sector line shot location:
+	* .. image:: https://giant.gfycat.com/HeftySimpleAnemone.gif
+
+* Hardware Panning
+
+	* Robots capable of shooting from both long and short distances in 2020 would have found it difficult to use Hardware Zoom on their Limelights without the use of an active, adjustable Limelight mount. We have incorporated Hardware Panning to solve this problem. 
+	* This gif shows Hardware Panning while using 3x Hardware Zoom. This should simplify mounting for teams who wish to use Hardware Zoom:
+	* .. image:: https://giant.gfycat.com/UntidyElaborateDartfrog.gif
+	* Hardware Panning on the  X and Y axes at 3x Hardware Zoom
+	* .. image:: https://giant.gfycat.com/EdibleTimelyElver.gif 
+
+
+Bugfixes
+----------------
+* Address driver issues that were breaking the color balance sliders
+* Revert all networking-related drivers to 2019 season variants to address a small number of network performance reports from teams
+
 2020.1  (1/16/20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2020.1 adds one of Limelight's coolest features yet: 2x Hardware Zoom. This is not digital zoom, and it is now enabled for all Limelight versions.
