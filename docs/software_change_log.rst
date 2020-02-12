@@ -11,9 +11,9 @@ Contact us or post to CD to suggest upgrades for Limelight!
 
 Features
 ----------------
-* 2x Hardware Zoom
+* 3x Hardware Zoom at 60 FPS
 
-	* Our last update added 2x Hardware Zoom for all Limelight models at no cost whatsoever. We've managed to push our hardware zoom even further with 3x Hardware Zoom. All Limelight models are now capable of 3x Hardware Zoom at 60fps. This makes full-court tracking even easier for every team.
+	* Our last update added 2x Hardware Zoom for all Limelight models at no cost whatsoever. We’ve managed to push our hardware zoom even further with 3x Hardware Zoom. All Limelight models are now capable of 3x Hardware Zoom at 60fps. This makes full-court tracking even easier for every team.
 	* The following gif shows 1x, 2x, and 3x Hardware Zoom from the sector line (full court shot line):
 	* .. image:: https://giant.gfycat.com/UnitedAntiqueKestrel.gif
 	* This gif shows only 1x and 3x Hardware Zoom from the full-court sector line shot location:
