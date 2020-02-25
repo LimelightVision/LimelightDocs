@@ -2,7 +2,10 @@ Software Change Log
 ==============================
 
 Contact us or post to CD to suggest upgrades for Limelight!
+2020.3  (2/25/20)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+2020.3 is a critical update that addresses intermittent networking-related software restarts, and addresses a crash that would occur upon USB camera disconnection.
 
 2020.2  (1/30/20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
