@@ -3,6 +3,11 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2020.4  (3/11/20)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2020.4 is another critical update that eliminates the intermittent 2-4 second crash that could occur during an abrupt mjpeg stream disconnection. This often happened at the very end of the match, and in some cases could happen during matches. 
+
 2020.3  (2/25/20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
