@@ -2,6 +2,7 @@ Software Change Log
 ==============================
 
 Contact us or post to CD to suggest upgrades for Limelight!
+
 2020.3  (2/25/20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
