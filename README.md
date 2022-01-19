@@ -13,9 +13,8 @@
 * Clone your forked repo
 * Install python and pip
 * Install dependencies from terminal: sudo pip install sphinx sphinx-autobuild sphinx_rtd_theme sphinx_tabs
-* Clone this repo
 * Navigate to the "docs" directory
-* Start autobuilding from terminal: "./sphinx-autobuild . _build/html"
+* Start autobuilding from terminal: >sphinx-autobuild . _build/html
 
 -------------------------
 
