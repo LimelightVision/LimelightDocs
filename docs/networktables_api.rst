@@ -58,11 +58,16 @@ tvert     Vertical sidelength of the rough bounding box (0 - 320 pixels)
 -------- --------------------------------------------------------------------------------------
 getpipe   True active pipeline index of the camera (0 .. 9)
 -------- --------------------------------------------------------------------------------------
-camtran   Results of a 3D position solution, 6 numbers: Translation (x,y,y) Rotation(pitch,yaw,roll)
+camtran   Results of a 3D position solution, NumberArray: Translation (x,y,y) Rotation(pitch,yaw,roll)
 ======== ======================================================================================
 
 
-Camera Controls:
+======== ======================================================================================
+tc        Get the average HSV color underneath the crosshair region as a NumberArray
+======== ======================================================================================
+
+Camera Controls
+-------------------------------------------------
 
 Use the following code:
 
@@ -140,7 +145,20 @@ snapshot		Allows users to take snapshots during a match
 1 		Take two snapshots per second
 =========== =====================================================================================
 
-Corners:
+Python
+-------------------------------------------------
+
+Python scripts allow for arbitrary inbound and outbound data.
+
+=========== =====================================================================================
+llpython		NumberArray sent by python scripts. This is accessible from robot code.
+----------- -------------------------------------------------------------------------------------
+llrobot	 	NumberArray sent by the robot. This is accessible from python scripts.
+=========== =====================================================================================
+
+
+Corners
+-------------------------------------------------
 
 Enable "send contours" in the "Output" tab to stream corner coordinates:
 
