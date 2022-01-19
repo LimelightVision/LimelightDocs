@@ -3,6 +3,49 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2022.0 and 2022.0.3 (1/15/22)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a big one. Here are the four primary changes:
+
+Features
+----------------
+
+* Smart Target Grouping
+	* Automatically group targets that pass all individual target filters.
+	* Will dynamically group any number of targets between -group size slider minimum- and -group size slider maximum-
+
+
+* Outlier Rejection
+	* While this goal is more challenging than other goals, it gives us more opportunities for filtering. Conceptually, this goal is more than a “green blob.” Since we know that the goal is comprised of multiple targets that are close to each other, we can actually reject outlier targets that stand on their own.
+	* You should rely almost entirely on good target filtering for this year’s goal, and only use outlier rejection if you see or expect spurious outliers in your camera stream. If you have poor standard target filtering, outlier detection could begin to work against you!
+
+
+* Limelight 2022 Image Upgrades
+	We have removed hundreds of moving parts from our software. These are the results:
+
+	* Compressed Image Size: 1.3 GB in 2020 → 76MB for 2022 (Reduced by a factor of 17!)
+	* Download time: 10s of minutes in 2020 → seconds for 2022
+	* Flash time: 5+ minutes in 2020 → seconds for 2022
+	* Boot time: 35+ seconds in 2020 → 14 seconds for 2022 (10 seconds to LEDS on)
+
+
+* Full Python Scripting
+    Limelight has successfully exposed a large number of students to some of the capabilities of computer vision in robotics. With python scripting, teams can now take another step forward by writing their own image processing pipelines.
+
+    * Limelight handles the hardware, camera interfacing, networking, streaming, and basic image pre-processing. All you need to do is write one python function called runPipeline().
+    * One of the most important features we offer is the one-click crosshair. The crosshair, dual crosshair, tx, ty, ta, ts, tvert, and all other standard limelight NetworkTables readings will automatically latch to the contour you return from the python runPipeline() function.
+    * Write your own real-time visualizations, thresholding, filtering, and bypass our backend entirely if desired.
+        * Limelight’s python scripting has access to the full OpenCV and numpy libraries.
+        * Beyond access to the image, the runPipeline() function also has access to the “llrobot” NetworkTables number array. Send any data from your robots to your python scripts for visualization or advanced applications (One might send IMU data, pose data, robot velocity, etc. for use in python scripts)
+        * The runPipeline function also outputs a number array that is placed directly into the “llpython” networktables number array. This means you can bypass Limelight’s crosshair and other functionality entirely and send your own custom data back to your robots.
+        * Python scripts are sandboxed within our c++ environment, so you don’t have to worry about crashes. Changes to scripts are applied instantly, and any error messages are printed directly to the web interface.
+
+* This update is compatible with all Limelight Hardware, including Limelight 1.
+* Known issues: Using hardware zoom with python will produce unexpected results.
+* 2022.0.3 restores the 5802 GRIP stream, and addresses boot issues on some LL2 units by reverting some of the boot time optimizations. Boot time is increased to 16 seconds.
+
+
 2020.4  (3/11/20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
