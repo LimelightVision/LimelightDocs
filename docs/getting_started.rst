@@ -39,6 +39,7 @@ Wiring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 7V.
+.. warning:: Do not use the REV radio power module to power your Limelight
 
 
 .. tabs::
@@ -72,17 +73,17 @@ Imaging
 	
 	.. tab:: Limelight 2
 
-		* Do not use a Windows 7 machine.
+		* Do not use a Windows 7 or Windows XP machine.
 		* Remove power from your limelight.
 		* Download the latest drivers, flasher tool, and image from from the Downloads_ Page.
-		* Install the Balena Etcher flash tool.
+		* Install the latest Balena Etcher flash tool from the Downloads_ Page. The "installer" version is recommended.
 		* Run a USB-MicroUSB cable from your laptop to your limelight.
-		* Run "Balena Etcher".
+		* Run "Balena Etcher" as an administrator.
 		* It may take up to 20 seconds for your machine to recognize the camera.
 		* Select the latest .zip image in your downloads folder
 		* Select a "Compute Module" device in the "Drives" menu
 		* Click "Flash"
-		* Once flashing is complete, remove power from your limelight
+		* Once flashing is complete, remove the usb cable from your limelight.
 
 	.. tab:: Limelight 1
 
@@ -93,13 +94,13 @@ Imaging
 			
 		.. warning:: Some versions of Limelight 1 are electrostatically sensitive around the micro-usb port.  To prevent damaging the port, ground yourself to something metal before you connect to the micro usb port.  This will ensure your personal static charge has been discharged.
 	
-		* Do not use a Windows 7 machine.
+		* Do not use a Windows 7 or Windows XP machine.
 		* Remove power from your limelight.
 		* Download the latest drivers, flasher tool, and image from from the Downloads_ Page.
-		* Install the Balena Etcher flash tool.
+		* Install the latest Balena Etcher flash tool from the Downloads_ Page. The "installer" version is recommended.
 		* Run a USB-MicroUSB cable from your laptop to your limelight.
 		* Apply power to your limelight.
-		* Run "Balena Etcher".
+		* Run "Balena Etcher" as an administrator.
 		* It may take up to 20 seconds for your machine to recognize the camera.
 		* Select the latest .zip image in your downloads folder
 		* Select a "Compute Module" device in the "Drives" menu
@@ -121,7 +122,7 @@ Follow these steps before starting:
 	* If there are two (2) items with "bonjour" in their names, uninstall "bonjour print services"
 	* If there are no (0) items with "bonjour" in their names, install bonjour from our Downloads_ page.
 * Reboot your robot and computer.
-* Download the  `Limelight Finder Tool <http://downloads.limelightvision.io/software/LimelightFinderSetup1_0_1.exe/>`_
+* Download the  `Limelight Finder Tool <https://limelightvision.io/pages/downloads/>`_
 * Follow the steps listed below.
 
 .. tabs::
@@ -235,6 +236,16 @@ pipeline	Sets limelight's current pipeline
 	
 	.. tab:: Java
 
+		Don't forget to add these imports:
+
+		.. code-block:: java
+
+			import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+			import edu.wpi.first.networktables.NetworkTable;
+			import edu.wpi.first.networktables.NetworkTableEntry;
+			import edu.wpi.first.networktables.NetworkTableInstance;
+
+
 		.. code-block:: java
 
 			NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight");
@@ -252,20 +263,23 @@ pipeline	Sets limelight's current pipeline
 			SmartDashboard.putNumber("LimelightY", y);
 			SmartDashboard.putNumber("LimelightArea", area);
 
-		Don't forget to add these imports:
-
-		.. code-block:: java
-
-			import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-			import edu.wpi.first.networktables.NetworkTable;
-			import edu.wpi.first.networktables.NetworkTableEntry;
-			import edu.wpi.first.networktables.NetworkTableInstance;
-
+		
 	.. tab:: LabView
 
 		.. image:: img/Labview_10.png
 
 	.. tab:: C++
+		
+		Don't forget to add these #include directives:
+
+		.. code-block:: c++
+
+			#include "frc/smartdashboard/Smartdashboard.h"
+			#include "networktables/NetworkTable.h"
+			#include "networktables/NetworkTableInstance.h"
+			#include "networktables/NetworkTableEntry.h"
+			#include "networktables/NetworkTableValue.h"
+			#include "wpi/span.h"
 
 		.. code-block:: c++
 
@@ -275,13 +289,6 @@ pipeline	Sets limelight's current pipeline
 			double targetArea = table->GetNumber("ta",0.0);
 			double targetSkew = table->GetNumber("ts",0.0); 
 
-		Don't forget to add these includes:
-
-		.. code-block:: c++
-
-			include "frc/smartdashboard/Smartdashboard.h"
-			include "networktables/NetworkTable.h"
-			include "networktables/NetworkTableInstance.h"
 			
 	.. tab:: Python
 
