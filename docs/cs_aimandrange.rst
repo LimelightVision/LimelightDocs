@@ -5,7 +5,7 @@ Case Study: Aiming and Range at the same time.
 
 1. Put aiming and range adjustment into one function.
 
-.. image:: https://thumbs.gfycat.com/UncommonIncomparableDassierat-max-14mb.gif
+.. image:: https://thumbs.gfycat.com/UncommonIncomparableDassierat-size_restricted.gif
 	:align: center
 
 This example uses code from the aiming and range adjustment examples and puts everything together into one simple function.  Using this, you can get your robot "close" and then use code to automatically aim and drive to the correct distance.

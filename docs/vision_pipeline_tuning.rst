@@ -77,7 +77,7 @@ Thresholding
 
 Thresholding is a critical component of most FRC vision tracking algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off.
 
-.. image:: https://thumbs.gfycat.com/NaughtyWateryAngelwingmussel-max-14mb.gif
+.. image:: https://thumbs.gfycat.com/NaughtyWateryAngelwingmussel-size_restricted.gif
 	:align: center
  
 Video Feed (Located beneath stream)
@@ -92,7 +92,7 @@ Wands enable users to click on Limelights's video stream to perform automatic HS
 	* The "Add" wand adjusts HSV parameters to include the selected pixel
 	* The "Subtract" wand adjust HSV paramters to ignore the selected pixel
 
-.. image:: https://thumbs.gfycat.com/FarHandyCanvasback-max-14mb.gif
+.. image:: https://thumbs.gfycat.com/FarHandyCanvasback-size_restricted.gif
 	:align: center
 
 Hue

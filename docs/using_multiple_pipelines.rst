@@ -10,7 +10,7 @@ To download your pipelines for backups and sharing, simply click the "download" 
 Here's an example of a robot that utilizes two pipelines:
 
 
-.. image:: https://thumbs.gfycat.com/UnfitLankyHadrosaurus-max-14mb.gif
+.. image:: https://thumbs.gfycat.com/UnfitLankyHadrosaurus-size_restricted.gif
 	:align: center
 
 
