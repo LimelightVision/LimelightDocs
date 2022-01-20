@@ -1,6 +1,8 @@
 Welcome
 ========================
 
+.. image:: https://thumbs.gfycat.com/ShabbyKaleidoscopicDassie-size_restricted.gif
+	:align: center
 Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents below to get started.
 
 .. toctree::

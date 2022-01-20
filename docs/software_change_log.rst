@@ -579,13 +579,7 @@ Bugfixes
 
 2017.1 (10/21/17)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Read-only boot partition
-* Mount all partitions with noatime option
-* Disable all swap functionality (100 mb)
-* Auto chmod 777 adminserver and visionserver from rc.local
-* Smaller image
-
-.. Removed WiringPi zip
+* Optimizations
 
 * “Convexity” changed to “Fullness”
 * Exposure range set to 0-128 ms from 0-255 ms
