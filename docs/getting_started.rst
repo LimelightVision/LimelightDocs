@@ -1,6 +1,13 @@
 Getting Started
 ===============
 
+.. figure:: https://thumbs.gfycat.com/ShabbyKaleidoscopicDassie-size_restricted.gif
+   :width: 100%
+   :alt: 2910
+   :align: center
+
+   FRC Team 987, HIGHROLLERS (Nevada, USA)
+	
 This page will cover the content on the official website's "Getting Started" page.
 
 * :ref:`mounting`
