@@ -58,7 +58,7 @@ tvert     Vertical sidelength of the rough bounding box (0 - 320 pixels)
 -------- --------------------------------------------------------------------------------------
 getpipe   True active pipeline index of the camera (0 .. 9)
 -------- --------------------------------------------------------------------------------------
-camtran   Results of a 3D position solution, NumberArray: Translation (x,y,y) Rotation(pitch,yaw,roll)
+camtran   Results of a 3D position solution, NumberArray: Translation (x,y,z) Rotation(pitch,yaw,roll)
 ======== ======================================================================================
 
 
