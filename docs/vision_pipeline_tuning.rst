@@ -15,7 +15,7 @@ The "Tracking" page is comprised of five tuning tabs:
 
 .. _Input:
 
-Input
+Input Tab
 ~~~~~~~~~~~~~~~~~~~~~~
 
 ----------
@@ -24,42 +24,57 @@ The Input Tab hosts controls to change the raw camera image before it is passed 
 
 Pipeline Type
 ---------------------
-Controls the desired pipeline type. Switch to "GRIP" if you want to use a GRIP pipeline.
+Controls the desired pipeline type. Change this option to utilize GRIP or Python Pipelines.
 
 
 Source Image
 ---------------------
-Controls the source of the image that is passed through the pipeline. Switch to "Snapshot" to test your vision pipeline on a stored Snapshot.
+Controls the source of the image that is passed through the pipeline. Switch to "Snapshot" to test your vision pipelines on stored Snapshots.
 
 This control auto-resets to "Camera" when the GUI is closed.
 
-Resolution
+.. image:: https://thumbs.gfycat.com/MintyKaleidoscopicHarpseal-size_restricted.gif
+	:align: center
+	:width: 100%
+
+Resolution + Zoom
 ---------------------
 Controls the resolution of the camera and vision pipeline. We recommend using the 320x240 pipeline unless you are utilizing 3D functionality.
 
 320x240 pipelines execute at 90fps, while 960x720 pipelines execute at 22 fps.
+In 2020, 2x and 3x Hardware Zoom options were added to this field. The zoom options are not digital and use 100% real sensor pixels.
+
+.. image:: https://thumbs.gfycat.com/LawfulRapidArchaeocete-size_restricted.gif
 
 LEDs
 ---------------------
 Controls the default LED mode for this pipeline. This may be overidden during a match with the "LED" network table option.
 
+Limelight 2+ users have access to an "LED Brightness" Slider which allows for LED dimming.
+
 Orientation
 ---------------------
 Controls the orientation of incoming frames. Set it to "inverted" if your camera is mounted upside-down.
 
-.. image:: https://thumbs.gfycat.com/KindTiredBellfrog-size_restricted.gif
+.. image:: https://thumbs.gfycat.com/ImpeccableWhichCaracal-size_restricted.gif
 	:align: center
+	:width: 100%
 
 Exposure
 ---------------------
-Controls the camera's exposure setting in .1 millisecond intervals. Think of a camera as a grid of light-collecting buckets - exposure time controls how long your camera's "buckets" are open per frame. Lowering the exposure time will effectively darken your image. Low and fixed exposure times are crucial in FRC, as they black-out the bulk of incoming image data. Well-lit retroreflective tape will stand out in a mostly black image, making vision processing a straightforward process.
+Controls the camera's exposure setting in .1 millisecond intervals. Think of a camera as a grid of light-collecting buckets - exposure time controls how long your camera's "buckets" are open per frame. Lowering the exposure time will effectively darken your image. Low and fixed exposure times are crucial in FRC, as they black-out the bulk of incoming image data. Well-lit retroreflective tape will stand out in a mostly black image, turning vision processing into a straightforward process.
 
-.. image:: https://thumbs.gfycat.com/ZealousFrighteningClingfish-size_restricted.gif
+.. image:: https://thumbs.gfycat.com/IlliterateRemoteIberianmole-size_restricted.gif
 	:align: center
+	:width: 100%
 
 Black Level Offset
 ---------------------
-Increasing the black level offset can significantly darken your camera stream. This should be increased to further remove arena lights and bright spots from your image.
+Increasing the black level offset can significantly darken your camera stream. This should be increased to further remove arena lights and bright spots from your image. This is a sensor-level setting, and not a fake digital brightness setting.
+
+.. image:: https://thumbs.gfycat.com/SeparateFatHedgehog-size_restricted.gif
+	:align: center
+	:width: 100%
 
 Red Balance, Blue Balance
 ---------------------
@@ -70,7 +85,7 @@ Controls the intensity of Red and Blue color components in your image. These col
 
 .. _Thresholding:
 
-Thresholding
+Thresholding Tab
 ~~~~~~~~~~~~~~~~~~~~~~
 
 ----------------------
@@ -129,14 +144,23 @@ These are passed through a series of filters to determine the "best" contour. If
 
 Sort Mode
 ------------------
-Controls how contours are sorted after they are passed through all other filters.
+Controls how contours are sorted after they are passed through all other filters. 
+
+In 2019, the "closest" sort mode was added. This mode will select the target that is closest to the configurable crosshair.
+
+.. image:: https://thumbs.gfycat.com/EnormousImpishDeer-size_restricted.gif
+	:align: center
+	:width: 100%
+
 
 Target Area
 ------------------
 Controls the range of acceptable bounding-rectangle areas, as percentages of the screen. You can increase the minimum area to help filter-out stadium lights, and decrease the maximum value to help filter-out things like large displays near the field.
 
-.. image:: https://thumbs.gfycat.com/CriminalWideCalf-size_restricted.gif
+.. image:: https://thumbs.gfycat.com/HairyWarlikeCusimanse-size_restricted.gif
 	:align: center
+	:width: 100%
+
 
 .. note:: The area slider is not linearly scaled, but quarticly scaled. This is done to provide extra precision near the lower-end of area values, where many FRC targets lie. The area of a square scales quadratically with its side length, but x^4 scaling provides even greater precision where it is needed.
 
@@ -144,15 +168,18 @@ Target Fullness
 ------------------
 Fullness is the percentage of "on" pixels in the chosen contour's bounding rectangle. A solid rectangle target will have a near-1.0 fullness, while a U-shaped target will have a low fullness.
 
-.. image:: https://thumbs.gfycat.com/UnripeOccasionalAnnashummingbird-size_restricted.gif
+.. image:: https://thumbs.gfycat.com/AmazingUnfortunateFlyingfish-size_restricted.gif
 	:align: center
+	:width: 100%
 
 Target Aspect Ratio
 ---------------------------
 Aspect ratio is defined by the width of the bounding rectangle of the chosen contour divided by its height. A low aspect ratio describes a "tall" rectangle, while a high aspect ratio describes a "wide" rectangle. 
 
-.. image:: https://thumbs.gfycat.com/OrdinaryLeafyIndianpalmsquirrel-size_restricted.gif
+
+.. image:: https://thumbs.gfycat.com/BlankMatureAzurevase-size_restricted.gif
 	:align: center
+	:width: 100%
 
 .. note:: The aspect ratio slider is also quadratically scaled.
 
@@ -160,22 +187,54 @@ Direction Filter
 ------------------
 Rejects contours on the basis of their orientation. 
 
+.. image:: https://thumbs.gfycat.com/SparklingConcernedCockatoo-size_restricted.gif
+	:align: center
+	:width: 100%
+
 Smart Speckle Rejection
 ----------------------------
-Rejects relatively small contours that have passed through all other filters. This is essential if a target must remain trackable from short-range and long-range. 
+Rejects relatively small (as opposed to absolutely small w/ the area filter) contours that have passed through all other filters. This is essential if a target must remain trackable from short-range and long-range. 
 This feature was introduced in the 2019 season to reject Limelight's LED reflections when robots were very close to targets.
 
-Contour Simplification %
-----------------------------
-Simplifies contours to reduce the number of corners in each contour. This is useful when using the raw corner or 3D features.
+.. image:: https://thumbs.gfycat.com/EachInsecureAustraliansilkyterrier-size_restricted.gif
+	:align: center
+	:width: 100%
+
 
 Target Grouping
 ----------------------------
 Controls target "grouping". Set to dual mode to look for "targets" that consist of two shapes, or tri mode to look for targets that consist of three shapes.
 
+Smart Target Grouping can group a variable number of targets and reject outliers. It was added in 2022 to help track the upper hub target.
+
+.. image:: https://thumbs.gfycat.com/HugeCraftyBear-size_restricted.gif
+	:align: center
+	:width: 100%
+
 Intersection Filter (Dual Targets Only)
 ------------------------------------------
 Rejects groups of contours based on how they would intersect if extended to infinity.
+
+.. image:: https://thumbs.gfycat.com/ThunderousWholeDinosaur-size_restricted.gif
+	:align: center
+	:width: 100%
+
+Smart Target Grouping
+------------------------------------------
+
+Automatically group targets that pass all individual target filters.
+	* Will dynamically group any number of targets between -group size slider minimum- and -group size slider maximum-
+.. image:: https://thumbs.gfycat.com/WetImmediateEarthworm-size_restricted.gif
+		:align: center
+		:width: 100%
+
+Outlier Rejection
+	* While group targets are more challenging than normal targets, they provide more information and opportunities for filtering. If you know that a goal is comprised of multiple targets that are close to each other, you can actually reject outlier targets that stand on their own.
+	* You should rely almost entirely on good target filtering, and only use outlier rejection if you see or expect spurious outliers in your camera stream. If you have poor standard target filtering, outlier detection could begin to work against you!
+.. image:: https://thumbs.gfycat.com/CoolQualifiedHedgehog-size_restricted.gif
+		:align: center
+		:width: 100%
+
 
 
 ----------
@@ -222,9 +281,32 @@ Controls the "origin" of your targeting values. Let's say a shooter on your robo
 
 Experiment with PnP point-based pose estimation here.
 
-Solve 3D
+.. image:: https://thumbs.gfycat.com/LeftHalfBluewhale-size_restricted.gif
+
+Compute 3D
 -------------------
-Controls whether pose estimation is enabled. You must enable high-res mode for this to work.
+Controls whether pose estimation is enabled. You must enable the 960x720 high-res mode for this to work.
+
+Force Convex
+-------------------
+Use this option to select only the "outermost" corners of a target for SolvePnP.
+
+Contour Simplification
+-------------------
+Use this option to remove small, noisy edges from the target.
+
+Acceptable Error
+-------------------
+Limelight will only return a target if it passes a reprojection test with a certain score in pixels.
+
+Goal Z-Offset
+-------------------
+Automatically the 3D Depth value of your target (Z-Axis).
+
+.. image:: https://thumbs.gfycat.com/AcidicHonoredElephant-size_restricted.gif
+	:align: center
+	:width: 100%
+
 
 Camera Matricies (Advanced Users)
 -----------------------------------
