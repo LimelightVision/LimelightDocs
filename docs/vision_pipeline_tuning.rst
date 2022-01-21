@@ -92,8 +92,9 @@ Thresholding Tab
 
 Thresholding is a critical component of most FRC vision tracking algorithms. It is the act of taking an image, and throwing away any pixels that aren't in a specific color range. The result of thresholding is generally a one-dimensional image in which a pixel is either "on" or "off.
 
-.. image:: https://thumbs.gfycat.com/NaughtyWateryAngelwingmussel-size_restricted.gif
+.. image:: https://thumbs.gfycat.com/MisguidedClumsyCusimanse-size_restricted.gif
 	:align: center
+	:width: 100%
  
 Video Feed (Located beneath stream)
 --------------------------------------
@@ -107,8 +108,9 @@ Wands enable users to click on Limelights's video stream to perform automatic HS
 	* The "Add" wand adjusts HSV parameters to include the selected pixel
 	* The "Subtract" wand adjust HSV paramters to ignore the selected pixel
 
-.. image:: https://thumbs.gfycat.com/FarHandyCanvasback-size_restricted.gif
+.. image:: https://thumbs.gfycat.com/AdorableScientificLaughingthrush-size_restricted.gif
 	:align: center
+	:width: 100%
 
 Hue
 --------------------------------
@@ -129,6 +131,12 @@ Erosion and Dilation
 --------------------------------
 Erosion slightly erodes the result of an HSV threshold. This is useful if many objects are passing through a tuned HSV threshold.
 Dilation slightly inflates the result of an HSV threshold. Use this to patch holes in thresholding results.
+
+
+.. image:: https://thumbs.gfycat.com/PastBouncyGnat-size_restricted.gif
+	:align: center
+	:width: 100%
+
 
 ------------------------------
 
@@ -252,8 +260,9 @@ Targeting Region
 -------------------
 Controls the point of interest of the chosen contour's bounding rectangle. By default, the tracking parameters tx and ty represent the offsets from your crosshair to the center of the chosen rectangle. You can use another option if a target changes in size, or is comprised of two targets that sometimes blend together.
 
-.. image:: https://thumbs.gfycat.com/RemarkableFragrantAmericankestrel-size_restricted.gif
+.. image:: https://thumbs.gfycat.com/FakeThinAfricanbushviper-size_restricted.gif
 	:align: center
+	:width: 100%
 
 Send Raw Corners?
 -----------------------------------------
@@ -267,8 +276,9 @@ Crosshair Calibration
 -------------------------
 Controls the "origin" of your targeting values. Let's say a shooter on your robot needs to be calibrated such that it always points a bit left-of-center. You can line up your robot, click "calibrate," and all of your targeting values will be sent relative to your new crosshair. See the calibration page for more details!
 
-.. image:: https://thumbs.gfycat.com/GraveEverlastingFawn-size_restricted.gif
+.. image:: https://thumbs.gfycat.com/JauntyTerrificGreatwhiteshark-size_restricted.gif
 	:align: center
+	:width: 100%
 
 -------------
 
