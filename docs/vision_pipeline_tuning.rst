@@ -292,6 +292,8 @@ Controls the "origin" of your targeting values. Let's say a shooter on your robo
 Experiment with PnP point-based pose estimation here.
 
 .. image:: https://thumbs.gfycat.com/LeftHalfBluewhale-size_restricted.gif
+	:align: center
+	:width: 100%
 
 Compute 3D
 -------------------
