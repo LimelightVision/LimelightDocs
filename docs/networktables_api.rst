@@ -163,9 +163,7 @@ Corners
 Enable "send contours" in the "Output" tab to stream corner coordinates:
 
 =========== =====================================================================================
-tcornx		Number array of corner x-coordinates
------------ -------------------------------------------------------------------------------------
-tcorny	 	Number array of corner y-coordinates
+tcornxy		Number array of corner coordinates [x0,y0,x1,y1......]
 =========== =====================================================================================
 
 Advanced Usage with Raw Contours

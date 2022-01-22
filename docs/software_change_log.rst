@@ -261,7 +261,7 @@ Features
 ----------------
 * Corners
 	
-	* Send the corners of your target as two arrays (tcornx, tcorny) by enabling "send corners" in the "Output" tab. This will further enable teams that are interested in advanced pipelines with methods like solvePNP().
+	* Send the corners of your target as two arrays (tcornx, tcorny) *NOW tcornxy by enabling "send corners" in the "Output" tab. This will further enable teams that are interested in advanced pipelines with methods like solvePNP().
 	* Adjust corner approximation with the "corner approximation" slider in the "Output" tab.
 
 Bug Fixes
