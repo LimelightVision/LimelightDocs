@@ -3,6 +3,31 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2022.1 (1/25/22)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Bugfixes
+----------------
+
+* We acquired information from one of our suppliers about an issue (and a fix!) that affects roughly 1/75 of the CPUs specifically used in Limelight 2 (it may be related to a specific batch). It makes sense, and it was one of the only remaining boot differences between the 2022 image and the 2020 image.
+
+* Fix the upload buttons for GRIP inputs and SolvePNP Models
+
+Features
+----------------
+
+* Hue Rainbow
+	* The new hue rainbow makes it easier to configure the hue threshold. Here’s an example of filtering for blue pixels:
+	* .. image:: https://thumbs.gfycat.com/BoldDishonestAntarcticgiantpetrel-size_restricted.gif
+
+* Hue Inversion
+	* The new hue inversion feature is a critical feature if you want to track red objects, as red is at both the beginning and the end of the hue range:
+	* If you’re trying to track cargo, the aspect ratio filter (set a tight range around “1”) and the fullness filter (you want above 70%) should work quite well. Explicit “circle” filtering is relatively slow and wont work as well as people assume.
+	* .. image:: https://thumbs.gfycat.com/MeekSnarlingFluke-size_restricted.gif
+
+* New Python Libraries
+	* Added scipy, scikit-image, pywavelets, pillow, and pyserial to our python sandbox.
+
 2022.0 and 2022.0.3 (1/15/22)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
