@@ -10,9 +10,9 @@ https://www.youtube.com/watch?v=rLwOkAJqImo
 WPI Vision Processing Resources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 These pages are loaded with information on various ways to implement your own vision processing pipeline.
-https://wpilib.screenstepslive.com/s/currentCS/m/vision
+https://docs.wpilib.org/en/stable/docs/software/vision-processing/index.html
 
 GRIP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Grip is a tool that lets you build OpenCV pipelines using a drag-and-drop GUI.
-https://wpilib.screenstepslive.com/s/currentCS/m/vision/l/463566-introduction-to-grip
+https://docs.wpilib.org/en/stable/docs/software/vision-processing/grip/introduction-to-grip.html

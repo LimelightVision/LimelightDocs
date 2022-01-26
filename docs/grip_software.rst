@@ -15,7 +15,7 @@ The first step in using GRIP is to download our build of Grip.  It can be downlo
 .. image:: img/Grip.jpg
 
 You can learn more about GRIP on this web page:
-https://wpilib.screenstepslive.com/s/currentCS/m/vision/l/463566-introduction-to-grip
+https://docs.wpilib.org/en/stable/docs/software/vision-processing/grip/introduction-to-grip.html
 
 Accessing the Video Stream wthin GRIP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -45,7 +45,7 @@ Before Connecting to the Field
     * Subnet mask: **255.255.255.0**
     * Gateway: "10.TE.AM.1"
 
-Additional information: https://wpilib.screenstepslive.com/s/currentCS/m/troubleshooting/l/319135-ip-networking-at-the-event
+Additional information: https://docs.wpilib.org/en/stable/docs/networking/networking-introduction/ip-configurations.html
 
 Before Every Match
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
