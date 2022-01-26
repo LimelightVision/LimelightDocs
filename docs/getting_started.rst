@@ -168,7 +168,7 @@ Follow these steps before starting:
 	
 	We recommend setting static IP addresses on your robo-rio and driverstation as well.  The networking settings to use 
 	on all of these devices can be found near the bottom half of this web page:
-	https://wpilib.screenstepslive.com/s/currentCS/m/troubleshooting/l/319135-ip-networking-at-the-event
+	https://docs.wpilib.org/en/stable/docs/networking/networking-introduction/ip-configurations.html
 	
 	
 .. note:: Q. How do I reset the IP address? 
