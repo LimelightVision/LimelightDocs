@@ -132,11 +132,18 @@ Erosion and Dilation
 Erosion slightly erodes the result of an HSV threshold. This is useful if many objects are passing through a tuned HSV threshold.
 Dilation slightly inflates the result of an HSV threshold. Use this to patch holes in thresholding results.
 
-
 .. image:: https://thumbs.gfycat.com/PastBouncyGnat-size_restricted.gif
 	:align: center
 	:width: 100%
 
+
+Hue Inversion
+--------------------------------
+Use hue inversion to track red targets, as red exists at both the beginning and the end of the hue range.
+
+.. image:: https://thumbs.gfycat.com/MeekSnarlingFluke-size_restricted.gif
+	:align: center
+	:width: 100%
 
 ------------------------------
 
