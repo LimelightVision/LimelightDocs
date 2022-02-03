@@ -146,6 +146,7 @@ Follow these steps before starting:
 		* Set the Netmask to "255.255.255.0".
 		* Set the Gateway to "10.TE.AM.1".
 		* Click the "Update" button.
+		* Give your roboRIO the following static IP address: "10.TE.AM.2"
 		* Power-cycle your robot.
 		* You will now be access your config panel at http://10.TE.AM.11:5801, and your camera stream at http://10.TE.AM.11:5800
 
