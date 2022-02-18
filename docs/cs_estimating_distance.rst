@@ -23,9 +23,10 @@ d = (h2-h1) / tan(a1+a2)
 
 The tan function usually assumes that its input is measured in radians. To convert an angle measurement from degrees to radians, multiply the angle measurement by (3.14159/180.0). Essentially, 3.14 radians = 180 degrees. See the full code example below.
 
+
 .. tabs::
 
-	..tab:: Java
+	.. tab:: Java
 
 		.. code-block:: java
 
@@ -48,7 +49,8 @@ The tan function usually assumes that its input is measured in radians. To conve
 			//calculate distance
 			double distanceFromLimelightToGoalInches = (goalHeightInches - limelightHeightInches)/tan(angleToGoalRadians);
 
-	..tab:: c++
+
+	.. tab:: C++
 
 		.. code-block:: c++
 
@@ -69,6 +71,8 @@ The tan function usually assumes that its input is measured in radians. To conve
 			
 			//calculate distance
 			double distanceFromLimelightToGoalInches = (goalHeightInches - limelightHeightInches)/tan(angleToGoalRadians);
+
+
 
 When using this technique it is important to choose the mounting angle of your camera carefully.  You want to be able to see the target both when you're too close and too far away.  You also do not want this angle to change, so mount it securely and avoid using slots in your mounting geometry.
 
