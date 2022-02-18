@@ -23,12 +23,52 @@ d = (h2-h1) / tan(a1+a2)
 
 The tan function usually assumes that its input is measured in radians. To convert an angle measurement from degrees to radians, multiply the angle measurement by (3.14159/180.0). Essentially, 3.14 radians = 180 degrees. See the full code example below.
 
-.. code-block:: c++
+.. tabs::
 
-	double limelightMountAngleDegrees = 25.0;
-	double limelightLensHeightInches = 20.0;
-	double goalHeightInches = 60;
-	double distanceFromLimelightToGoalInches = (goalHeightInches - limelightHeightInches)/tan((limelightMountAngleDegrees+ty) * 3.14159/180.0);
+	..tab:: Java
+
+		.. code-block:: java
+
+			NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight");
+			NetworkTableEntry ty = table.getEntry("ty");
+			double targetOffsetAngle_Vertical = ty.getDouble(0.0);
+
+			// how many degrees back is your limelight rotated from perfectly vertical?
+			double limelightMountAngleDegrees = 25.0; 
+
+			// distance from the center of the Limelight lens to the floor
+			double limelightLensHeightInches = 20.0; 
+
+			// distance from the target to the floor
+			double goalHeightInches = 60.0; 
+
+			double angleToGoalDegrees = limelightMountAngleDegrees + targetOffsetAngle_Vertical;
+			double angleToGoalRadians = angleToGoalDegrees * (3.14159 / 180.0);
+			
+			//calculate distance
+			double distanceFromLimelightToGoalInches = (goalHeightInches - limelightHeightInches)/tan(angleToGoalRadians);
+
+	..tab:: c++
+
+		.. code-block:: c++
+
+			std::shared_ptr<NetworkTable> table = nt::NetworkTableInstance::GetDefault().GetTable("limelight");  
+			double targetOffsetAngle_Vertical = table->GetNumber("ty",0.0);
+
+			// how many degrees back is your limelight rotated from perfectly vertical?
+			double limelightMountAngleDegrees = 25.0; 
+
+			// distance from the center of the Limelight lens to the floor
+			double limelightLensHeightInches = 20.0; 
+
+			// distance from the target to the floor
+			double goalHeightInches = 60.0; 
+
+			double angleToGoalDegrees = limelightMountAngleDegrees + targetOffsetAngle_Vertical;
+			double angleToGoalRadians = angleToGoalDegrees * (3.14159 / 180.0);
+			
+			//calculate distance
+			double distanceFromLimelightToGoalInches = (goalHeightInches - limelightHeightInches)/tan(angleToGoalRadians);
 
 When using this technique it is important to choose the mounting angle of your camera carefully.  You want to be able to see the target both when you're too close and too far away.  You also do not want this angle to change, so mount it securely and avoid using slots in your mounting geometry.
 
