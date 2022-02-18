@@ -8,9 +8,9 @@ Case Study: Estimating Distance
 
 Using a Fixed Angle Camera
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-If your vision tracking camera is mounted on your robot such that the angle between the ground plane and its line of sight does not change, then you can use this technique to very accurately calculate the distance to a target.  You can then use this distance value to either drive your robot forward and back to get into the perfect range or you can use it to adjust the power of a launching mechanism.  
+If your vision tracking camera is mounted on your robot such that the angle between the ground plane and its line of sight does not change, then you can use this technique to very accurately calculate the distance to a target.  You can then use this distance value to either drive your robot forward and back to get into the perfect range or adjust the power of a launching mechanism.  
 
-See the below diagram.  In this situation all of the variables are known: the height of the target (h2) is known because it is a property of the field.  The height of your camera above the floor (h1) is known and its mounting angle is known (a1).  The limelight (or your vision system) can tell you the y angle to the target (a2).
+See the below diagram.  In this context, all of the variables are known: the height of the target (h2) is known because it is a property of the field.  The height of your camera above the floor (h1) is known and its mounting angle is known (a1).  The limelight (or your vision system) can tell you the y angle to the target (a2).
 
 .. image:: img/DistanceEstimation.jpg
 	:align: center
@@ -21,7 +21,7 @@ tan(a1+a2) = (h2-h1) / d
 
 d = (h2-h1) / tan(a1+a2)
 
-The tan function usually assumes that its input is measured in radians. To convert an angle measurement from degrees to radians, multiply the angle measurement by (3.14159/180.0). Essentially, 3.14 radians = 180 degrees. See the full code example below.
+The tan function usually expects an input measured in radians. To convert an angle measurement from degrees to radians, multiply the angle measurement by (3.14159/180.0). See the full code example below.
 
 
 .. tabs::
