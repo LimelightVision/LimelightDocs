@@ -3,6 +3,34 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2022.2.2 (2/23/22)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Mandatory upgrade for all teams based on Week 0 and FMS reliability testing.
+
+Bugfixes
+----------------
+
+* Fix hang / loss of connection / loss of targeting related to open web interfaces, FMS, FMS-like setups, Multiple viewer devices etc.
+
+Features and Changes
+----------------
+* Crop Filtering
+	* Ignore all pixels outside of a specified crop rectangle
+	* If your flywheel has a sweet spot (or multiple sweet spots each with their own pipelines), you can make use of the crop filter to ignore the vast majority of pixels. This feature should help teams reduce the probability of tracking non-targets.
+	* If you are tracking cargo, use this feature to look for cargo only within a specific part of the image. Use this feature to ignore your team's bumpers, far-away targets, etc.
+	* GIF
+
+
+* Corners feature now compatible with smart target grouping
+	* tcornxy corner limit increased to 64 corners,
+	* contour simplification and force convex features now work properly with smart target grouping and corner sending 
+	* GIF
+
+* IQR Filter max increased to 3.0
+* Web interface live target update rate reduced from 30fps to 15fps to reduce bandwidth and cpu load while the web interface is open
+
+
 2022.1 (1/25/22)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
