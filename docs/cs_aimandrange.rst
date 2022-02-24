@@ -30,7 +30,7 @@ This example uses code from the aiming and range adjustment examples and puts ev
 		{
 			steering_adjust = KpAim*heading_error - min_aim_command;
 		}
-		else if (tx < 1.0)
+		else if (tx < -1.0)
 		{
         		steering_adjust = KpAim*heading_error + min_aim_command;
 		}
