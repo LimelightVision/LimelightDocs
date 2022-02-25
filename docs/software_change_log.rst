@@ -17,14 +17,15 @@ Features and Changes
 ----------------
 * Crop Filtering
 	* Ignore all pixels outside of a specified crop rectangle
-	* If your flywheel has a sweet spot (or multiple sweet spots each with their own pipelines), you can make use of the crop filter to ignore the vast majority of pixels. This feature should help teams reduce the probability of tracking non-targets.
-	* If you are tracking cargo, use this feature to look for cargo only within a specific part of the image. Use this feature to ignore your team's bumpers, far-away targets, etc.
+	* If your flywheel has any sweet spots on the field, you can make use of the crop filter to ignore the vast majority of pixels in specific pipelines. This feature should help teams reduce the probability of tracking non-targets.
+	* If you are tracking cargo, use this feature to look for cargo only within a specific part of the image. Consider ignoring your team's bumpers, far-away targets, etc.
 	* .. image:: https://thumbs.gfycat.com/ChillyWhimsicalGander-size_restricted.gif
 
 
 * Corners feature now compatible with smart target grouping
-	* tcornxy corner limit increased to 64 corners,
-	* contour simplification and force convex features now work properly with smart target grouping and corner sending 
+	* This one is for the teams that want to do more advanced custom vision on the RIO
+	* "tcornxy" corner limit increased to 64 corners
+	* Contour simplification and force convex features now work properly with smart target grouping and corner sending 
 	* .. image:: https://thumbs.gfycat.com/DaringTatteredBlowfish-size_restricted.gif
 
 * IQR Filter max increased to 3.0
