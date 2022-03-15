@@ -20,6 +20,7 @@ Before An Event
 	.. tab:: Java
 
 		.. code-block:: java
+            
             ///////////////////////////////////////////////
             import edu.wpi.first.wpiutil.net.PortForwarder;
             ///////////////////////////////////////////////
@@ -40,6 +41,7 @@ Before An Event
 	.. tab:: C++
 
 		.. code-block:: c++
+            
             //////////////////////////////
             #include <wpi/PortForwarder.h>
             //////////////////////////////
