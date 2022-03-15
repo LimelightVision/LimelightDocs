@@ -20,9 +20,8 @@ Before An Event
 	.. tab:: Java
 
 		.. code-block:: java
-           
+
             import edu.wpi.first.wpiutil.net.PortForwarder;
-            ///
 			@Override
             public void robotInit() {
                 // Make sure you only configure port forwarding once in your robot code.
@@ -39,9 +38,8 @@ Before An Event
 	.. tab:: C++
 
 		.. code-block:: c++
-            
+        
             #include <wpi/PortForwarder.h>
-            ///
 			void Robot::RobotInit 
             {
                 wpi::PortForwarder::GetInstance().Add(5800, "limelight.local", 5800);
