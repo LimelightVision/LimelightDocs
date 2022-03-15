@@ -11,6 +11,50 @@ Before An Event
 * Add strain reliefs to all power and ethernet cables going to your LL.
 * Consider hot-gluing all connections.
 
+* Add a network switch to your robot to enable ethernet tethering while at an event and to avoid the second radio port. We recommend the `Branboxes SW-005 5 port Switch <https://www.amazon.com/BRAINBOXES-SW-005-Brainboxes-Unmanaged-Ethernet/dp/B07PRZ2R1P/>`_ 
+* We do not recommend use of the second radio port. Route all devices through your network switch if possible.
+* Setup `Port Forwarding <https://docs.wpilib.org/en/latest/docs/networking/networking-utilities/portforwarding.html>`_ to enable Limelight communication while tethered to your robot over USB.
+    * Forward ports 5800, 5801, 5802, 5803, 5804, and 5805
+.. tabs::
+
+	.. tab:: Java
+
+		.. code-block:: java
+            ///////////////////////////////////////////////
+            import edu.wpi.first.wpiutil.net.PortForwarder;
+            ///////////////////////////////////////////////
+			@Override
+            public void robotInit() {
+                // Make sure you only configure port forwarding once in your robot code.
+                // Do not place these function calls in any periodic functions
+                PortForwarder.add(5800, "limelight.local", 5800);
+                PortForwarder.add(5801, "limelight.local", 5801);
+                PortForwarder.add(5802, "limelight.local", 5802);
+                PortForwarder.add(5803, "limelight.local", 5803);
+                PortForwarder.add(5804, "limelight.local", 5804);
+                PortForwarder.add(5805, "limelight.local", 5805);
+            }
+			
+
+
+	.. tab:: C++
+
+		.. code-block:: c++
+            //////////////////////////////
+            #include <wpi/PortForwarder.h>
+            //////////////////////////////
+			void Robot::RobotInit 
+            {
+                wpi::PortForwarder::GetInstance().Add(5800, "limelight.local", 5800);
+                wpi::PortForwarder::GetInstance().Add(5801, "limelight.local", 5801);
+                wpi::PortForwarder::GetInstance().Add(5802, "limelight.local", 5802);
+                wpi::PortForwarder::GetInstance().Add(5803, "limelight.local", 5803);
+                wpi::PortForwarder::GetInstance().Add(5804, "limelight.local", 5804);
+                wpi::PortForwarder::GetInstance().Add(5805, "limelight.local", 5805);
+            }
+			
+
+
 During Event Calibration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Roll your robot to each target on the field.
