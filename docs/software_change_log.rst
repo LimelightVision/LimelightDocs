@@ -1,7 +1,30 @@
 Software Change Log
 ==============================
 
+
 Contact us or post to CD to suggest upgrades for Limelight!
+
+2022.2.3 (3/16/22)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Bugfixes and robot-code crop filtering.
+
+Bugfixes
+----------------
+
+* Fix "stream" networktables key and Picture-In-Picture Modes
+* Fix "snapshot" networktables key. Users must set the "snapshot" key to "0" before setting it to "1" to take a screenshot.
+* Remove superfluous python-related alerts from web interface
+
+Features and Changes
+----------------------
+
+* Manual Crop Filtering
+	* Using the "crop" networktables array, teams can now control crop rectangles from robot code.
+	* For the "crop" key to work, the current pipeline must utilize the default, wide-open crop rectangle (-1 for minX and minY, +1 for maxX and +1 maxY).
+	* In addition, the "crop" networktable array must have exactly 4 values, and at least one of those values must be non-zero.
+
+
 
 2022.2.2 (2/23/22)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
