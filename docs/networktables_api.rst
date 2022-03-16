@@ -140,9 +140,21 @@ stream		Sets limelight's streaming mode
 =========== =====================================================================================
 snapshot		Allows users to take snapshots during a match
 ----------- -------------------------------------------------------------------------------------
-0	 	Stop taking snapshots
+0	 	Reset snapshot mode
 ----------- -------------------------------------------------------------------------------------
-1 		Take two snapshots per second
+1 		Take exactly one snapshot
+=========== =====================================================================================
+
+=========== =====================================================================================
+crop		Sets limelight's crop rectangle. For the "crop" key to work, the current pipeline must utilize the default, wide-open crop rectangle (-1 for minX and minY, +1 for maxX and +1 maxY). In addition, the "crop" networktable array must have exactly 4 values, and at least one of those values must be non-zero.
+----------- -------------------------------------------------------------------------------------
+[0]	 	X0 - Min or Max X value of crop rectangle (-1 to 1)
+----------- -------------------------------------------------------------------------------------
+[1] 	X1 - Min or Max X value of crop rectangle (-1 to 1)
+----------- -------------------------------------------------------------------------------------
+[2]	 	Y0 - Min or Max Y value of crop rectangle (-1 to 1)
+----------- -------------------------------------------------------------------------------------
+[3]	 	Y1 - Min or Max Y value of crop rectangle (-1 to 1)
 =========== =====================================================================================
 
 Python
