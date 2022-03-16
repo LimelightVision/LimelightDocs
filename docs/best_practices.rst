@@ -10,7 +10,8 @@ Before An Event
     * 2 - Dual Target High Cargo
 * Add strain reliefs to all power and ethernet cables going to your LL.
 * Consider hot-gluing all connections.
-* Make sure you are using a dashboard (Smartdashboard, Shuffleboard) and not a web browser to view the stream during practice matches. Dashboards have autoreconnection features and will use less bandwidth than the web interface.
+* Make sure you are using a dashboard (Smartdashboard, Shuffleboard) and not a web browser to view the stream while practicing and during events. Default web controls don't have the ability to auto-reconnect to streams after spurious disconnections, but SmartDashboard and Shuffleboard both have auto-reconnection built-in by default.
+
 
 * Add a network switch to your robot to enable ethernet tethering while at an event and to avoid the second radio port. We recommend the `Branboxes SW-005 5 port Switch <https://www.amazon.com/BRAINBOXES-SW-005-Brainboxes-Unmanaged-Ethernet/dp/B07PRZ2R1P/>`_ 
 * We do not recommend use of the second radio port. Route all devices through your network switch if possible.
