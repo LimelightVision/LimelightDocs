@@ -47,7 +47,7 @@ The tan function usually expects an input measured in radians. To convert an ang
 			double angleToGoalRadians = angleToGoalDegrees * (3.14159 / 180.0);
 			
 			//calculate distance
-			double distanceFromLimelightToGoalInches = (goalHeightInches - limelightHeightInches)/Math.tan(angleToGoalRadians);
+			double distanceFromLimelightToGoalInches = (goalHeightInches - limelightLensHeightInches)/Math.tan(angleToGoalRadians);
 
 
 	.. tab:: C++
@@ -70,7 +70,7 @@ The tan function usually expects an input measured in radians. To convert an ang
 			double angleToGoalRadians = angleToGoalDegrees * (3.14159 / 180.0);
 			
 			//calculate distance
-			double distanceFromLimelightToGoalInches = (goalHeightInches - limelightHeightInches)/tan(angleToGoalRadians);
+			double distanceFromLimelightToGoalInches = (goalHeightInches - limelightLensHeightInches)/tan(angleToGoalRadians);
 
 
 
