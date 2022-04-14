@@ -4,6 +4,25 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2022.3.0 (4/13/22)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Bugfixes and heartbeat.
+
+Bugfixes
+----------------
+
+* Fix performance, stream stability, and stream lag issues related to USB Camera streams and multiple stream instances.
+
+
+Features and Changes
+----------------------
+
+* "hb" Heartbeat NetworkTable key
+	* The "hb" value increments once per processing frame, and resets to zero at 2000000000.
+
+
+
 2022.2.3 (3/16/22)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

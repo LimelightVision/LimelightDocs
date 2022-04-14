@@ -14,6 +14,7 @@ Before An Event
 
 
 * Add a network switch to your robot to enable ethernet tethering while at an event and to avoid the second radio port. We recommend the `Branboxes SW-005 5 port Switch <https://www.amazon.com/BRAINBOXES-SW-005-Brainboxes-Unmanaged-Ethernet/dp/B07PRZ2R1P/>`_ 
+* Use twisted Cat6 cables with stranded wires. We do not recommend the use of flat ethernet cables.
 * We do not recommend use of the second radio port. Route all devices through your network switch if possible.
 * Setup `Port Forwarding <https://docs.wpilib.org/en/latest/docs/networking/networking-utilities/portforwarding.html>`_ to enable Limelight communication while tethered to your robot over USB.
     * Forward ports 5800, 5801, 5802, 5803, 5804, and 5805
