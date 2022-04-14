@@ -291,7 +291,7 @@ pipeline	Sets limelight's current pipeline
 
 		.. code-block:: c++
 
-			std::shared_ptr<NetworkTable> table = nt::NetworkTableInstance::GetDefault().GetTable("limelight");  
+			std::shared_ptr<nt::NetworkTable> table = nt::NetworkTableInstance::GetDefault().GetTable("limelight");  
 			double targetOffsetAngle_Horizontal = table->GetNumber("tx",0.0);
 			double targetOffsetAngle_Vertical = table->GetNumber("ty",0.0);
 			double targetArea = table->GetNumber("ta",0.0);
