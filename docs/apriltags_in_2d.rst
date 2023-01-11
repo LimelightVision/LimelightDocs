@@ -6,7 +6,7 @@ AprilTags are tracked using the "tx", "ty", and "ta" values in NetworkTables, ju
 Do not feel pressured to use the more advanced features in the "Advanced" pages unless you know you need them. Many of the very best teams in FRC use the simplest techniques available 
 to maximize reliability and speed. Many ChiefDelphi and FRC Discord users like to give the impression that you must use the most advanced software possible to win events, but this is simply not true.
 
-To configure an AprilTag pipeline, first access the Limelight web interface at <http://IPADDRESS:5801> or http://10.te.am.11:5801 for FRC teams.
+To configure an AprilTag pipeline, first access the Limelight web interface at <http://IPADDRESS:5801> or http://10.te.am.11:5801 for FRC teams. Use the Limelight Finder tool from our Downloads page to find your Limelight's IP address.
 
 ----------
 
