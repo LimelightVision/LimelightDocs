@@ -62,7 +62,7 @@ Sets the expected size of the tags your robot will encounter in mm. For FRC, thi
 
 Detector Downscale
 --------------------------------
-Increasing this number will result in significant performance boosts at the cost of detection range.
+Increasing this number will result in significant performance boosts. This this will sometimes result in reduced range, but the cost is usually minimal.
 
 ID Filters
 --------------------------------
