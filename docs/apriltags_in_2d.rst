@@ -16,10 +16,12 @@ Quick Start for FRC
 * Standard Tab - Make sure "family" is set to "AprilTag Classic 16h5"
 * Input Tab - Set "Black Level" to zero
 * Input Tab - Set "Gain" to 20
+* Input Tab - Set "Resolution" 
 * Input Tab - Reduce exposure to reduce motion blur. Stop reducing once tracking reliability decreases.
 * Click the "Gear" Icon, and make sure your team number is set and that a static IP is configured.
 * You're done! Use "tx" and "ty" from networktables. Copy the code sample on the "getting started" page.
 
+* Make sure your tags are as flat as possible.
 ----------
 
 .. _Input:
@@ -65,7 +67,7 @@ Increasing this number will result in significant performance boosts at the cost
 ID Filters
 --------------------------------
 ID Filters allow you specify exactly which tags you care about. For most FRC teams, each pipeline should be configured to track exactly one tag ID.
-This is a comma-separated list of numbers (eg. "0,1"
+This is a comma-separated list of numbers (eg. "0,1")
 
 (ADVANCED) Localization ID Filters
 ----------------------------------------------------------------
