@@ -19,11 +19,14 @@ Input Tab
 
 The Input Tab hosts controls to change the raw camera image before it is passed through the processing pipeline. See the "Building a retroreflective/color pipeline" page for more details.
 
-To track AprilTags, you want to start by setting your black level to zero.
+To track AprilTags:
+
+* Change "Pipeline Type" to "Fiducial Markers"
+* Set "Black Level" to zero
 
 At this point, it is a matter of balancing sensor gain and exposure time. You want to be able to see the tags with the smallest exposure possible to minimize motion blur.
 This usually calls for a high sensor gain setting. For simple 2D tracking,
-it is often advisable to max-out your sensor gain, and then increase your exposure from zero until targets are sufficiently tracked.
+it is often advisable to max-out your sensor gain, and then increase your exposure from zero until targets are sufficiently tracked. Make sure the correct family is selected in the "Standard" tab if tracking isn't working.
 
 
 ----------
