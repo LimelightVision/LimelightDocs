@@ -8,6 +8,18 @@ to maximize reliability and speed. Many ChiefDelphi and FRC Discord users like t
 
 To configure an AprilTag pipeline, first access the Limelight web interface at <http://IPADDRESS:5801> or http://10.te.am.11:5801 for FRC teams. Use the Limelight Finder tool from our Downloads page to find your Limelight's IP address.
 
+
+
+Quick Start for FRC
+~~~~~~~~~~~~~~~~~~~~~~
+* Input Tab - Change "Pipeline Type" in the "Input" Tab to "Fiducial Markers"
+* Standard Tab - Make sure "family" is set to "AprilTag Classic 16h5"
+* Input Tab - Set "Black Level" to zero
+* Input Tab - Set "Gain" to 20
+* Input Tab - Reduce exposure to reduce motion blur. Stop reducing once tracking reliability decreases.
+* Click the "Gear" Icon, and make sure your team number is set and that a static IP is configured.
+* You're done! Use "tx" and "ty" from networktables. Copy the code sample on the "getting started" page.
+
 ----------
 
 .. _Input:
