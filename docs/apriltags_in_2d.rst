@@ -12,7 +12,7 @@ To configure an AprilTag pipeline, first access the Limelight web interface at <
 
 Quick Start for FRC
 ~~~~~~~~~~~~~~~~~~~~~~
-* Input Tab - Change "Pipeline Type" in the "Input" Tab to "Fiducial Markers"
+* Input Tab - Change "Pipeline Type" to "Fiducial Markers"
 * Standard Tab - Make sure "family" is set to "AprilTag Classic 16h5"
 * Input Tab - Set "Black Level" to zero
 * Input Tab - Set "Gain" to 20
