@@ -15,8 +15,7 @@ Quick Start for FRC
 * Input Tab - Change "Pipeline Type" to "Fiducial Markers"
 * Standard Tab - Make sure "family" is set to "AprilTag Classic 16h5"
 * Input Tab - Set "Black Level" to zero
-* Input Tab - Set "Gain" to 20
-* Input Tab - Set "Resolution" 
+* Input Tab - Set "Gain" to 20 
 * Input Tab - Reduce exposure to reduce motion blur. Stop reducing once tracking reliability decreases.
 * Click the "Gear" Icon, and make sure your team number is set and that a static IP is configured.
 * You're done! Use "tx" and "ty" from networktables. Copy the code sample on the "getting started" page.
