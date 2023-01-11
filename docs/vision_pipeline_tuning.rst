@@ -1,7 +1,7 @@
-Building A Pipeline
-===============================
+Building a Retroreflective/Color Pipeline
+==============================================================
 
-To configure a limelight vision pipeline, first access its web interface at http://10.te.am.11:5801. If you have opted to use a dynamically assigned ip-address, access the interface at http://limelight.local:5801.
+To configure a retroreflective/color vision pipeline, first access its web interface at <http://IPADDRESS:5801> or http://10.te.am.11:5801 for FRC teams.
 
 The "Tracking" page is comprised of five tuning tabs: 
 
@@ -62,7 +62,7 @@ Controls the orientation of incoming frames. Set it to "inverted" if your camera
 
 Exposure
 ---------------------
-Controls the camera's exposure setting in .1 millisecond intervals. Think of a camera as a grid of light-collecting buckets - exposure time controls how long your camera's "buckets" are open per frame. Lowering the exposure time will effectively darken your image. Low and fixed exposure times are crucial in FRC, as they black-out the bulk of incoming image data. Well-lit retroreflective tape will stand out in a mostly black image, turning vision processing into a straightforward process.
+Controls the camera's exposure setting in .01 millisecond intervals. Think of a camera as a grid of light-collecting buckets - exposure time controls how long your camera's "buckets" are open per frame. Lowering the exposure time will effectively darken your image. Low and fixed exposure times are crucial in FRC, as they black-out the bulk of incoming image data. Well-lit retroreflective tape will stand out in a mostly black image, turning vision processing into a straightforward process.
 
 .. image:: https://thumbs.gfycat.com/IlliterateRemoteIberianmole-size_restricted.gif
 	:align: center

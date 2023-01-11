@@ -21,6 +21,25 @@ Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents
    best_practices
    theory
 
+
+.. toctree::
+   :maxdepth: 2
+   :caption: AprilTag Pipelines
+
+   apriltags_in_2d
+   apriltags_in_3d
+   coordinate_systems_fiducials
+   apriltag_map_specification
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Zero-Code Neural Network Pipelines
+   
+   building_a_pipeline
+   training
+   
+
 .. toctree::
    :maxdepth: 2
    :caption: Programming
@@ -35,8 +54,6 @@ Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents
    cs_aimandrange
    cs_robotexample
    cs_drive_to_goal_2019
-
-
 
 .. toctree::
    :maxdepth: 2
