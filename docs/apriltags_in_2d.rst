@@ -3,6 +3,8 @@ Tracking AprilTags
 
 AprilTags are tracked using the "tx", "ty", and "ta" values in NetworkTables, just like standard retroreflective targets! No code changes are required to upgrade a retroreflective tracking robot to apriltags.
 
+For more advanced usage with multiple tags, the JSON results dump may be used.
+
 Do not feel pressured to use the more advanced features in the "Advanced" pages unless you know you need them. Many of the very best teams in FRC use the simplest techniques available 
 to maximize reliability and speed. If you frequent Discord, CD, and regionals with elite teams, you may get the impression that you need the most advanced software possible to win events, but this is simply not true.
 
