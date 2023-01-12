@@ -1,7 +1,7 @@
 (ADVANCED) AprilTag Map Specification
 ====================================================================
 
-Limelight's field-space localization features uses .fmap files to compute a robot pose for use by WPILIB's pose estimators.
+Limelight's field-space localization feature uses .fmap files to compute a robot pose for use by WPILIB's pose estimators.
 Our fmap files support maps comprised of different target sizes and different families.
 The .fmap file is a JSON file containing a single "fiducial" array.
 Each entry in the fiducial array has the following structure:
