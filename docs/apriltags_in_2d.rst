@@ -75,7 +75,7 @@ This is a comma-separated list of numbers (eg. "0,1")
 
 (ADVANCED) Localization ID Filters
 ----------------------------------------------------------------
-This is only for advanced users. This filter allows you to specify the tags that should be considered during field-space localization). It is recommended to only consider the tags on your side of the field if the game permits.
+This is only for advanced users. This filter allows you to specify the tags that should be considered during field-space localization). It is recommended to only consider the tags that you plan on seeing during a match.
 
 Multi-Target Sorting and Grouping
 --------------------------------
