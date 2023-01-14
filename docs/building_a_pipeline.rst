@@ -1,76 +1,54 @@
-Building a Pipeline
+Getting Started with Neural Networks
 ==============================================================
 
-Limelight OS currently supports real-time object detection, and real-time image classification.
+With Limelight's neural network pipelines, once-impossible computer vision challenges are now trivial. Learning-based vision already plays an enormous role in bleeding-edge robots and self-driving vehicles, so we are 
+excited to bring this technology to FIRST students. 
 
-Object detection neural networks 
+In FRC, teams have always wanted to track game pieces on the field during the autonomous and teleoperated periods.
+Using Limelight's "Neural Detector" pipeline, teams are able to track pieces just like any other target with zero tuning.
 
+"Neural Classifier" pipelines, on the other hand, allow teams to add advanced sensing capabilities to their robots. 
+Let's say a team wanted to determine whether their robot was in posession of a Red ball, a Blue ball, or not in possession of a ball.
+A Limelight pointed inside a robot could run a classifier trained to determine one of these three cases. A classifier could also count the number of objects in a hopper, determine the state of a field feature, etc.
 
-Quick Start for FRC
-~~~~~~~~~~~~~~~~~~~~~~
-* Input Tab - Change "Pipeline Type" to "Fiducial Markers"
-* Standard Tab - Make sure "family" is set to "AprilTag Classic 16h5"
-* Input Tab - Set "Black Level" to zero
-* Input Tab - Set "Gain" to 20 
-* Input Tab - Reduce exposure to reduce motion blur. Stop reducing once tracking reliability decreases.
-* Click the "Gear" Icon, and make sure your team number is set and that a static IP is configured.
-* Click "Change Team Number" and "Change IP Settings" if you changed their corresponding settings. Powercycle your robot.
-* You're done! Use "tx" and "ty" from networktables. Copy the code sample on the "getting started" page.
+Neural Detector and Classifier networks require the addition of a Google Coral USB accelerator. The Google Coral Accelerator is an ASIC (application specific integrated circuit)
+that is purpose-built for neural network inference. You can think of the term "inference" as "execution" or "running data through the neural network and producing an output".
 
-* Make sure your tags are as flat as possible.
-----------
+If you are interested in building a deeper understanding, we recommend starting with this video from 3blue1brown:
+https://www.youtube.com/watch?v=aircAruvnKk
 
-.. _Input:
-
-Input Tab
-~~~~~~~~~~~~~~~~~~~~~~
+Programmers can learn more in a hands-on fashion with the following book:
+https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438
 
 ----------
 
-The Input Tab hosts controls to change the raw camera image before it is passed through the processing pipeline. See the "Building a retroreflective/color pipeline" page for more details.
+Neural Detector Pipeline
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------
 
-To track AprilTags:
+To get started, ensure your Google Coral is plugged into the USB-A port on your Limelight.
 
-* Change "Pipeline Type" to "Fiducial Markers"
-* Set "Black Level" to zero
+Change "Pipeline Type" to "Neural Detector" to start running inference on the built-in test model. Game-specific models should arrive mid-season.
 
-At this point, it is a matter of balancing sensor gain and exposure time. You want to be able to see the tags with the smallest exposure possible to minimize motion blur.
-This usually calls for a high sensor gain setting. For simple 2D tracking,
-it is often advisable to max-out your sensor gain, and then increase your exposure from zero until targets are sufficiently tracked. Make sure the correct family is selected in the "Standard" tab if tracking isn't working.
+Change the "confidence threshold" slider to adjust the required confidence for a successful detection. All results are posted over JSON, but we recommend using the built-in sorting interface
+to optimize for a single target which will be represented by networktables values "tx," "ty," "ta," and "tclass."
 
+Change the crop window to easily ignore objects outside of the desired detection zone.
 
 ----------
 
-Standard Tab
+
+Nerual Classifier Pipeline
 ~~~~~~~~~~~~~~~~~~~~~~
 
-----------------------
+----------
 
- 
-Family
---------------------------------------
-Selects the fiducial/AprilTag family type. For FRC, you should selection "AprilTag Classic 16h5 (30 tags)"
+To get started, ensure your Google Coral is plugged into the USB-A port on your Limelight.
+
+Change "Pipeline Type" to "Neural Classifier" to start running inference on the built-in test model. You can train your own classifier models using the method documented in the "Training" section.
+
+The "Crop" window will allow you to better control the image used for neural network inference. While classifier models are capable of incredible levels of generalization in diverse environments, you will 
+see greater success by minimizing the number of variables in your image.
 
 
-Marker Size
---------------------------------
-Sets the expected size of the tags your robot will encounter in mm. For FRC, this should be set to 203.2
-
-Detector Downscale
---------------------------------
-Increasing this number will result in significant performance boosts. This this will sometimes result in reduced range, but the cost is usually minimal.
-
-ID Filters
---------------------------------
-ID Filters allow you specify exactly which tags you care about. For most FRC teams, each pipeline should be configured to track exactly one tag ID.
-This is a comma-separated list of numbers (eg. "0,1")
-
-(ADVANCED) Localization ID Filters
-----------------------------------------------------------------
-This is only for advanced users. This filter allows you to specify the tags that should be considered during field-space localization). It is recommended to only consider the tags that you plan on seeing during a match.
-
-Multi-Target Sorting and Grouping
---------------------------------
-This allows for the exact grouping functionality seen in standard retroreflective pipelines. In most games, the only feature to modify is the "Area" filter, which will allow you to filter-out small tags.
-
-------------------------------
+----------

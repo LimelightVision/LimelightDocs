@@ -22,6 +22,10 @@ Quick Start for FRC
 * Input Tab - Set "Black Level" to zero
 * Input Tab - Set "Gain" to 20 
 * Input Tab - Reduce exposure to reduce motion blur. Stop reducing once tracking reliability decreases.
+
+* Standard Tab - If would like to increase your framerate, increase the "Detector Downscale"
+* Input Tab - For increased range and/or accuracy, increase the capture resolution.
+
 * Click the "Gear" Icon, and make sure your team number is set and that a static IP is configured.
 * Click "Change Team Number" and "Change IP Settings" if you changed their corresponding settings. Powercycle your robot.
 * You're done! Use "tx" and "ty" from networktables. Copy the code sample on the "getting started" page.
