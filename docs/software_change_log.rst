@@ -4,6 +4,106 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+
+2023.0.0 and 2023.0.1 (1/11/22)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Introducing AprilTags, Robot localization, Deep Neural Networks, a rewritten screenshot interface, and more.
+
+
+Features, Changes, and Bugfixes
+--------------------------------------------
+
+* New sensor capture pipeline and Gain control
+
+	* Our new capture pipeline allows for exposure times 100x shorter than what they were in 2022. 
+	  The new pipeline also enables Gain Control. This is extremely important for AprilTags tracking, and will serve to make retroreflective targeting more reliable than ever. Before Limelight OS 2023, Limelight's sensor gain was non-deterministic (we implemented some tricks to make it work anyways).
+      
+	* With the new "Sensor Gain" slider, teams can make images darker or brighter than ever before without touching the exposure slider. Increasing gain will increase noise in the image.
+	
+	* Combining lower gain with the new lower exposure times, it is now possible to produce nearly completely black images with full-brightness LEDs and retroreflective targets. This will help mitigate LED and sunlight reflections while tracking retroreflective targets.
+
+	* By increasing Sensor Gain and reducing exposure, teams will be able to minimize the effects of motion blur due to high exposure times while tracking AprilTags.
+
+	* We have managed to develop this new pipeline while retaining all features - 90fps, hardware zoom, etc.
+
+* More Resolution Options
+
+	* There two new capture resolutsions for LL1, LL2, and LL2+: 640x480x90fps, and 1280x960x22fps
+
+* Optimized Web Interface
+
+	* The web gui will now load and initialize up to 3x faster on robot networks.
+
+* Rewritten Snapshots Interface
+
+	* The snapshots feature has been completely rewritten to allow for image uploads, image downloads, and image deletion. There are also new APIs for capturing snapshots detailed in the documentation.
+
+* SolvePnP Improvements
+
+	* Our solvePnP-based camera localization feature had a nasty bug that was seriously limiting its accuracy every four frames. This has been addressed, and a brand new full 3D canvas has been built for Retroreflective/Color SolvePNP visualizations.
+
+* Web Interface Bugfix
+
+	* There was an extremely rare issue 2022 that caused the web interface to permanently break during the first boot after flashing, which would force the user to re-flash. The root cause was found and fixed for good.
+
+* New APIs
+
+	* Limelight now include REST and Websocket APIs. REST, Websocket, and NetworkTables APIs all support the new JSON dump feature, which lists all data for all targets in a human readable, simple-to-parse format for FRC and all other applications.
+
+
+Zero-Code Learning-Based Vision & Google Coral Support
+----------------------------------------------------------------------------------------
+
+
+	* Google Coral is now supported by all Limelight models. Google Coral is a 4TOPs (Trillions-of-Operations / second) USB hardware accelerator that is purpose built for inference on 8-bit neural networks.
+	* Just like retroreflective tracking a few years ago, the barrier to entry for learning-based vision on FRC robots has been too high for the average team to even make an attempt. We have developed all of the infrastructure required to make learning-based vision as easy as retroreflective targets with Limelight.
+	* We have a cloud GPU cluster, training scripts, a dataset aggregation tool, and a human labelling team ready to go. We are excited to bring deep neural networks to the FRC community for the first time.
+
+	* We currently support two types of models: Object Detection models, and Image classification models.
+		* Object detection models will provide "class IDs" and bounding boxes (just like our retroreflective targets) for all detected objects. This is perfect for real-time game piece tracking.
+			* Please contribute to the first-ever FRC object detection model by submitting images here: https://datasets.limelightvision.io/frc2023
+
+		* Image classification models will ingest an image, and produce a single class label. 
+			* To learn more and to start training your own models for Limelight, check out Teachable Machine by google.
+			* https://www.youtube.com/watch?v=T2qQGqZxkD0
+			* Image classifiers can be used to classify internal robot state, the state of field features, and so much more.
+
+	* Limelight OS 2023.0 does not  provide the ability to upload custom models. This will be enabled shortly in 2023.1 
+
+
+Zero-Code AprilTag Support
+--------------------------------------------
+
+* AprilTags are as easy as retroreflective targets with Limelight. Because they have a natural hard filter in the form of an ID, there is even less of a reason to have your roboRIO do any vision-related filtering.
+* To start, use tx, ty, and ta as normal. Zero code changes are required. Sort by any target characteristic, utilize target groups, etc.
+* Because AprilTags both always square and always uniquely identifiable, they provide the perfect platform for full 3D pose calculations.
+* The feedback we've received for this feature in our support channels has been extremely positive. We've made AprilTags as easy as possible, from 2D tracking to a full 3D robot localization on the field 
+* Check out the Field Map Specification and Coordinate System Doc for more detailed information.
+* There are four ways to use AprilTags with Limelight:
+
+* AprilTags in 2D
+	* Use tx, ty, and ta. Configure your pipelines to seek out a specific tag ID.
+	* <gif>
+
+
+	
+* Point-of-Interest 3D AprilTags
+	* Use tx and ty, and ta. The point of interest offset is all most teams will need to track targets do not directly have AprilTags attached to them.
+	* <gif>
+		
+* Full 3D
+	* Track tags, or your camera in Full 3D
+	* <gif>
+
+
+* Field-Space Robot Localization
+	* Tell your Limelight how it's mounted, upload a field map, and your LL will provide the field pose of your robot for use with the WPILib Pose Estimator.
+	* Our field coordinate system places (0,0) at the center of the field instead of a corner.
+	* <gif>
+
+
+
 2022.3.0 (4/13/22)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
