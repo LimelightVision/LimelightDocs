@@ -5,7 +5,7 @@ Software Change Log
 Contact us or post to CD to suggest upgrades for Limelight!
 
 
-2023.0.0 and 2023.0.1 (1/11/22)
+2023.0.0 and 2023.0.1 (1/11/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Introducing AprilTags, Robot localization, Deep Neural Networks, a rewritten screenshot interface, and more.
