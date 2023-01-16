@@ -68,6 +68,7 @@ Zero-Code Learning-Based Vision & Google Coral Support
 		* Image classification models will ingest an image, and produce a single class label. 
 			* To learn more and to start training your own models for Limelight, check out Teachable Machine by google.
 			* https://www.youtube.com/watch?v=T2qQGqZxkD0
+			* Teachable machine models are directly compatible with Limelight.
 			* Image classifiers can be used to classify internal robot state, the state of field features, and so much more.
 			* Use the tclass networktables key to use these models.
 
