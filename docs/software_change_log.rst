@@ -63,11 +63,13 @@ Zero-Code Learning-Based Vision & Google Coral Support
 	* We currently support two types of models: Object Detection models, and Image classification models.
 		* Object detection models will provide "class IDs" and bounding boxes (just like our retroreflective targets) for all detected objects. This is perfect for real-time game piece tracking.
 			* Please contribute to the first-ever FRC object detection model by submitting images here: https://datasets.limelightvision.io/frc2023
+			* Use tx, ty, ta, and tclass networktables keys or the JSON dump to use detection networks
 
 		* Image classification models will ingest an image, and produce a single class label. 
 			* To learn more and to start training your own models for Limelight, check out Teachable Machine by google.
 			* https://www.youtube.com/watch?v=T2qQGqZxkD0
 			* Image classifiers can be used to classify internal robot state, the state of field features, and so much more.
+			* Use the tclass networktables key to use these models.
 
 	* Limelight OS 2023.0 does not  provide the ability to upload custom models. This will be enabled shortly in 2023.1 
 
@@ -87,19 +89,19 @@ Zero-Code AprilTag Support
 	* <gif>
 
 
-	
 * Point-of-Interest 3D AprilTags
-	* Use tx and ty, and ta. The point of interest offset is all most teams will need to track targets do not directly have AprilTags attached to them.
+	* Use tx and ty, ta, and tid networktables keys. The point of interest offset is all most teams will need to track targets do not directly have AprilTags attached to them.
 	* <gif>
 		
 * Full 3D
-	* Track tags, or your camera in Full 3D
+	* Track your LL, your robot, or tags in full 3D. Use camtran or json to pull relevant data into your roboRio.
 	* <gif>
 
 
 * Field-Space Robot Localization
 	* Tell your Limelight how it's mounted, upload a field map, and your LL will provide the field pose of your robot for use with the WPILib Pose Estimator.
 	* Our field coordinate system places (0,0) at the center of the field instead of a corner.
+	* Use the botpose networktables key for this feature.
 	* <gif>
 
 
