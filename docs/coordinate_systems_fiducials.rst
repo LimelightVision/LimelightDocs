@@ -5,7 +5,7 @@
 ------------------------
 
 
-Limelight Camera Space: 
+Limelight Camera Space
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ------------------------
@@ -21,7 +21,7 @@ Z+ → Pointing out of the camera
 ------------------------
 
 
-Target Space:
+Target Space
 ~~~~~~~~~~~~~~~~~~~~~~
 
 ------------------------
