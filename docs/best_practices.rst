@@ -31,12 +31,9 @@ Before An Event
                     {
                         // Make sure you only configure port forwarding once in your robot code.
                         // Do not place these function calls in any periodic functions
-                        PortForwarder.add(5800, "limelight.local", 5800);
-                        PortForwarder.add(5801, "limelight.local", 5801);
-                        PortForwarder.add(5802, "limelight.local", 5802);
-                        PortForwarder.add(5803, "limelight.local", 5803);
-                        PortForwarder.add(5804, "limelight.local", 5804);
-                        PortForwarder.add(5805, "limelight.local", 5805);
+                        for (int port = 5800; port <= 5805; port++) {
+                            PortForwarder.add(port, "limelight.local", port);
+                        }
                     }
 
     .. tab:: C++
@@ -46,12 +43,9 @@ Before An Event
             #include <wpi/PortForwarder.h>
             void Robot::RobotInit 
             {
-                wpi::PortForwarder::GetInstance().Add(5800, "limelight.local", 5800);
-                wpi::PortForwarder::GetInstance().Add(5801, "limelight.local", 5801);
-                wpi::PortForwarder::GetInstance().Add(5802, "limelight.local", 5802);
-                wpi::PortForwarder::GetInstance().Add(5803, "limelight.local", 5803);
-                wpi::PortForwarder::GetInstance().Add(5804, "limelight.local", 5804);
-                wpi::PortForwarder::GetInstance().Add(5805, "limelight.local", 5805);
+                for (int port = 5800; port <= 5805; port++) {
+                    wpi::PortForwarder::GetInstance().Add(port, "limelight.local", port);
+                }
             }
                     
 
