@@ -44,7 +44,7 @@ Robot Localization (botpose and MegaTag)
 --------------------------------------------
 
 If your Limelight's robot-space pose has been configured in the web ui, and a field map has been uploaded via the web ui, then the robot's location in field space
-will be available via the "botpose" networktables key. 
+will be available via the "botpose" networktables array (x,y,z in meters, rx, ry, rz in degrees). 
 
 .. image:: https://thumbs.gfycat.com/ForthrightUnfinishedIridescentshark-size_restricted.gif
     :width: 100%

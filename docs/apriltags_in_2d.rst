@@ -32,8 +32,13 @@ Quick Start for FRC AprilTags
 
 Tips
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Make sure your tags are as flat as possible.
-* Make sure your camera is mounted above or below tag height. You don't want your camera to ever be completely "head on" with a tag if you want to avoid tag flipping.
+For ideal tracking, consider the following:
+* Your tags should be as flat as possible.
+* Your Limelight should be mounted above or below tag height. You don't want your camera to ever be completely "head on" with a tag if you want to avoid tag flipping.
+* Increasing capture resolution will always increase 3D accuracy and reduce noise. It will usually increase range.
+* Increasing detector downscale will always increase framerates. It might decrease effective range, but in many cases this may be negligible. It will not affect 3D accuracy or decoding accuracy.
+* Reducing exposure will always improve motion-blur resilience. This is actually really easy to observe. 
+* Reducing the brightness and contrast of the image will generally improve framerates and reduce range.
 
 ----------
 
