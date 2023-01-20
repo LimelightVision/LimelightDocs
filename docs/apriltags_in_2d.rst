@@ -78,12 +78,15 @@ ID Filters
 ID Filters allow you specify exactly which tags you care about. For most FRC teams, each pipeline should be configured to track exactly one tag ID.
 This is a comma-separated list of numbers (eg. "0,1"). This feature is important for eliminating the vast majority of false-positives.
 
+.. image:: https://thumbs.gfycat.com/NeatOfficialChinchilla-small.gif
+    :width: 100%
+
 Cropping
 --------------------------------
 Cropping removes content from the image for huge performance boosts. Use the NT "crop" key to crop dynamically during matches
 
 .. image:: https://thumbs.gfycat.com/HandyCompleteHerring-size_restricted.gif
-
+    :width: 100%
 
 
 Multi-Target Sorting and Grouping
