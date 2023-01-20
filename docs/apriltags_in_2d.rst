@@ -35,10 +35,14 @@ Tips
 For ideal tracking, consider the following:
 * Your tags should be as flat as possible.
 * Your Limelight should be mounted above or below tag height. You don't want your camera to ever be completely "head on" with a tag if you want to avoid tag flipping.
-* Increasing capture resolution will always increase 3D accuracy and reduce noise. It will usually increase range.
-* Increasing detector downscale will always increase framerates. It might decrease effective range, but in many cases this may be negligible. It will not affect 3D accuracy or decoding accuracy.
-* Reducing exposure will always improve motion-blur resilience. This is actually really easy to observe. 
-* Reducing the brightness and contrast of the image will generally improve framerates and reduce range.
+
+There is an interplay between the following variables for AprilTag Tracking:
+
+* Increasing capture resolution will always increase 3D accuracy, increase 3d stability, and reduce noise. This will also reduce the rate of ambiguity flipping from most perspectives. It will usually increase range. This will reduce pipeline framerate.
+* Increasing detector downscale will always increase pipeline framerate. It might decrease effective range, but in many cases this may be negligible. It will not affect 3D accuracy, 3D stability, or decoding accuracy.
+* Reducing exposure will always improve motion-blur resilience. This is actually really easy to observe. This may reduce range
+* Reducing the brightness and contrast of the image will generally improve pipeline framerate and reduce range.
+* Increasing Sensor gain allows you to increase brightness without increasing exposure. It may reduce 3D stability, and it may reduce tracking stability.
 
 ----------
 
