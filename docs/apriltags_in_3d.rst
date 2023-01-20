@@ -49,7 +49,8 @@ will be available via the "botpose" networktables array (x,y,z in meters, rx, ry
 .. image:: https://thumbs.gfycat.com/ForthrightUnfinishedIridescentshark-size_restricted.gif
     :width: 100%
 
-Our implementation of botpose is called MegaTag. If more than one tag is in view, it is resilient to tag ambiguities and noise in the image.
+Our implementation of botpose is called MegaTag. If more than one tag is in view, it is resilient to individual tag ambiguities and noise in the image.
+If all kepoints are coplanar, there is still some risk of ambiguity flipping.
 
 * Green Cylinder: Individual per-tag bot pose
 * Blue Cylinder: Old BotPose
