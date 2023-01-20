@@ -38,7 +38,7 @@ the most useful transforms will be "Camera Transform in Target Space", and "Robo
 .. image:: https://thumbs.gfycat.com/FineColorlessBeardeddragon-size_restricted.gif
     :width: 100%
 
-Robot Localization
+Robot Localization (botpose and MegaTag)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 --------------------------------------------
@@ -49,3 +49,31 @@ will be available via the "botpose" networktables key.
 .. image:: https://thumbs.gfycat.com/ForthrightUnfinishedIridescentshark-size_restricted.gif
     :width: 100%
 
+Our implementation of botpose is called MegaTag. If more than one tag is in view, it is resilient to tag ambiguities and noise in the image.
+
+* Green Cylinder: Individual per-tag bot pose
+* Blue Cylinder: Old BotPose
+* White Cylinder: MegaTag Botpose
+
+.. image:: https://thumbs.gfycat.com/ConfusedQuerulousLiger-size_restricted.gif
+    :width: 100%
+
+Notice how the new botpose (white cylinder) is extremely stable compared to the old botpose (blue cylinder). You can watch the tx and ty values as well.
+
+This is not restricted to planar tags. It scales to any number of tags in full 3D and in any orientation. Floor tags and ceiling tags work perfectly.
+
+Here’s a diagram demonstrating one aspect of how this works with a simple planar case. 
+The results are actually better than what is depicted, as the MegaTag depicted has a significant error applied to three points instead of one point. 
+As the 3D combined MegaTag increases in size and in keypoint count, its stability increases.
+
+.. image:: https://downloads.limelightvision.io/documents/MEGATAG.png
+
+
+Configuring your Limelight's Robot-Space Pose
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--------------------------------------------
+
+LL Forward, LL Right, and LL Up represent distances along the Robot's forward, right, and up vectors if you were to embody the robot. (in meters).
+LL Roll, Pitch, and Yaw represent the rotation of your Limelight in degrees. You can modify these values and watch the 3D model of the Limelight change in the 3D viewer.
+Limelight uses this configuration internally to go from the target pose in camera space -> robot pose in field space.  
