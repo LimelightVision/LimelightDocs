@@ -76,11 +76,15 @@ Increasing this number will result in significant performance boosts. This this 
 ID Filters
 --------------------------------
 ID Filters allow you specify exactly which tags you care about. For most FRC teams, each pipeline should be configured to track exactly one tag ID.
-This is a comma-separated list of numbers (eg. "0,1")
+This is a comma-separated list of numbers (eg. "0,1"). This feature is important for eliminating the vast majority of false-positives.
 
-(ADVANCED) Localization ID Filters
-----------------------------------------------------------------
-This is only for advanced users. This filter allows you to specify the tags that should be considered during field-space localization). It is recommended to only consider the tags that you plan on seeing during a match.
+Cropping
+--------------------------------
+Cropping removes content from the image for huge performance boosts. Use the NT "crop" key to crop dynamically during matches
+
+.. image:: https://thumbs.gfycat.com/HandyCompleteHerring-size_restricted.gif
+
+
 
 Multi-Target Sorting and Grouping
 --------------------------------
