@@ -15,8 +15,8 @@ To configure an AprilTag pipeline, first access the Limelight web interface at <
 
 
 
-Quick Start for FRC
-~~~~~~~~~~~~~~~~~~~~~~
+Quick Start for FRC AprilTags
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Input Tab - Change "Pipeline Type" to "Fiducial Markers"
 * Standard Tab - Make sure "family" is set to "AprilTag Classic 16h5"
 * Input Tab - Set "Black Level" to zero
@@ -30,7 +30,11 @@ Quick Start for FRC
 * Click "Change Team Number" and "Change IP Settings" if you changed their corresponding settings. Powercycle your robot.
 * You're done! Use "tx" and "ty" from networktables. Copy the code sample on the "getting started" page.
 
+Tips
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Make sure your tags are as flat as possible.
+* Make sure your camera is mounted above or below tag height. You don't want your camera to ever be completely "head on" with a tag if you want to avoid tag flipping.
+
 ----------
 
 .. _Input:
