@@ -40,8 +40,8 @@ For ideal tracking, consider the following:
 
 There is an interplay between the following variables for AprilTag Tracking:
 
-* Increasing capture resolution will always increase 3D accuracy, increase 3d stability, and reduce noise. This will also reduce the rate of ambiguity flipping from most perspectives. It will usually increase range. This will reduce pipeline framerate.
-* Increasing detector downscale will always increase pipeline framerate. It might decrease effective range, but in many cases this may be negligible. It will not affect 3D accuracy, 3D stability, or decoding accuracy.
+* Increasing capture resolution will always increase 3D accuracy and increase 3d stability. This will also reduce the rate of ambiguity flipping from most perspectives. It will usually increase range. This will reduce pipeline framerate.
+* Increasing detector downscale will always increase pipeline framerate. It will decrease effective range, but in some cases this may be negligible. It will not affect 3D accuracy, 3D stability, or decoding accuracy.
 * Reducing exposure will always improve motion-blur resilience. This is actually really easy to observe. This may reduce range
 * Reducing the brightness and contrast of the image will generally improve pipeline framerate and reduce range.
 * Increasing Sensor gain allows you to increase brightness without increasing exposure. It may reduce 3D stability, and it may reduce tracking stability.
