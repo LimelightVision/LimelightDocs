@@ -32,7 +32,9 @@ Quick Start for FRC AprilTags
 
 Tips
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 For ideal tracking, consider the following:
+
 * Your tags should be as flat as possible.
 * Your Limelight should be mounted above or below tag height. You don't want your camera to ever be completely "head on" with a tag if you want to avoid tag flipping.
 
