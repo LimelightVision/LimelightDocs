@@ -80,7 +80,7 @@ Selects the fiducial/AprilTag family type. For FRC, you should selection "AprilT
 
 Marker Size
 --------------------------------
-Sets the expected size of the tags your robot will encounter in mm. For FRC, this should be set to 203.2
+Sets the expected size of the tags your robot will encounter in mm. For FRC, this should be set to 152.4
 
 Detector Downscale
 --------------------------------

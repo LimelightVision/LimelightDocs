@@ -35,7 +35,7 @@ AprilTag Map for FRC 2023 Charged Up
             {
             "family": "apriltag3_16h5_classic",
             "id": 1,
-            "size": 203.2,
+            "size": 152.4,
             "transform": [
                 -1,
                 0,
@@ -59,7 +59,7 @@ AprilTag Map for FRC 2023 Charged Up
             {
             "family": "apriltag3_16h5_classic",
             "id": 2,
-            "size": 203.2,
+            "size": 152.4,
             "transform": [
                 -1,
                 0,
@@ -83,7 +83,7 @@ AprilTag Map for FRC 2023 Charged Up
             {
             "family": "apriltag3_16h5_classic",
             "id": 3,
-            "size": 203.2,
+            "size": 152.4,
             "transform": [
                 -1,
                 0,
@@ -107,7 +107,7 @@ AprilTag Map for FRC 2023 Charged Up
             {
             "family": "apriltag3_16h5_classic",
             "id": 4,
-            "size": 203.2,
+            "size": 152.4,
             "transform": [
                 -1,
                 0,
@@ -131,7 +131,7 @@ AprilTag Map for FRC 2023 Charged Up
             {
             "family": "apriltag3_16h5_classic",
             "id": 5,
-            "size": 203.2,
+            "size": 152.4,
             "transform": [
                 1,
                 0,
@@ -155,7 +155,7 @@ AprilTag Map for FRC 2023 Charged Up
             {
             "family": "apriltag3_16h5_classic",
             "id": 6,
-            "size": 203.2,
+            "size": 152.4,
             "transform": [
                 1,
                 0,
@@ -179,7 +179,7 @@ AprilTag Map for FRC 2023 Charged Up
             {
             "family": "apriltag3_16h5_classic",
             "id": 7,
-            "size": 203.2,
+            "size": 152.4,
             "transform": [
                 1,
                 0,
@@ -203,7 +203,7 @@ AprilTag Map for FRC 2023 Charged Up
             {
             "family": "apriltag3_16h5_classic",
             "id": 8,
-            "size": 203.2,
+            "size": 152.4,
             "transform": [
                 1,
                 0,
