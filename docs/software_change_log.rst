@@ -5,6 +5,74 @@ Software Change Log
 Contact us or post to CD to suggest upgrades for Limelight!
 
 
+
+2023.1 (1/19/23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+MegaTag and Performance Boosts
+
+
+Correcting A Mistake
+--------------------------------------------
+The default marker size parameter in the UI has been corrected to 152.4mm (down from 203.2mm). This was the root of most accuracy issues. While it is sometimes acceptable to measure tags by their outermost border, the Limelight interface uses the detection corner distance (black box side length).
+
+Increased Tracking Stability
+--------------------------------------------
+There are several ways to tune AprilTag detection and decoding. We’ve improved stability across the board, especially in low light / low exposure environments.
+
+Ultra Fast Grayscaling
+--------------------------------------------
+Grayscaling is 3x-6x faster than before. Teams will always see a gray video stream while tracking AprilTags. While grayscaling was never very expensive, we want to squeeze as much performance out of the hardware as possible.
+
+Cropping For Performance
+--------------------------------------------
+AprilTag pipelines now have crop sliders. Cropping your image will result in improved framerates at any resolution. AprilTag pipelines also support the dynamic “crop” networktables key. In case you missed it last year, dynamic cropping with the “Crop” NT key was added at the request of one of the best teams in the world in 2022 to improve shoot-on-the-move reliability.
+Note the framerate increase from ~55fps to ~80fps.
+
+.. image:: https://thumbs.gfycat.com/HandyCompleteHerring-size_restricted.gif
+
+
+Easier Filtering
+--------------------------------------------
+There is now a single “ID filter” field in AprilTag pipelines which filters JSON output, botpose-enabled tags, and tx/ty-enabled tags. The dual-filter setup was buggy and confusing.
+
+Breaking Change
+--------------------------------------------
+The NT Key “camtran” is now “campose”
+
+
+JSON update
+--------------------------------------------
+"botpose" is now a part of the json results dump
+
+
+Limelight MegaTag (new botpose)
+--------------------------------------------
+My #1 priority has been rewriting botpose for greater accuracy, reduced noise, and ambiguity resilience. Limelight’s new botpose implementation is called MegaTag. Instead of computing botpose with a dumb average of multiple individual field-space poses, MegaTag essentially combines all tags into one giant 3D tag with several keypoints. This has enormous benefits.
+
+The following GIF shows a situation designed to induce tag flipping:
+Green Cylinder: Individual per-tag bot pose
+Blue Cylinder: 2023.0.1 BotPose
+White Cylinder: New MegaTag Botpose
+
+Notice how the new botpose (white cylinder) is extremely stable compared to the old botpose (blue cylinder). You can watch the tx and ty values as well.
+.. image:: https://thumbs.gfycat.com/ConfusedQuerulousLiger-size_restricted.gif
+
+Here’s the full screen, showing the tag ambiguity:
+.. image:: https://thumbs.gfycat.com/ElementaryCarefulHoopoe-size_restricted.gif
+
+Here are the advantages:
+
+Botpose is now resilient to ambiguities (tag flipping) if more than one tag is in view (unless they are close and coplanar. Ideally the keypoints are not coplanar).
+Botpose is now more resilient to noise in tag corners if more than one tag is in view. The farther away the tags are from each other, the better.
+This is not restricted to planar tags. It scales to any number of tags in full 3D and in any orientation. Floor tags and ceiling tags would work perfectly.
+
+Here’s a diagram demonstrating one aspect of how this works with a simple planar case. The results are actually better than what is depicted, as the MegaTag depicted has a significant error applied to three points instead of one point. As the 3D combined MegaTag increases in size and in keypoint count, its stability increases.
+.. image:: https://downloads.limelightvision.io/documents/MEGATAG.png
+
+Nerual Net upload is being pushed to 2023.2!
+
+
 2023.0.0 and 2023.0.1 (1/11/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
