@@ -46,6 +46,11 @@ JSON update
 "botpose" is now a part of the json results dump
 
 
+Field Space Visualizer Update
+--------------------------------------------
+The Field-space visualizer now shows the 2023 FRC field. It should now be easier to judge botpose accuracy at a glance.
+
+
 Limelight MegaTag (new botpose)
 --------------------------------------------
 My #1 priority has been rewriting botpose for greater accuracy, reduced noise, and ambiguity resilience. Limelight’s new botpose implementation is called MegaTag. Instead of computing botpose with a dumb average of multiple individual field-space poses, MegaTag essentially combines all tags into one giant 3D tag with several keypoints. This has enormous benefits.
