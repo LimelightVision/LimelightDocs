@@ -3,6 +3,10 @@
 
 Limelight's field-space localization feature uses .fmap files to compute a robot pose for use by WPILIB's pose estimators.
 Our fmap files support maps comprised of different target sizes and different families.
+
+You can use fmaps to define "environments" such as FRC fields, or "objects" such as objects that have several attached AprilTags.
+To use an fmap, all you need to do is upload it to your Limelight using the interface or one of the upload APIs (coming soon). 
+
 The .fmap file is a JSON file containing a single "fiducial" array.
 Each entry in the fiducial array has the following structure:
 
