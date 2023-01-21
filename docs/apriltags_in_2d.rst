@@ -2,7 +2,7 @@ Tracking AprilTags
 ==============================================================
 
 AprilTags are tracked using the "tx", "ty", and "ta" values in NetworkTables, just like standard retroreflective targets! No code changes are required to upgrade a retroreflective tracking robot to apriltags.
-"botpose" and "camtran" may also be used for field-space and target-space 3D tracking.
+"botpose" and "campose" may also be used for field-space and target-space 3D tracking.
 
 For more advanced usage with multiple tags, the JSON results dump may be used.
 

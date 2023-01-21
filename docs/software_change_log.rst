@@ -163,7 +163,7 @@ Zero-Code AprilTag Support
 	* <gif>
 		
 * Full 3D
-	* Track your LL, your robot, or tags in full 3D. Use camtran or json to pull relevant data into your roboRio.
+	* Track your LL, your robot, or tags in full 3D. Use campose or json to pull relevant data into your roboRio.
 	* <gif>
 
 
