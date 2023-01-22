@@ -36,7 +36,7 @@ Tips
 For ideal tracking, consider the following:
 
 * Your tags should be as flat as possible.
-* Your Limelight should be mounted above or below tag height. You don't want your camera to ever be completely "head on" with a tag if you want to avoid tag flipping.
+* Your Limelight should be mounted above or below tag height and angled up/down. Your target should look as trapezoidal as possible from your camera's perspective. You don't want your camera to ever be completely "head-on" with a tag if you want to avoid tag flipping.
 
 There is an interplay between the following variables for AprilTag Tracking:
 
