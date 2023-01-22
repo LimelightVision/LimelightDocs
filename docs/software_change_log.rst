@@ -61,9 +61,11 @@ Blue Cylinder: 2023.0.1 BotPose
 White Cylinder: New MegaTag Botpose
 
 Notice how the new botpose (white cylinder) is extremely stable compared to the old botpose (blue cylinder). You can watch the tx and ty values as well.
+
 .. image:: https://thumbs.gfycat.com/ConfusedQuerulousLiger-size_restricted.gif
 
 Here’s the full screen, showing the tag ambiguity:
+
 .. image:: https://thumbs.gfycat.com/ElementaryCarefulHoopoe-size_restricted.gif
 
 Here are the advantages:
@@ -73,6 +75,7 @@ Botpose is now more resilient to noise in tag corners if more than one tag is in
 This is not restricted to planar tags. It scales to any number of tags in full 3D and in any orientation. Floor tags and ceiling tags would work perfectly.
 
 Here’s a diagram demonstrating one aspect of how this works with a simple planar case. The results are actually better than what is depicted, as the MegaTag depicted has a significant error applied to three points instead of one point. As the 3D combined MegaTag increases in size and in keypoint count, its stability increases.
+
 .. image:: https://downloads.limelightvision.io/documents/MEGATAG.png
 
 Nerual Net upload is being pushed to 2023.2!
