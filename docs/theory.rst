@@ -87,7 +87,7 @@ The end result of the vision pipeline is a pixel location of the best contour in
 
 First we assume that we have a perfect "pinhole" camera.  In practice this can be far from the truth but the limelight's camera is very close.  (A fisheye lens would be far from this ideal as a counter-example.)  
 
-The limelight camera has a horizontal field of view of 54 degrees and a vertical field of view of 41 degrees.  It captures images at 320x240 resolution.  We assume the center of the image is the optical azis of the camera (so the x and y angles for that location are 0,0).  Given these known values, we can use a little trigonometry to compute the angles for any pixel in the image.  
+The limelight camera has a horizontal field of view of 54 degrees and a vertical field of view of 41 degrees.  It captures images at 320x240 resolution.  We assume the center of the image is the optical axis of the camera (so the x and y angles for that location are 0,0).  Given these known values, we can use a little trigonometry to compute the angles for any pixel in the image.  
 
 The below diagram shows an example target point which we want to compute angles for.  Pixel coordinates start at the upper left corner of the image and are positive to the right and down.  
 
