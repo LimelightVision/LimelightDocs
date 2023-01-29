@@ -6,7 +6,7 @@
 1. You can accurately and quickly aim your robot using only a limelight and your drivetrain.
 2. We added the limelight to a robot, implemented the code and tuned it in less than 1hr.
 
-Using high-framerate vision tracking, it is now possible to use the vision pipeline directly as the “sensor” in a PID control loop to guide your robot or turret.  In order to test this idea we added a limelight to our 2017 FRC robotand made it aim at vision targets using nothing more than the drivetrain and the networks table data being reported by the limelight. 
+Using high-framerate vision tracking, it is now possible to use the vision pipeline directly as the “sensor” in a PID control loop to guide your robot or turret.  In order to test this idea we added a limelight to our 2017 FRC robot and made it aim at vision targets using nothing more than the drivetrain and the networks table data being reported by the limelight. 
 
 In this example, our test candidate was a 2017 FRC robot which uses a 6-wheel drivetrain with colson wheels.  Here is a picture of us adding a limelight onto the robot in order to do this test.  
 
