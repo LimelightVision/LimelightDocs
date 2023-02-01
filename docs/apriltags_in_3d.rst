@@ -1,13 +1,12 @@
 (ADVANCED) 3D AprilTags
 ==============================================================
 
-(DOCS WIP)
-
 There are three levels of 3D AprilTag tracking in Limelight OS:
 
 * Point of interest tracking (Easy to use, requires zero code changes, compatible with "tx" and "ty")
 * Full 3D Tracking
 * Robot Localization
+* All 3D data is accessible via direct NetworkTables or JSON.
 
 Point-of-Interest Tracking
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

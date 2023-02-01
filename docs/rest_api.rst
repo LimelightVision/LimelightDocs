@@ -21,4 +21,4 @@ ws://<IPADDRESS>:5806        	Websocket server streaming full JSON dump of curre
 ========================== ==========================================================================================================================================================
 
 
-See `JSON Dump Sepcification <https://docs.limelightvision.io/en/latest/json_dump.html>`_ for more information.
+See `JSON Dump Specification <https://docs.limelightvision.io/en/latest/json_dump.html>`_ for more information.

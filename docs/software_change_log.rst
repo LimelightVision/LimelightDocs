@@ -6,6 +6,46 @@ Contact us or post to CD to suggest upgrades for Limelight!
 
 
 
+2023.2 (1/28/23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Making 3D easier than ever.
+
+
+WPILib-compatible Botposes
+--------------------------------------------
+Botpose is now even easier to use out-of-the-box.
+
+* New NetworkTables Key "botpose_wpired" - botpose, but with the origin at the right-hand side of the driverstation on the red side of the field.
+* New NetworkTables Key "botpose_wpiblue" - botpose, but with the origin at the right-hand side of the driverstation on the blue side of the field.
+* New Json arrays - botpose_wpired, and botpose_wpiblue
+
+These match the WPILib Coordinate systems. Here's an example:
+		
+.. image:: img/botposes.png
+
+
+All botposes are printed directly in the field-space visualizer in the web interface, making it easy to confirm at a glance that everything is working properly.
+
+
+Easier access to 3D Data (Breaking Changes)
+--------------------------------------------
+RobotPose in TargetSpace is arguably the most useful data coming out of Limelight with repsect to AprilTags. Using this alone, you can perfectly alighn a drivetrain with an AprilTag on the field.
+Until now, this data has been buried in the JSON dump. In 2023.2, all 3D data for the primary in-view AprilTag is accessible over NT.
+
+* NetworkTables Key "campose" is now "camerapose_targetspace"
+* NetworkTables Key "targetpose" is now "targetpose_cameraspace"
+* New NetworkTables Key - "targetpose_robotspace"
+* New NetworkTables Key - "botpose_targetspace"
+
+
+Neural Net Upload
+--------------------------------------------
+Upload teachable machine models to the Limelight Classifier Pipeline. Make sure they are Tensorflow Lite EdgeTPU compatible models.
+Upload .tflite and .txt label files separately.
+
+
+
 2023.1 (1/19/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
