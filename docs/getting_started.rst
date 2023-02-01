@@ -89,12 +89,26 @@ Imaging
 .. _Downloads: https://limelightvision.io/pages/downloads
 .. tabs::
 	
+	.. tab:: Limelight 3
+
+		* Do not use a Windows 7 or Windows XP machine.
+		* Remove power from your limelight.
+		* Download the latest drivers, image from from the Downloads_ Page.
+		* Install the latest Balena Etcher flash tool from the Downloads_ Page.
+		* Run a USB-USB-C cable from your laptop to your limelight.
+		* Run "Balena Etcher" as an administrator.
+		* It may take up to 20 seconds for your machine to recognize the camera.
+		* Select the latest .zip image in your downloads folder
+		* Select a "Compute Module" device in the "Drives" menu
+		* Click "Flash"
+		* Once flashing is complete, remove the usb cable from your limelight.
+
 	.. tab:: Limelight 2
 
 		* Do not use a Windows 7 or Windows XP machine.
 		* Remove power from your limelight.
-		* Download the latest drivers, flasher tool, and image from from the Downloads_ Page.
-		* Install the latest Balena Etcher flash tool from the Downloads_ Page. The "installer" version is recommended.
+		* Download the latest drivers and image from from the Downloads_ Page.
+		* Install the latest Balena Etcher flash tool from the Downloads_ Page.
 		* Run a USB-MicroUSB cable from your laptop to your limelight.
 		* Run "Balena Etcher" as an administrator.
 		* It may take up to 20 seconds for your machine to recognize the camera.
@@ -131,7 +145,7 @@ Imaging
 
 Networking Setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We highly reccomend following the static IP instructions for reliability during events.
+We highly recommend following the static IP instructions for reliability during events.
 
 Follow these steps before starting:
 
