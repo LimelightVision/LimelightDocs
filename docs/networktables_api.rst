@@ -212,12 +212,12 @@ crop		Sets the crop rectangle. The pipeline must utilize the default crop rectan
 
 		.. code-block:: java
 
-		    double[] cropValues = new double[4];
+			double[] cropValues = new double[4];
 			cropValues[0] = -1.0;
-			cropValues[1] = 1.0; 
+			cropValues[1] = 1.0;
 			cropValues[2] = -1.0;
 			cropValues[3] = 1.0;
-			table.getEntry("crop").setDoubleArray(cropValues);
+			NetworkTableInstance.getDefault().getTable("limelight").getEntry("crop").setDoubleArray(cropValues);
 
 	.. tab:: C++
 
