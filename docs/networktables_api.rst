@@ -2,7 +2,7 @@ Complete NetworkTables API
 ============================
 
 
-Basic Targeting Data:
+Basic Targeting Data
 -------------------------------------------------
 
 Use the following code:
@@ -71,10 +71,10 @@ tc        Get the average HSV color underneath the crosshair region as a NumberA
 ======== ======================================================================================
 
 
-AprilTag and 3D Data:
+AprilTag and 3D Data
+-------------------------------------------------
 
 Use the following code:
--------------------------------------------------
 
 .. tabs::
 	
