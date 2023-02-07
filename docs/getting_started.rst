@@ -168,6 +168,9 @@ Follow these steps before starting:
 		* Enter your team number and press the "Update Team Number" button.
 		* Change your "IP Assignment" to "Static".
 		* Set your Limelight's IP address to "10.TE.AM.11".
+		* NOTE: Teams with zeros need to pay special attention:
+		* Team 916 uses 10.9.16.xx,
+		* Team 9106 uses 10.91.6.xx
 		* Set the Netmask to "255.255.255.0".
 		* Set the Gateway to "10.TE.AM.1".
 		* Click the "Update" button.
