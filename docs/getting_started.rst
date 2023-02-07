@@ -171,6 +171,7 @@ Follow these steps before starting:
 		* NOTE: Teams with zeros need to pay special attention:
 		* Team 916 uses 10.9.16.xx,
 		* Team 9106 uses 10.91.6.xx
+		* Team 9016 uses 10.90.16.xx
 		* Set the Netmask to "255.255.255.0".
 		* Set the Gateway to "10.TE.AM.1".
 		* Click the "Update" button.

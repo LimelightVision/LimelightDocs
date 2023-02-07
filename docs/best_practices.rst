@@ -86,6 +86,11 @@ Before Connecting to the Field
     * Subnet mask: **255.255.255.0**
     * Gateway: "10.TE.AM.1"
 
+NOTE: Teams with zeros need to pay special attention:
+    * Team 916 uses 10.9.16.xx,
+    * Team 9106 uses 10.91.6.xx
+    * Team 9016 uses 10.90.16.xx
+
 Additional information: https://docs.wpilib.org/en/stable/docs/networking/networking-introduction/ip-configurations.html
 
 Before Every Match
