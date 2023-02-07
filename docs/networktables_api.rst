@@ -98,11 +98,11 @@ to retrieve this data:
 
 ======================== ============================================================================================================================================================================
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-botpose   					Robot transform in field-space. Translation (X,Y,Z) Rotation(Pitch,Roll,Yaw)
+botpose   					Robot transform in field-space. Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw)
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-botpose_wpiblue  			Robot transform in field-space (blue driverstation WPILIB origin). Translation (X,Y,Z) Rotation(Pitch,Roll,Yaw)
+botpose_wpiblue  			Robot transform in field-space (blue driverstation WPILIB origin). Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw)
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-botpose_wpired   			Robot transform in field-space (red driverstation WPILIB origin). Translation (X,Y,Z) Rotation(Pitch,Roll,Yaw)
+botpose_wpired   			Robot transform in field-space (red driverstation WPILIB origin). Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw)
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 camerapose_targetspace   	3D transform of the camera in the coordinate system of the primary in-view AprilTag (array (6))
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
