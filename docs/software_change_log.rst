@@ -32,9 +32,15 @@ Here's an example of a Limelight on an elevator:
 .. image:: https://thumbs.gfycat.com/SeriousLegitimateDowitcher-size_restricted.gif
 
 
-Higher Max Exposure
+Increased Max Exposure
 --------------------------------------------
 The maximum exposure time is now 33ms (up from 12.5 ms). High-fps capture modes are still limited to (1/fps) seconds. 90hz pipelines, for example, will not have brighter images past 11ms exposure time.
+
+
+Botpose updates
+--------------------------------------------
+The maximum exposure time is now 33ms (up from 12.5 ms). High-fps capture modes are still limited to (1/fps) seconds. 90hz pipelines, for example, will not have brighter images past 11ms exposure time.
+
 
 Bugfixes
 --------------------------------------------
