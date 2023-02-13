@@ -46,7 +46,9 @@ ty        Vertical Offset From Crosshair To Target (LL1: -20.5 degrees to 20.5 d
 -------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ta        Target Area (0% of image to 100% of image)								
 -------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-tl        The pipeline's latency contribution (ms) Add at least 11ms for image capture latency.
+tl        The pipeline's latency contribution (ms). Add to "cl" to get total latency.
+-------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cl        Capture pipeline latency (ms). Time between the end of the exposure of the middle row of the sensor to the beginning of the tracking pipeline.
 -------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 tshort    Sidelength of shortest side of the fitted bounding box (pixels)
 -------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -98,11 +100,11 @@ to retrieve this data:
 
 ======================== ============================================================================================================================================================================
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-botpose   					Robot transform in field-space. Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw)
+botpose   					Robot transform in field-space. Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw), total latency (cl+tl)
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-botpose_wpiblue  			Robot transform in field-space (blue driverstation WPILIB origin). Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw)
+botpose_wpiblue  			Robot transform in field-space (blue driverstation WPILIB origin). Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw), total latency (cl+tl)
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-botpose_wpired   			Robot transform in field-space (red driverstation WPILIB origin). Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw)
+botpose_wpired   			Robot transform in field-space (red driverstation WPILIB origin). Translation (X,Y,Z) Rotation(Roll,Pitch,Yaw), total latency (cl+tl)
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 camerapose_targetspace   	3D transform of the camera in the coordinate system of the primary in-view AprilTag (array (6))
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -111,6 +113,8 @@ targetpose_cameraspace   	3D transform of the primary in-view AprilTag in the co
 targetpose_robotspace   	3D transform of the primary in-view AprilTag in the coordinate system of the Robot  (array (6))
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 botpose_targetspace   	  	3D transform of the robot in the coordinate system of the primary in-view AprilTag  (array (6))
+------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+camerapose_robotspace   	3D transform of the camera in the coordinate system of the robot  (array (6))
 ------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 tid    						ID of the primary in-view AprilTag
 ======================== ============================================================================================================================================================================
@@ -204,6 +208,11 @@ crop		Sets the crop rectangle. The pipeline must utilize the default crop rectan
 [2]	 	Y0 - Min or Max Y value of crop rectangle (-1 to 1)
 ----------- -------------------------------------------------------------------------------------
 [3]	 	Y1 - Min or Max Y value of crop rectangle (-1 to 1)
+=========== =====================================================================================
+
+=========== =====================================================================================
+camerapose_robotspace_set		Set the camera's pose in the coordinate system of the robot.
+----------- -------------------------------------------------------------------------------------
 =========== =====================================================================================
 
 .. tabs::
