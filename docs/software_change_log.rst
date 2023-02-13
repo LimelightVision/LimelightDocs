@@ -41,6 +41,7 @@ Bugfixes
 * Fix LL3 MJPEG streams in shuffleboard
 * Fix camMode - driver mode now produces bright, usable images.
 * Exposure label has been corrected - each "tick" represents 0.01ms and not 0.1 ms
+* Fix neural net detector upload
 
 
 
