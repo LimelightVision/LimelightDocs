@@ -20,11 +20,13 @@ Quick Start for FRC AprilTags
 * Input Tab - Change "Pipeline Type" to "Fiducial Markers"
 * Standard Tab - Make sure "family" is set to "AprilTag Classic 16h5"
 * Input Tab - Set "Black Level" to zero
-* Input Tab - Set "Gain" to 20 
+* Input Tab - Set "Gain" to 15 
 * Input Tab - Reduce exposure to reduce motion blur. Stop reducing once tracking reliability decreases.
 
 * Standard Tab - If would like to increase your framerate, increase the "Detector Downscale"
 * Input Tab - For increased range and/or accuracy, increase the capture resolution.
+
+* If you're seeing spurious tag detections, add the ID's you want to track to the "filter" control or increase the "Quality Threshold" value.
 
 * Click the "Gear" Icon, and make sure your team number is set and that a static IP is configured.
 * Click "Change Team Number" and "Change IP Settings" if you changed their corresponding settings. Powercycle your robot.
@@ -36,7 +38,7 @@ Tips
 For ideal tracking, consider the following:
 
 * Your tags should be as flat as possible.
-* Your Limelight should be mounted above or below tag height and angled up/down. Your target should look as trapezoidal as possible from your camera's perspective. You don't want your camera to ever be completely "head-on" with a tag if you want to avoid tag flipping.
+* Your Limelight should be mounted above or below tag height and angled up/down such that the target is centered. Your target should look as trapezoidal as possible from your camera's perspective. You don't want your camera to ever be completely "head-on" with a tag if you want to avoid tag flipping.
 
 There is an interplay between the following variables for AprilTag Tracking:
 
