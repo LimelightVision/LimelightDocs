@@ -147,7 +147,7 @@ Use the following code:
 
 		.. code-block:: python
 
-		    	NetworkTables.getTable("limelight").putNumber('<variablename>',<value>);
+		    	NetworkTables.getTable("limelight").putNumber('<variablename>',<value>)
 
 
 to set this data:
