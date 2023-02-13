@@ -5,6 +5,44 @@ Software Change Log
 Contact us or post to CD to suggest upgrades for Limelight!
 
 
+2023.3 (2/13/23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Capture Latency (NT Key: "cl", JSON Results: "cl")
+--------------------------------------------
+The new capture latency entry represents the time between the end of the exposure of the middle row of LL's sensor and the beginning of the processing pipeline. 
+
+Capture latency replaces the estimated "11ms" value we have recommended in the past. For each capture mode, we profiled the best-case image pipeline time (sensor, ISP, driver, memory transfer), 
+and subtracted slightly less than half the total image capture time to arrive at the values posted to "cl". Our profiling procedure captures photons-to-memory latency with an LED Rig and a lot of profiling software.
+
+
+New Quality Threshold for AprilTags
+--------------------------------------------
+Spurious AprilTags are now more easily filtered out with the new Quality Threshold slider. The default value set in 2023.3 should remove most spurious detections.
+
+
+Camera Pose in Robot Space Override (NT Key: "camerapose_robotspace_set", "camerapose_robotspace")
+--------------------------------------------
+Your Limelight's position in robot space may now be adjusted on-the-fly. If the key is set to an array of zeros, the pose set in the web interface is used.
+The current camera pose may now be read with "camerapose_robotspace" in networktables or "t6c_rs" in the top-level of the JSON results.
+
+.. image:: https://thumbs.gfycat.com/VagueElderlyDove-size_restricted.gif
+
+
+Higher Max Exposure
+--------------------------------------------
+The maximum exposure time is now 33ms (up from 12.5 ms). High-fps capture modes are still limited to (1/fps) seconds. 90hz pipelines, for example, will not have brighter images past 11ms exposure time.
+
+Bugfixes
+--------------------------------------------
+* Fix LL3 MJPEG streams in shuffleboard
+* Fix camMode - driver mode now produces bright, usable images.
+* Exposure label has been corrected - each "tick" represents 0.01ms and not 0.1 ms
+
+
+
+
 
 2023.2 (1/28/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
