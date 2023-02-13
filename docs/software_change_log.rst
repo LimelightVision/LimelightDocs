@@ -22,12 +22,14 @@ New Quality Threshold for AprilTags
 Spurious AprilTags are now more easily filtered out with the new Quality Threshold slider. The default value set in 2023.3 should remove most spurious detections.
 
 
-Camera Pose in Robot Space Override (NT Key: "camerapose_robotspace_set", "camerapose_robotspace")
+Camera Pose in Robot Space Override (NT Keys: "camerapose_robotspace_set", "camerapose_robotspace")
 --------------------------------------------
 Your Limelight's position in robot space may now be adjusted on-the-fly. If the key is set to an array of zeros, the pose set in the web interface is used.
 The current camera pose may now be read with "camerapose_robotspace" in networktables or "t6c_rs" in the top-level of the JSON results.
 
-.. image:: https://thumbs.gfycat.com/VagueElderlyDove-size_restricted.gif
+Here's an example of a Limelight on an elevator:
+
+.. image:: https://thumbs.gfycat.com/SeriousLegitimateDowitcher-size_restricted.gif
 
 
 Higher Max Exposure
@@ -39,8 +41,6 @@ Bugfixes
 * Fix LL3 MJPEG streams in shuffleboard
 * Fix camMode - driver mode now produces bright, usable images.
 * Exposure label has been corrected - each "tick" represents 0.01ms and not 0.1 ms
-
-
 
 
 
