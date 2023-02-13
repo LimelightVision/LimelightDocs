@@ -34,7 +34,7 @@ Right off the bat, this mostly worked.  The robot turns in the direction of the 
 
 What we have implemented so far is a simple proportional control loop.  We calculated the error in heading and multiplied that by a constant, thus making a motor command which is proportional to the error.  As the error goes to zero, our command will go to zero.  The problem is that there is a lot of friction involved when the robot tries to turn.  Very small commands will not turn the robot at all.  At small angles, the command can become too small to actually move the robot.  You might find that your robot reaches its target well when you start out with a large targeting error but it just can’t aim at all if you start out really close.  
 
-There are a few ways to solve this problem but here is a really simple solution.  We used a concept the “minimum command”.  If the error is bigger than some threshhold, just add a constant to your motor command which roughly represents the minimum amount of power needed for the robot to actually move (you actually want to use a little bit less than this).  The new code looks like this:
+There are a few ways to solve this problem but here is a really simple solution.  We used a concept the “minimum command”.  If the error is larger than some threshhold, just add a constant to your motor command which roughly represents the minimum amount of power needed for the robot to actually move (you actually want to use a little bit less than this).  The new code looks like this:
 
 .. code-block:: c++
 	
@@ -48,14 +48,17 @@ There are a few ways to solve this problem but here is a really simple solution.
 	{
 		float heading_error = -tx;
 		float steering_adjust = 0.0f;
-    		if (tx > 1.0)
+    	if (Math.abs(heading_error) > 1.0) 
 		{
-			steering_adjust = Kp*heading_error - min_command;
-		}
-		else if (tx < 1.0)
-		{
-        		steering_adjust = Kp*heading_error + min_command;
-		}
+			if (heading_error < 0) 
+			{
+				steering_adjust = Kp*heading_error + min_command;
+			} 
+			else 
+			{
+				steering_adjust = Kp*heading_error - min_command;
+			}
+		} 
 		left_command += steering_adjust;
 		right_command -= steering_adjust;
 	}
