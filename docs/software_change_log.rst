@@ -11,10 +11,10 @@ Contact us or post to CD to suggest upgrades for Limelight!
 
 Capture Latency (NT Key: "cl", JSON Results: "cl")
 --------------------------------------------
-The new capture latency entry represents the time between the end of the exposure of the middle row of LL's sensor and the beginning of the processing pipeline. 
+The new capture latency entry represents the time between the end of the exposure of the middle row of Limelight's image sensor and the beginning of the processing pipeline. 
 
 Capture latency replaces the estimated "11ms" value we have recommended in the past. For each capture mode, we profiled the best-case image pipeline time (sensor, ISP, driver, memory transfer), 
-and added slightly less than half the total image readout time to arrive at the values posted to "cl". Our profiling procedure captures photons-to-memory latency with an LED Rig and a lot of profiling software.
+and added slightly less than half the total sensor readout time to arrive at the values posted to "cl". Our profiling procedure captures photons-to-memory latency with an LED Rig and a lot of profiling software.
 
 
 New Quality Threshold for AprilTags
@@ -39,8 +39,7 @@ The maximum exposure time is now 33ms (up from 12.5 ms). High-fps capture modes 
 
 Botpose updates
 --------------------------------------------
-The maximum exposure time is now 33ms (up from 12.5 ms). High-fps capture modes are still limited to (1/fps) seconds. 90hz pipelines, for example, will not have brighter images past 11ms exposure time.
-
+All three botpose arrays in networktables have a seventh entry representing total latency (capture latency + targeting latency).
 
 Bugfixes
 --------------------------------------------
