@@ -5,6 +5,20 @@ Software Change Log
 Contact us or post to CD to suggest upgrades for Limelight!
 
 
+2023.3.1 (2/14/23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+AprilTag Accuracy Improvements
+----------------------------------------------------------------------------------------
+Improved intrinsics matrix and, most importantly, improved distortion coefficients for all models. Noticable single AprilTag Localization improvements. 
+
+
+Detector Upload
+----------------------------------------------------------------------------------------
+Detector upload fixed.
+
+
 2023.3 (2/13/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
