@@ -4,6 +4,18 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2023.4.0 (2/18/23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Neural Detector Class Filter
+----------------------------------------------------------------------------------------
+Specify the classes you want to track for easy filtering of unwanted detections.
+
+Neural Detector expanded support
+----------------------------------------------------------------------------------------
+Support any input resolution, support additional output shapes to support other object detection architectures.
+
 
 2023.3.1 (2/14/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
