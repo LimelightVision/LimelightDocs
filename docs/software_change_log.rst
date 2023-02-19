@@ -14,7 +14,7 @@ Specify the classes you want to track for easy filtering of unwanted detections.
 
 Neural Detector expanded support
 ----------------------------------------------------------------------------------------
-Support any input resolution, support additional output shapes to support other object detection architectures.
+Support any input resolution, support additional output shapes to support other object detection architectures. EfficientDet0-based models are now supported.
 
 
 2023.3.1 (2/14/23)
