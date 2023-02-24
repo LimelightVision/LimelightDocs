@@ -59,6 +59,11 @@ Wiring
 .. note:: Limelight takes a 12V input, but is built to function down to 6V. Its LEDs have a constant brightness down to 7V.
 .. warning:: Do not use the REV radio power module to power your Limelight
 
+.. image:: img/wiring.jpg
+		:align: center
+		:width: 100%
+Credit - Christian Femia
+			
 
 .. tabs::
 	
