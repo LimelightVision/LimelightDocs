@@ -29,7 +29,7 @@ Similar to the aiming example, here we show a function which can be run in your 
 
 With some tuning of the KpDistance setting, your robot should very quickly and accurately drive to the desired distance.  Compared to aiming, driving to the correct distance is usually easier because most robots drive forward and backward much easier than they turn in place.  
 
-Next we'll describe a simple trick to make driving to the correct distance even easier.  Instead of actually calculating the distance, you can use the limelight cross-hair.  Just position your robot at your idea distance from the target and calibrate the y-position of the cross-hair.  Now your y-angle will report as 0.0 when your robot is at the corect distance.  Using this trick, you don't ever have to actually calculate the actual distance and your code can look something like this:
+Next we'll describe a simple trick to make driving to the correct distance even easier.  Instead of actually calculating the distance, you can use the limelight cross-hair.  Just position your robot at your idea distance from the target and calibrate the y-position of the cross-hair.  Now your y-angle will report as 0.0 when your robot is at the correct distance.  Using this trick, you don't ever have to actually calculate the actual distance and your code can look something like this:
 
 .. code-block:: c++
 

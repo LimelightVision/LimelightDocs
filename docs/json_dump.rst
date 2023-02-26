@@ -2,7 +2,7 @@ JSON Dump Specification
 ============================
 
 Limelight's JSON results output is a collection of arrays containing targeting results. Separate arrays exist for retroreflective, fiducial, neural classifier, and neural detector results.
-JSON is human-readable and easy to parse in any language on any platform, so it is perfect for most use-cases. The same JSON dump may be retreived using the REST/HTTP, Websocket, and NetworkTables APIs.
+JSON is human-readable and easy to parse in any language on any platform, so it is perfect for most use-cases. The same JSON dump may be retrieved using the REST/HTTP, Websocket, and NetworkTables APIs.
 Parsing this JSON output is incredibly easy with our FRC libraries.
 
 Limelightlib has built-in functionality that parses the JSON Dump into a LimelightResults object.

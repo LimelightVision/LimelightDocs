@@ -5,7 +5,7 @@ Before An Event
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Download and backup all pipelines to your programming laptop.
 * Download a copy of the latest Limelight image to your programming laptop.
-* Record a list of your pipelines and their indicies.
+* Record a list of your pipelines and their indices.
     * 1 - Dual Target Low
     * 2 - Dual Target High Cargo
 * Add strain reliefs to all power and ethernet cables going to your LL.

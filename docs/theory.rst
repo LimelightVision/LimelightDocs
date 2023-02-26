@@ -19,7 +19,7 @@ The FRC game designers often place reflective "vision targets" on the field in s
 .. image:: img/VisionTargetExamples.jpg
 	:align: center
 
-These retro-reflective vision targets have a very useful property: when light is shined at them, it will reflect directly back to the light source.  This is why Limelight has bright green LEDs surrounding its camera lens.  By setting the camera exposure very low while emitting a bright green light toward the target, we can aquire an image that is mostly black with a bright green vision target. This makes the job of aquiring the target relatively easy.
+These retro-reflective vision targets have a very useful property: when light is shined at them, it will reflect directly back to the light source.  This is why Limelight has bright green LEDs surrounding its camera lens.  By setting the camera exposure very low while emitting a bright green light toward the target, we can acquire an image that is mostly black with a bright green vision target. This makes the job of acquiring the target relatively easy.
 
 Here you can see an example of the ideal of image.  Notice how almost all of the detail in the image is gone due to the low exposure setting but the retro-reflective tape stands out brightly.
 
