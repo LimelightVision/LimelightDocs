@@ -48,7 +48,7 @@ In 2020, 2x and 3x Hardware Zoom options were added to this field. The zoom opti
 
 LEDs
 ---------------------
-Controls the default LED mode for this pipeline. This may be overidden during a match with the "LED" network table option.
+Controls the default LED mode for this pipeline. This may be overridden during a match with the "LED" network table option.
 
 Limelight 2+ users have access to an "LED Brightness" Slider which allows for LED dimming.
 
@@ -106,7 +106,7 @@ Thresholding Wands
 Wands enable users to click on Limelights's video stream to perform automatic HSV thresholding.
 	* The "Eyedropper" wand centers HSV parameters around the selected pixel
 	* The "Add" wand adjusts HSV parameters to include the selected pixel
-	* The "Subtract" wand adjust HSV paramters to ignore the selected pixel
+	* The "Subtract" wand adjust HSV parameters to ignore the selected pixel
 
 .. image:: https://thumbs.gfycat.com/AdorableScientificLaughingthrush-size_restricted.gif
 	:align: center

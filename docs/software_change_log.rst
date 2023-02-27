@@ -23,7 +23,7 @@ Support any input resolution, support additional output shapes to support other 
 
 AprilTag Accuracy Improvements
 ----------------------------------------------------------------------------------------
-Improved intrinsics matrix and, most importantly, improved distortion coefficients for all models. Noticable single AprilTag Localization improvements. 
+Improved intrinsics matrix and, most importantly, improved distortion coefficients for all models. Noticeable single AprilTag Localization improvements. 
 
 
 Detector Upload
@@ -382,7 +382,7 @@ Features
 
 * Hue Inversion
 	* The new hue inversion feature is a critical feature if you want to track red objects, as red is at both the beginning and the end of the hue range:
-	* If you’re trying to track cargo, the aspect ratio filter (set a tight range around “1”) and the fullness filter (you want above 70%) should work quite well. Explicit “circle” filtering is relatively slow and wont work as well as people assume.
+	* If you’re trying to track cargo, the aspect ratio filter (set a tight range around “1”) and the fullness filter (you want above 70%) should work quite well. Explicit “circle” filtering is relatively slow and won't work as well as people assume.
 	* .. image:: https://thumbs.gfycat.com/MeekSnarlingFluke-size_restricted.gif
 
 * New Python Libraries
@@ -545,7 +545,7 @@ Changes
 ----------------
 * Tooltips
 
-	* Tooltips are now avaiable on some Limelight controls
+	* Tooltips are now available on some Limelight controls
 	* .. image:: https://thumbs.gfycat.com/SeparateHonestEthiopianwolf-size_restricted.gif
 
 
@@ -615,7 +615,7 @@ Features
 		* .. image:: https://thumbs.gfycat.com/DisloyalUnfinishedAntipodesgreenparakeet-size_restricted.gif
 	* With 2019.4, we introduced corner sending. This allowed advanced teams to write their own algorithms using OpenCV's solvePNP(). With 2019.5, this is all done on-board.
 	* Upload a plain-text csv file with a model of your target. We have pre-built models of 2019 targets hosted on our website. All models must have a centered origin, and use counter-clockwise point ordering with inch scaling.
-	* Enable the new high-res 960x720 mode, and then enable "Solve 3D" to aquire the position and rotation of your Limelight relative to your target.
+	* Enable the new high-res 960x720 mode, and then enable "Solve 3D" to acquire the position and rotation of your Limelight relative to your target.
 	* Corner numbers are now displayed on the image for easier model creation and threshold tuning.
 	* Read all 6 dimensions of your camera's transform (x,y,z,pitch,yaw,roll) by reading the "camtran" networktable number array.
 
@@ -803,7 +803,7 @@ Features
 	* The "Set" wand centers HSV parameters around the selected pixel
 	* The "Add" wand adjusts HSV parameters to include the selected pixel
 	* .. image:: https://thumbs.gfycat.com/FarHandyCanvasback-size_restricted.gif
-	* The "Subtract" wand adjusts HSV paramters to ignore the selected pixel
+	* The "Subtract" wand adjusts HSV parameters to ignore the selected pixel
 	* .. image:: https://thumbs.gfycat.com/HoarseEnragedIslandwhistler-size_restricted.gif
 
 * Snapshots
@@ -816,7 +816,7 @@ Features
 
 * New Streaming options
 	
-	* We've introduced the "stream" NetworkTables key to control Limelight's streaming mode. We've received requests for PiP (Picture-in-Picture) modes to better accomodate certain dashboards.
+	* We've introduced the "stream" NetworkTables key to control Limelight's streaming mode. We've received requests for PiP (Picture-in-Picture) modes to better accommodate certain dashboards.
 	* 0 - Standard - Side-by-side streams if a webcam is attached to Limelight
 	* 1 - PiP Main - The secondary camera stream is placed in the lower-right corner of the primary camera stream.
 	* 2 - PiP Secondary - The primary camera stream is placed in the lower-right corner of the secondary camera stream.

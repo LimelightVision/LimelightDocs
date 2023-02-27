@@ -8,7 +8,7 @@ In FRC, teams have always wanted to track game pieces on the field during the au
 Using Limelight's "Neural Detector" pipeline, teams are able to track pieces just like any other target with zero tuning.
 
 "Neural Classifier" pipelines, on the other hand, allow teams to add advanced sensing capabilities to their robots. 
-Let's say a team wanted to determine whether their robot was in posession of a Red ball, a Blue ball, or not in possession of a ball.
+Let's say a team wanted to determine whether their robot was in possession of a Red ball, a Blue ball, or not in possession of a ball.
 A Limelight pointed inside a robot could run a classifier trained to determine one of these three cases. A classifier could also count the number of objects in a hopper, determine the state of a field feature, etc.
 
 Neural Detector and Classifier networks require the addition of a Google Coral USB accelerator. The Google Coral Accelerator is an ASIC (application specific integrated circuit)

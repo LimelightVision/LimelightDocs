@@ -90,7 +90,7 @@ Credit - Christian Femia
 Imaging
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: Limelight will receive software updates for improvements and features to accomodate the game if necessary.
+.. note:: Limelight will receive software updates for improvements and features to accommodate the game if necessary.
 .. _Downloads: https://limelightvision.io/pages/downloads
 .. tabs::
 	
@@ -197,7 +197,7 @@ Follow these steps before starting:
 		* You can continue be access your config panel at http://limelight.local:5801, and your camera stream at http://limelight.local:5800
 
 .. This is a comment. Mutli-line notes, warnings, admonitions in general need indented lines after the first line
-.. note:: Q. Why do we reccommend a static IP? 
+.. note:: Q. Why do we recommend a static IP? 
 
 	A. First, it shaves multiple seconds off Limelight's boot time. Second, teams have historically had issues with DHCP assignment and mDNS responders on actual FRC fields and with event radio firmware.  
 	
