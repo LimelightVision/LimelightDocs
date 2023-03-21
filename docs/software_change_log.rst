@@ -27,6 +27,9 @@ MegaTag Fix
 ----------------------------------------------------------------------------------------
 * Certain non-coplanar apriltag layouts were broken in MegaTag. This has been fixed, and pose estimation is now stable with all field tags. This enables stable pose estimation at even greater distances than before.
 
+Greater tx and ty accuracy
+----------------------------------------------------------------------------------------
+* TX and TY are more accurate than ever. Targets are fully undistorted, and FOV is determined wholly by camera intrinsics.
 
 2023.3.1 (2/14/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
