@@ -4,6 +4,44 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+
+2023.5.0 (3/21/23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Breaking Changes
+----------------------------------------------------------------------------------------
+Fixed regression - Limelight Robot-Space "Yaw" was inverted in previous releases. Limelight yaw in the web ui is now CCW-Positive internally.
+
+Region Selection Update
+----------------------------------------------------------------------------------------
+* Region selection now works as expected in neural detector pipelines.
+* Add 5 new region options to select the center, top, left, right, top, or bottom of the unrotated target rectangle.
+
+
+"hwreport" REST API
+----------------------------------------------------------------------------------------
+* :5807/hwreport will return a JSON response detailing camera intrinsics and distortion information
+
+MegaTag Fix
+----------------------------------------------------------------------------------------
+* Certain non-coplanar apriltag layouts were broken in MegaTag. This has been fixed, and pose estimation is now stable with all field tags. This enables stable pose estimation at even greater distances than before.
+
+
+2023.3.1 (2/14/23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+AprilTag Accuracy Improvements
+----------------------------------------------------------------------------------------
+Improved intrinsics matrix and, most importantly, improved distortion coefficients for all models. Noticeable single AprilTag Localization improvements. 
+
+
+Detector Upload
+----------------------------------------------------------------------------------------
+Detector upload fixed.
+
+
 2023.4.0 (2/18/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
