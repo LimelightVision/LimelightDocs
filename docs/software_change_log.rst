@@ -9,6 +9,8 @@ Contact us or post to CD to suggest upgrades for Limelight!
 Fixed regression introduced in 2023.5.0 - While 2023.5 fixed megatag for all non-planar layouts, it reduced the performance of single-tag pose estimates. This has been fixed.
 Single-tag pose estimates use the exact same solver used in 2023.4.
 
+Snappier snapshot interface. Snapshot grid now loads low-res 128p thumbnails.
+
 
 2023.5.0 (3/21/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
