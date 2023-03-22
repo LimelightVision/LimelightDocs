@@ -18,7 +18,6 @@ Region Selection Update
 * Region selection now works as expected in neural detector pipelines.
 * Add 5 new region options to select the center, top, left, right, top, or bottom of the unrotated target rectangle.
 
-
 "hwreport" REST API
 ----------------------------------------------------------------------------------------
 * :5807/hwreport will return a JSON response detailing camera intrinsics and distortion information
@@ -30,19 +29,6 @@ MegaTag Fix
 Greater tx and ty accuracy
 ----------------------------------------------------------------------------------------
 * TX and TY are more accurate than ever. Targets are fully undistorted, and FOV is determined wholly by camera intrinsics.
-
-2023.3.1 (2/14/23)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-AprilTag Accuracy Improvements
-----------------------------------------------------------------------------------------
-Improved intrinsics matrix and, most importantly, improved distortion coefficients for all models. Noticeable single AprilTag Localization improvements. 
-
-
-Detector Upload
-----------------------------------------------------------------------------------------
-Detector upload fixed.
 
 
 2023.4.0 (2/18/23)
