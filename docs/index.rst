@@ -57,6 +57,12 @@ Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents
 
 .. toctree::
    :maxdepth: 2
+   :caption: Camera Intrinsics Calibration
+   
+   camera_calibration
+
+.. toctree::
+   :maxdepth: 2
    :caption: Python Scripting
    
    python_software
