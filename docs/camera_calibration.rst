@@ -62,12 +62,12 @@ Calibrating
 8. Change your "preferred calibration" to "custom - file" to utilize your custom calibration result. All pipelines will use your calibration result.
 9. Consider capturing more screenshots and recalibrating once you are familiar with the process.
 
-
-
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
 		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Mes5oS-z8Uw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
 	</div>
+
+
 
 
