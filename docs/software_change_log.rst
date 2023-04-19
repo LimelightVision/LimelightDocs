@@ -4,6 +4,24 @@ Software Change Log
 
 Contact us or post to CD to suggest upgrades for Limelight!
 
+2023.6 (4/18/23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Easy ChArUco Calibration & Calibration Visualizers
+----------------------------------------------------------------------------------------
+* ChArUco calibration is far more robust than checkerboard calibration because it handles occlusions and does not require the entire board to be visible. This makes it much easier to capture calibration board corners close to the edges and corners of your images. This is crucial for distortion coefficient estimation.
+* Limelight's calibration process provides feedback at every step, and will ensure you do all that is necessary for good calibration results. A ton of effort has gone into making this process as bulletproof as possible.
+* Most importantly, you can visualize your calibration results right next to the default calibration. At a glance, you can understand whether your calibration result is reasonable or not. 
+* You can also use the calibration dashboard as a learning tool. You can modify downloaded calibration results files to learn how the intrinsics matrix and distortion coefficients affect targeting results, FOV, etc.
+* Take a look at this video:
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/watch?v=Mes5oS-z8Uw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+
 2023.5.1 & 2023.5.2(3/22/23)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Fixed regression introduced in 2023.5.0 - While 2023.5 fixed megatag for all non-planar layouts, it reduced the performance of single-tag pose estimates. This has been fixed.
