@@ -11,7 +11,7 @@ Performing ChArUco Calibration
 
 ChArUco calibration with Limelight was designed to be as seamless and bullet-proof as possible. Read the following steps, and then watch the video below to learn how to calibrate your camera for increased accuracy.
 
-.. note:: You only need to calibrate at one resolution (we recommend 1280x960). Intrinsics are auto-scaled to match your pipeline's chosen resolution, and distortion coefficents are resolution-invariant. Hardware zoom pipelines 5 megapixel pipelines are the only pipelines that will not make use of custom calibrations.
+.. note:: You only need to calibrate at one resolution (we recommend 1280x960). Intrinsics are auto-scaled to match your pipeline's chosen resolution, and distortion coefficents are resolution-invariant given a fixed aspect ratio and FOV. Hardware zoom pipelines 5 megapixel pipelines are the only pipelines that will not make use of custom calibrations.
 
 
 Preparing the Board
