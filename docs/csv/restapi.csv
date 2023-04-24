@@ -1,0 +1,19 @@
+METHOD, ROUTE, DESCRIPTION
+GET, /results,Retrieve full JSON dump of current targeting results
+
+GET, /capturesnapshot,"Capture a snapshot. Include a ""snapname"" string header to name the snapshot"
+POST, /uploadsnapshot,"Upload a named snapshot. Include a ""snapname"" header. Include an image in the body of the request"
+GET, /snapshotmanifest,Returns a list of snapshot file names
+GET, /deletesnapshots,Deletes all snapshots
+
+GET, /hwreport,"Returns a JSON array of full hardware reports. A hardware report is derived from a calibration result and contains human-readable information such as FOV, principal offset, etc."
+
+GET, /cal-default,Returns default calibration result
+GET, /cal-file,Returns custom calibration result (file system)
+GET, /cal-eeprom,Returns custom calibration result (eeprom)
+GET, /cal-latest,Returns latest custom calibration result. This result is not used unless it is saved to the file system or the eeprom
+POST, /cal-eeprom,Update the eeprom calibration result
+POST, /cal-file,Update the filesystem calibration result
+DEL, /cal-latest,Delete latest calibration result
+DEL, /cal-eeprom,Delete eeprom calibration result
+DEL, /cal-file,Delete filesystem calibration result
