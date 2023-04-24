@@ -6,6 +6,8 @@ POST, /uploadsnapshot,"Upload a named snapshot. Include a ""snapname"" header. I
 GET, /snapshotmanifest,Returns a list of snapshot file names
 GET, /deletesnapshots,Deletes all snapshots
 
+POST, /uploadnn,"Upload a neural network. Include a ""type"" header set to ""detector"" or ""classifier"""
+
 GET, /hwreport,"Returns a JSON array of full hardware reports. A hardware report is derived from a calibration result and contains human-readable information such as FOV, principal offset, etc."
 
 GET, /cal-default,Returns default calibration result
