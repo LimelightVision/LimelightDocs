@@ -8,17 +8,23 @@ Limelight Docs
 
    FRC Team 2910, Jack In The Bot (Washington, USA)
 
-Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents below to get started.
+Limelight is an easy-to-use smart camera for FRC.
 
 .. toctree::
    :maxdepth: 2
    :caption: Getting Started
 
    getting_started
-   vision_pipeline_tuning
    crosshair_calibration
    using_multiple_pipelines
    best_practices
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Retroreflective/Color Pipelines
+
+   vision_pipeline_tuning
    theory
 
 
@@ -39,6 +45,19 @@ Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents
    building_a_pipeline
    training
    
+.. toctree::
+   :maxdepth: 2
+   :caption: Python Pipelines
+   
+   python_software
+   python_examples
+
+.. toctree::
+   :maxdepth: 2
+   :caption: GRIP Pipelines
+   
+   grip_software
+   grip_limelight
 
 .. toctree::
    :maxdepth: 2
@@ -47,6 +66,11 @@ Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents
    networktables_api
    rest_api
    json_dump
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Case Studies
+
    cs_estimating_distance
    cs_aiming
    cs_seeking
@@ -60,20 +84,6 @@ Limelight is an easy-to-use smart camera for FRC. Refer to the table of contents
    :caption: Camera Intrinsics Calibration
    
    camera_calibration
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Python Scripting
-   
-   python_software
-   python_examples
-
-.. toctree::
-   :maxdepth: 2
-   :caption: GRIP Support
-   
-   grip_software
-   grip_limelight
 	
 .. toctree::
    :maxdepth: 2
