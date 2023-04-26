@@ -1,7 +1,7 @@
 Building a Retroreflective/Color Pipeline
 ==============================================================
 
-To configure a retroreflective/color vision pipeline, first access its web interface at <http://IPADDRESS:5801> or http://10.te.am.11:5801 for FRC teams.
+To configure a retroreflective/color vision pipeline, you must first access the web interface at <http://IPADDRESS:5801> or http://10.te.am.11:5801 for FRC teams.
 
 The "Tracking" page is comprised of five tuning tabs: 
 

@@ -42,7 +42,7 @@ Limelight is an easy-to-use smart camera for FRC.
    :maxdepth: 2
    :caption: Neural Network Pipelines
    
-   building_a_pipeline
+   neural_network_pipelines
    training
    
 .. toctree::
