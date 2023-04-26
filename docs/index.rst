@@ -16,6 +16,7 @@ Limelight is an easy-to-use smart camera for FRC.
 
    getting_started
    crosshair_calibration
+   status_lights
    using_multiple_pipelines
    best_practices
 
