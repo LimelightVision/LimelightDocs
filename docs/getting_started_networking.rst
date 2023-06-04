@@ -1,3 +1,5 @@
+.. _Downloads: https://limelightvision.io/pages/downloads
+
 Networking Setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We highly recommend following the static IP instructions for reliability during events.
