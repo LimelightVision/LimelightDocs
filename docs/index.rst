@@ -14,7 +14,11 @@ Limelight is an easy-to-use smart camera for FRC.
    :maxdepth: 2
    :caption: Getting Started
 
-   getting_started
+   getting_started_mounting
+   getting_started_wiring
+   getting_started_imaging
+   getting_started_networking
+   getting_started_programming
    crosshair_calibration
    status_lights
    using_multiple_pipelines

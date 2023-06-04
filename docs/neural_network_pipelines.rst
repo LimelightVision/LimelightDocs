@@ -53,7 +53,7 @@ Change the crop window to easily ignore objects outside of the desired detection
 
 
 Nerual Classifier Pipeline
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ----------
 

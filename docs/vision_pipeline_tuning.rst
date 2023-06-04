@@ -77,7 +77,7 @@ Increasing the black level offset can significantly darken your camera stream. T
 	:width: 100%
 
 Red Balance, Blue Balance
----------------------
+------------------------------------------
 Controls the intensity of Red and Blue color components in your image. These collecively control your Limelight's white balance. We recommend leaving these at their default values of
 
 
@@ -311,7 +311,7 @@ Force Convex
 Use this option to select only the "outermost" corners of a target for SolvePnP.
 
 Contour Simplification
--------------------
+--------------------------------------
 Use this option to remove small, noisy edges from the target.
 
 Acceptable Error
