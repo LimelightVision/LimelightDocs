@@ -71,7 +71,7 @@ As the 3D combined MegaTag increases in size and in keypoint count, its stabilit
 
 Using WPILib's Pose Estimator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The latest images for LImelight publish targeting latency and capture latency in milliseconds. You can access them with the "tl" and "cl" NT keys, or with LimelightHelpers.getLatency_Pipeline() and LimelightHelpers.getLatency_Capture() if you are using Limelight Lib. You can also get the combined latency by accessing the 7th value in the botpose array.
+The latest images for Limelight publish targeting latency and capture latency in milliseconds. You can access them with the "tl" and "cl" NT keys, or with LimelightHelpers.getLatency_Pipeline() and LimelightHelpers.getLatency_Capture() if you are using Limelight Lib. You can also get the combined latency by accessing the 7th value in the botpose array.
 
 pseudocode for the "latency" component of WPILib' addVisionMeasurement():
 
