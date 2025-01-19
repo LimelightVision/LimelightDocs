@@ -1,3 +1,4 @@
+# (ARCHIVED)
 # Limelight Documentation Environment Setup
 
 ## Windows
